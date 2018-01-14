@@ -1,14 +1,26 @@
 /* ================================================== */
+/* ====================== S A M ===================== */
 /* ========== Scss Animated Microframework ========== */
 /* ================================================== */
-/* ============ github/philippebeck/sam ============= */
+/* ========== github/philippebeck/sam.scss ========== */
+/* ========= www.npmjs.com/package/sam.scss ========= */
 /* ================================================== */
 
 
 
-// ******************* \\
-// ***** Summary ***** \\
+// ************************ \\
+// ***** Installation ***** \\
 
+// To install via npm :
+// $ npm install sam.scss
+
+// To install via Bower :
+// $ bower install sam.scss --save
+
+
+
+// ******************** \\
+// ***** Overview ***** \\
 
 // Sam is a microframework SCSS who group some important CSS properties by class.
 
@@ -47,6 +59,11 @@
 //                    they contain the conditions & loops to create all classes
 //                    starting from the 6 main characteristics, but 3 files are in more,
 //                    one for the navbar, one for the buttons & one for the forms
+
+
+
+// ************************ \\
+// ***** Contribution ***** \\
 
 // Sam needs you if you like it : sends pull requests on GitHub to improve it !!
 
