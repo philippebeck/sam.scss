@@ -34,6 +34,12 @@ Sam is build around 6 main characteristics :
 Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 
 
+# Documentation
+***************
+
+The documentation will be added as soon as possible... please apologize for the inconvenience...
+
+
 # Contribution
 **************
 
