@@ -1,0 +1,137 @@
+/* ****************** */
+/* ***** HELPER ***** */
+/* ****************** */
+
+
+
+// The helper part includes :
+// 01 => the width helpers
+// 02 => the height helpers
+// 03 => the margin helpers
+// 04 => the padding helpers
+// 05 => the text align helpers
+// 06 => the font helpers
+// 07 => the text decoration helpers
+// 08 => the cursor helpers
+
+
+
+/* ************************* */
+/* ***** Width Helpers ***** */
+
+// Loops on the $size map for each width size
+@each $suffix, $value in $size
+{
+  /* Width #{$suffix} */
+  @include width($suffix, $value);
+}
+
+
+
+/* ************************** */
+/* ***** Height Helpers ***** */
+
+// Loops on the $size map for each height size
+@each $suffix, $value in $size
+{
+  /* Height #{$suffix} */
+  @include height($suffix, $value);
+}
+
+
+
+/* ************************** */
+/* ***** Margin Helpers ***** */
+
+// Loops on the $margin map for each margin size
+@each $suffix, $value in $margin
+{
+  /* Margin #{$suffix} */
+  @include margin($suffix, $value);
+}
+
+
+
+/* *************************** */
+/* ***** Padding Helpers ***** */
+
+// Loops on the $margin map for each padding size
+@each $suffix, $value in $margin
+{
+  /* Padding #{$suffix} */
+  @include padding($suffix, $value);
+}
+
+
+
+/* ****************************** */
+/* ***** Text Align Helpers ***** */
+
+// Loops on the $text-align map for each text alignment
+@each $name, $value in $text-align
+{
+  // Constructs the text-align classes
+  .#{$name} {
+    text-align: $value;
+  }
+}
+
+
+
+/* ************************ */
+/* ***** Font Helpers ***** */
+
+// For normal text
+.normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+// For italic text
+.italic {
+  font-style: italic;
+}
+
+// For bold text
+.bold {
+  font-weight: bold;
+}
+
+
+
+/* *********************************** */
+/* ***** Text Decoration Helpers ***** */
+
+// Loops on the $decoration-style map for each text decoration style
+@each $prefix, $style in $decoration-style
+{
+  // Loops on the $decoration-line map for each text decoration line
+  @each $suffix, $line in $decoration-line
+  {
+    // Constructs the text-decoration classes
+    .#{$prefix}-#{$suffix} {
+      text-decoration: $line $style;
+    }
+  }
+}
+
+// To unset text decoration
+.no-decoration {
+  text-decoration: none;
+}
+
+
+
+/* ************************** */
+/* ***** Cursor Helpers ***** */
+
+// Loops on the $cursor map for each cursor style
+@each $name, $value in $cursor
+{
+  // Constructs the cursor classes
+  .#{$name},
+  .#{$name} > *,
+  .#{$name} > * > * {
+    cursor: $value;
+  }
+}
