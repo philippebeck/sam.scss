@@ -1,0 +1,107 @@
+// **************************** \\
+// ***** COLORS FUNCTIONS ***** \\
+// **************************** \\
+
+
+// The colors functions part includes :
+// 01 => the create-color Function to create the colors shades
+// 02 => the create-colors Function to create all shades of all colors
+// 03 => the effective creation of the colors by calling the functions
+
+
+
+// ************************************** \\
+// ***** 01 - Create Color Function ***** \\
+
+// Create a map $color-map who contains 9 variations of a color
+// @param $color                => the normal color
+// @param $low-brightness       => the low brightness in percentage
+// @param $strong-brightness    => the strong brightness in percentage
+// @param $low-darkness         => the low darkness in percentage
+// @param $strong-darkness      => the strong darkness in percentage
+// @param $low-transparency     => the low transparency between 0 & 1
+// @param $strong-transparency  => the strong transparency between 0 & 1
+// @return $color-map           => the map with the 9 color variations
+@function create-color(
+$color,
+$low-brightness,
+$strong-brightness,
+$low-darkness,
+$strong-darkness,
+$low-transparency,
+$strong-transparency)
+{
+
+  // You can customize here the choice of functions to obtain different shades
+  $color-map:
+  (
+  // this color
+  base:       $color,
+
+  // this bright color
+  bright:     lighten($color, $low-brightness),
+
+  // this color brighter
+  brighter:   lighten($color, $strong-brightness),
+
+  // this dark color
+  dark:       darken($color, $low-darkness),
+
+  // this color darker
+  darker:     darken($color, $strong-darkness),
+
+  // this color with low transparency
+  opac:       transparentize($color, $low-transparency),
+
+  // this color with strong transparency
+  trans:      transparentize($color, $strong-transparency),
+
+  // the complement color of this color
+  comp:       complement($color),
+
+  // the inverse color of this color
+  inv:        invert($color)
+  );
+  // Return the map $color-map which contains all shades
+  // From the create-color function for one color
+  @return $color-map;
+}
+
+
+
+// *************************************** \\
+// ***** 02 - Create Colors Function ***** \\
+
+// Create a map $colors-map who contains all color-map (the 9 variations of all colors)
+// @param $colors       => the basic colors map from the colors system
+// @return $colors-map  => the map with the 9 color variations of all colors
+@function create-colors($colors)
+{
+  // Create the map $colors-map empty
+  $colors-map: ();
+
+  // Loop on the map $colors from the Colors System
+  @each $name, $color in $colors
+  {
+    // Create a map $color-map empty on each loop
+    $color-map: ();
+
+    // All colors values are set here but you can change this values like you wish
+    $color-map: map-merge($color-map, ($name: create-color($color, 20%, 65%, 10%, 30%, 0.1, 0.8)) );
+
+    // Merge the map $colors-map with each map $color-map
+    // (with each color) on each loop
+    $colors-map: map-merge($colors-map, $color-map);
+  }
+  // Return the map $colors-map which contains all shades
+  // From the create-colors function of all colors from the Color System
+  @return $colors-map;
+}
+
+
+
+// ******************************************** \\
+// ***** 03 - Call Create Colors Function ***** \\
+
+// Call the function to create all colors & store them into the map $colors-map
+$colors-map: create-colors($colors);
