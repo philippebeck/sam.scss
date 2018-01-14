@@ -1,0 +1,54 @@
+/* ******************* */
+/* ***** BUTTON ***** */
+/* ******************* */
+
+
+
+// The button part includes :
+// 01 => the btn class to design buttons
+// 02 => the btn-group class to design group buttons
+
+
+
+/* *************** */
+/* ***** Btn ***** */
+
+// Display inline-block to the center
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+
+  // Default colors
+  background-color: $blue;
+  color: $white;
+}
+
+
+
+/* ********************* */
+/* ***** Btn-Group ***** */
+
+// Display flex row
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+// No style for list
+ul.btn-group {
+  list-style: none;
+}
+
+// Basic gutters
+.btn-group > * {
+  margin: .3rem;
+}
+
+// For usage of alignment classes
+ul.btn-group > li {
+  display: flex;
+}
