@@ -1,0 +1,169 @@
+// *********************** \\
+// ***** COLOR MIXIN ***** \\
+// *********************** \\
+
+
+// The color mixin part includes :
+// 01 => the text-color mixin who attributes differents colors variations to differents colors classes
+// 02 => the background-color mixin who attributes differents colors variations to differents colors classes
+// 03 => the border-color mixin who attributes differents colors variations to differents colors classes
+// 04 => the colors mixin who group the 3 colors properties by color
+
+
+
+// ********************************* \\
+// ***** 01 - Text Color Mixin ***** \\
+
+// Creates all text colors
+// @param Color $color => the current color
+@mixin text-color($color)
+{
+  &-text,
+  &-outline,
+  {
+    color: map-get(map-get($colors-map, $color), base);
+  }
+
+  &-dark
+  {
+    color: map-get(map-get($colors-map, $color), bright);
+  }
+
+  &,
+  &-btn,
+  &-sea,
+  &-trans,
+  &-light:hover,
+  &-outline:hover
+  {
+    color: map-get(map-get($colors-map, $color), brighter);
+  }
+
+  &-light,
+  &-btn:hover
+  {
+    color: map-get(map-get($colors-map, $color), dark);
+  }
+
+  &-glass,
+  &-dark:hover,
+  &-trans:hover
+  {
+    color: map-get(map-get($colors-map, $color), darker);
+  }
+
+  & a
+  {
+    color: map-get(map-get($colors-map, $color), comp);
+  }
+
+  & a:hover
+  {
+    color: map-get(map-get($colors-map, $color), inv);
+  }
+}
+
+
+
+// *************************************** \\
+// ***** 02 - Background Color Mixin ***** \\
+
+// Creates all background colors
+// @param Color $color => the current color
+@mixin background-color($color)
+{
+  &,
+  &-btn,
+  &-light:hover,
+  &-dark:hover,
+  &-outline:hover
+  {
+    background-color: map-get(map-get($colors-map, $color), base);
+  }
+
+  &-light,
+  &-btn:hover
+  {
+    background-color: map-get(map-get($colors-map, $color), bright);
+  }
+
+  &-dark
+  {
+    background-color: map-get(map-get($colors-map, $color), dark);
+  }
+
+  &-outline
+  {
+    background-color: map-get(map-get($colors-map, $color), brighter);
+  }
+
+  &-sea,
+  &-trans
+  {
+    background-color: map-get(map-get($colors-map, $color), opac);
+  }
+
+  &-glass,
+  &-trans:hover
+  {
+    background-color: map-get(map-get($colors-map, $color), trans);
+  }
+
+  &-btn,
+  &-outline,
+  &-light,
+  &-dark,
+  &-trans {
+    transition: background-color 1s;
+  }
+}
+
+
+
+// *********************************** \\
+// ***** 03 - Border Color Mixin ***** \\
+
+// Creates all border colors
+// @param Color $color => the current color
+@mixin border-color($color)
+{
+  &-border,
+  &-light,
+  &-dark,
+  &-sea,
+  &-trans,
+  &-btn:hover
+  {
+    border-color: map-get(map-get($colors-map, $color), base);
+  }
+
+  &-outline,
+  &-glass,
+  &-trans:hover
+  {
+    border-color: map-get(map-get($colors-map, $color), bright);
+  }
+
+  &,
+  &-btn,
+  &-light:hover,
+  &-dark:hover,
+  &-outline:hover
+  {
+    border-color: map-get(map-get($colors-map, $color), dark);
+  }
+}
+
+
+
+// ***************************** \\
+// ***** 04 - Colors Mixin ***** \\
+
+// Creates all kinds of colors
+// @param Color $color => the current color
+@mixin colors($color)
+{
+  @include text-color($color);
+  @include background-color($color);
+  @include border-color($color);
+}
