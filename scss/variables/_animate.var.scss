@@ -1,0 +1,393 @@
+// **************************** \\
+// ***** ANIMATE VARIABLE ***** \\
+// **************************** \\
+
+
+
+// The animate variable part includes:
+// 01 => the transform variables that are some kind of animations (more in the future)
+// 02 => the transform system who contain all transform variables
+// 03 => the time variables that are 5 differents duration
+// !! => be careful, the time variables are using for duration & delay
+// 04 => the time system who contain all time variables
+// 05 => the animation system who contain many animation options
+// 06 => the origin system who contain all transform origin basic values (very basic !)
+
+
+
+// ************************************ \\
+// ***** 01 - Transform Variables ***** \\
+
+// You can change the transform values with your own
+
+// ***** Rotate ***** \\
+// RotateX
+$quarterX:          rotateX(90deg)              !default;
+$halfX:             rotateX(180deg)             !default;
+$fullX:             rotateX(360deg)             !default;
+
+// RotateY
+$quarterY:          rotateY(90deg)              !default;
+$halfY:             rotateY(180deg)             !default;
+$fullY:             rotateY(360deg)             !default;
+
+// Rotate
+$quarter:           rotate(90deg)               !default;
+$half:              rotate(180deg)              !default;
+$full:              rotate(360deg)              !default;
+
+// Rotate3d
+$quarterX3d:        rotate3d(0, 1, 1, 90deg)    !default;
+$halfX3d:           rotate3d(0, 1, 1, 180deg)   !default;
+$fullX3d:           rotate3d(0, 1, 1, 360deg)   !default;
+
+$quarterY3d:        rotate3d(1, 0, 1, 90deg)    !default;
+$halfY3d:           rotate3d(1, 0, 1, 180deg)   !default;
+$fullY3d:           rotate3d(1, 0, 1, 360deg)   !default;
+
+$quarterZ3d:        rotate3d(1, 1, 0, 90deg)    !default;
+$halfZ3d:           rotate3d(1, 1, 0, 180deg)   !default;
+$fullZ3d:           rotate3d(1, 1, 0, 360deg)   !default;
+
+$quarter3d:         rotate3d(1, 1, 1, 90deg)    !default;
+$half3d:            rotate3d(1, 1, 1, 180deg)   !default;
+$full3d:            rotate3d(1, 1, 1, 360deg)   !default;
+
+// ***** Scale ***** \\
+// ScaleX
+$flipY:             scaleX(-1)                  !default;
+$growX:             scaleX(0)                   !default;
+$shrinkX:           scaleX(3)                   !default;
+
+// ScaleY
+$flipX:             scaleY(-1)                  !default;
+$growY:             scaleY(0)                   !default;
+$shrinkY:           scaleY(3)                   !default;
+
+// Scale
+$bounceL:           scale(-3)                   !default;
+$bounceM:           scale(-2)                   !default;
+$bounceS:           scale(-1)                   !default;
+
+$growYbounceL:      scale(-3, 0)                !default;
+$growYbounceM:      scale(-2, 0)                !default;
+$growYbounceS:      scale(-1, 0)                !default;
+
+$flipYshrinkL:      scale(-4, 4)                !default;
+$flipYshrinkM:      scale(-3, 3)                !default;
+$flipYshrinkS:      scale(-2, 2)                !default;
+
+$growXbounceL:      scale(0, -3)                !default;
+$growXbounceM:      scale(0, -2)                !default;
+$growXbounceS:      scale(0, -1)                !default;
+
+$grow:              scale(0)                    !default;
+
+$growXshrinkS:      scale(0, 2)                 !default;
+$growXshrinkM:      scale(0, 3)                 !default;
+$growXshrinkL:      scale(0, 4)                 !default;
+
+$flipXshrinkS:      scale(2, -2)                !default;
+$flipXshrinkM:      scale(3, -3)                !default;
+$flipXshrinkL:      scale(4, -4)                !default;
+
+$growYshrinkS:      scale(2, 0)                 !default;
+$growYshrinkM:      scale(3, 0)                 !default;
+$growYshrinkL:      scale(4, 0)                 !default;
+
+$shrinkS:           scale(2)                    !default;
+$shrinkM:           scale(3)                    !default;
+$shrinkL:           scale(4)                    !default;
+
+// ***** Skew ***** \\
+// SkewX
+$twistR:            skewX(90deg)                !default;
+$twistL:            skewX(-90deg)               !default;
+
+$torsionR:          skewX(180deg)               !default;
+$torsionL:          skewX(-180deg)              !default;
+
+// SkewY
+$twistT:            skewY(-90deg)               !default;
+$twistB:            skewY(90deg)                !default;
+
+$torsionT:          skewY(-180deg)              !default;
+$torsionB:          skewY(180deg)               !default;
+
+// Skew
+$twisterR:          skew(90deg, -90deg)         !default;
+$twisterL:          skew(-90deg, 90deg)         !default;
+$twisterT:          skew(-90deg, -90deg)        !default;
+$twisterB:          skew(90deg, 90deg)          !default;
+
+$cycloneR:          skew(180deg, -180deg)       !default;
+$cycloneL:          skew(-180deg, 180deg)       !default;
+$cycloneT:          skew(-180deg, -180deg)      !default;
+$cycloneB:          skew(180deg, 180deg)        !default;
+
+// ***** Translate ***** \\
+// TranslateX
+$slipR:             translateX(-10rem)          !default;
+$slipL:             translateX(10rem)           !default;
+
+$slideR:            translateX(-100rem)         !default;
+$slideL:            translateX(100rem)          !default;
+
+// TranslateY
+$slipT:             translateY(5rem)            !default;
+$slipB:             translateY(-5rem)           !default;
+
+$slideT:            translateY(50rem)           !default;
+$slideB:            translateY(-50rem)          !default;
+
+// Translate
+$slipTR:            translate(-10rem, 5rem)     !default;
+$slipBR:            translate(-10rem, -5rem)    !default;
+$slipTL:            translate(10rem, 5rem)      !default;
+$slipBL:            translate(10rem, -5rem)     !default;
+
+$slideTR:           translate(-100rem, 50rem)   !default;
+$slideBR:           translate(-100rem, -50rem)  !default;
+$slideTL:           translate(100rem, 50rem)    !default;
+$slideBL:           translate(100rem, -50rem)   !default;
+
+
+
+// ********************************* \\
+// ***** 02 - Transform System ***** \\
+
+// Creates the map $transforms empty
+$transforms:        ()                          !default;
+
+// You need to add, change or remove variables here if you have changed something above
+$transforms:        map-merge(
+(
+// ***** Rotate ***** \\
+// RotateX
+'quarterX':         $quarterX,
+'halfX':            $halfX,
+'fullX':            $fullX,
+
+// RotateY
+'quarterY':         $quarterY,
+'halfY':            $halfY,
+'fullY':            $fullY,
+
+// Rotate
+'quarter':          $quarter,
+'half':             $half,
+'full':             $full,
+
+// Rotate3d
+'quarterX3d':       $quarterX3d,
+'halfX3d':          $halfX3d,
+'fullX3d':          $fullX3d,
+
+'quarterY3d':       $quarterY3d,
+'halfY3d':          $halfY3d,
+'fullY3d':          $fullY3d,
+
+'quarterZ3d':       $quarterZ3d,
+'halfZ3d':          $halfZ3d,
+'fullZ3d':          $fullZ3d,
+
+'quarter3d':        $quarter3d,
+'half3d':           $half3d,
+'full3d':           $full3d,
+
+// ***** Scale ***** \\
+// ScaleX
+'flipY':            $flipY,
+'growX':            $growX,
+'shrinkX':          $shrinkX,
+
+// ScaleY
+'flipX':            $flipX,
+'growY':            $growY,
+'shrinkY':          $shrinkY,
+
+// Scale
+'bounceL':          $bounceL,
+'bounceM':          $bounceM,
+'bounceS':          $bounceS,
+
+'growYbounceL':     $growYbounceL,
+'growYbounceM':     $growYbounceM,
+'growYbounceS':     $growYbounceS,
+
+'flipYshrinkL':     $flipYshrinkL,
+'flipYshrinkM':     $flipYshrinkM,
+'flipYshrinkS':     $flipYshrinkS,
+
+'growXbounceL':     $growXbounceL,
+'growXbounceM':     $growXbounceM,
+'growXbounceS':     $growXbounceS,
+
+'grow':             $grow,
+
+'growXshrinkS':     $growXshrinkS,
+'growXshrinkM':     $growXshrinkM,
+'growXshrinkL':     $growXshrinkL,
+
+'flipXshrinkS':     $flipXshrinkS,
+'flipXshrinkM':     $flipXshrinkM,
+'flipXshrinkL':     $flipXshrinkL,
+
+'growYshrinkS':     $growYshrinkS,
+'growYshrinkM':     $growYshrinkM,
+'growYshrinkL':     $growYshrinkL,
+
+'shrinkL':          $shrinkL,
+'shrinkM':          $shrinkM,
+'shrinkS':          $shrinkS,
+
+// ***** Skew ***** \\
+// SkewX
+'twistR':           $twistR,
+'twistL':           $twistL,
+
+'torsionR':         $torsionR,
+'torsionL':         $torsionL,
+
+// SkewY
+'twistT':           $twistT,
+'twistB':           $twistB,
+
+'torsionT':         $torsionT,
+'torsionB':         $torsionB,
+
+// Skew
+'twisterR':         $twisterR,
+'twisterL':         $twisterL,
+'twisterT':         $twisterT,
+'twisterB':         $twisterB,
+
+'cycloneR':         $cycloneR,
+'cycloneL':         $cycloneL,
+'cycloneT':         $cycloneT,
+'cycloneB':         $cycloneB,
+
+// ***** Translate ***** \\
+// TranslateX
+'slipR':            $slipR,
+'slipL':            $slipL,
+
+'slideR':           $slideR,
+'slideL':           $slideL,
+
+// TranslateY
+'slipT':            $slipT,
+'slipB':            $slipB,
+
+'slideT':           $slideT,
+'slideB':           $slideB,
+
+// Translate
+'slipTR':           $slipTR,
+'slipBR':           $slipBR,
+'slipTL':           $slipTL,
+'slipBL':           $slipBL,
+
+'slideTR':          $slideTR,
+'slideBR':          $slideBR,
+'slideTL':          $slideTL,
+'slideBL':          $slideBL
+),
+$transforms);
+
+
+
+// ******************************* \\
+// ***** 03 - Time Variables ***** \\
+
+// You can change the time values with your own
+$time-tn:           1s                          !default;
+$time-sm:           2s                          !default;
+$time-md:           5s                          !default;
+$time-lg:           10s                         !default;
+$time-wd:           60s                         !default;
+
+
+
+// **************************** \\
+// ***** 04 - Time System ***** \\
+
+// Creates the map $times empty
+$times:             ()                          !default;
+
+// Merges the map with the time values
+$times:             map-merge(
+(
+'tn':               $time-tn,
+'sm':               $time-sm,
+'md':               $time-md,
+'lg':               $time-lg,
+'wd':               $time-wd
+),
+$times);
+
+
+
+// ********************************* \\
+// ***** 05 - Animation System ***** \\
+
+// Creates the list $animations empty
+$animations:        ()                          !default;
+
+// Joins the list with the facultative animation values
+$animations:        join(
+(
+// Timing Function
+('in',              timing-function,            ease-in),
+('out',             timing-function,            ease-out),
+('ease',            timing-function,            ease-in-out),
+('linear',          timing-function,            linear),
+('start',           timing-function,            steps(4, start)),
+('end',             timing-function,            steps(4)),
+('chrono',          timing-function,            steps(60, start)),
+('springS',         timing-function,            cubic-bezier(1, 2, 1, -2)),
+('springM',         timing-function,            cubic-bezier(1, 5, 1, -5)),
+('springL',         timing-function,            cubic-bezier(1, 10, 1, -10)),
+
+ // Delay
+('tiny',            delay,                      $time-tn),
+('small',           delay,                      $time-sm),
+('medium',          delay,                      $time-md),
+('large',           delay,                      $time-lg),
+('wide',            delay,                      $time-wd),
+
+ // Iteration Count
+('double',          iteration-count,            2),
+('triple',          iteration-count,            3),
+('loop',            iteration-count,            infinite),
+
+ // Direction
+('rev',             direction,                  reverse),
+('alt',             direction,                  alternate),
+('inv',             direction,                  alternate-reverse),
+
+ // Fill Mode
+('front',           fill-mode,                  forwards),
+('back',            fill-mode,                  backwards),
+('both',            fill-mode,                  both)
+),
+$animations);
+
+
+
+// ****************************** \\
+// ***** 06 - Origin System ***** \\
+
+// Creates the map $origins empty
+$origins:           ()                          !default;
+
+// Merges the map with the basic values
+$origins:           map-merge(
+(
+'center':           center,
+'top':              top,
+'right':            right,
+'bottom':           bottom,
+'left':             left
+),
+$origins);
