@@ -1,0 +1,36 @@
+// ****************** \\
+// ***** BORDER ***** \\
+// ****************** \\
+
+
+
+// The border part includes :
+// the border classes for setting all borders with style, radius & width
+
+
+
+/* ************************** */
+/* ***** Border Classes ***** */
+
+// Loops on each border style
+@each $style-key, $style-value in $border-style
+{
+  /* ***** Borders #{$style-key} ***** */
+  // Loops on each border radius
+  @each $radius-key, $radius-value in $border-radius
+  {
+    /* borders #{$style-key} #{$radius-key} */
+    // Loops on each border width
+    @each $width-key, $width-value in $border-width
+    {
+      // Calls the mixin borders with keys & values from the 3 maps
+      @include borders(
+      $style-key,
+      $radius-key,
+      $width-key,
+      $style-value,
+      $radius-value,
+      $width-value);
+    }
+  }
+}
