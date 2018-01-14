@@ -1,0 +1,93 @@
+// *************************** \\
+// ***** COLOR VARIABLES ***** \\
+// *************************** \\
+
+
+// The color variables part includes :
+// 01 => the 10 basic colors variables that can be set with custom values
+// 02 => the project colors variables that need to be set with custom values & where you can add other colors to your project
+// 03 => the social network colors variables that can be add or remove (or commented out)
+// 04 => the color system map that contains the colors to give to the colors functions
+
+
+
+// ***************************** \\
+// ***** 01 - Basic Colors ***** \\
+
+// You can change the basic colors values with your own
+$black:             black           !default;
+$blue:              DodgerBlue      !default;
+$brown:             SaddleBrown     !default;
+$gray:              DimGray         !default;
+$green:             ForestGreen     !default;
+$orange:            OrangeRed       !default;
+$red:               Crimson         !default;
+$violet:            SlateBlue       !default;
+$white:             Snow            !default;
+$yellow:            Gold            !default;
+
+
+
+// ******************************* \\
+// ***** 02 - Project Colors ***** \\
+
+// You can add keys & values and you need to change values to match your project
+$primary:           RoyalBlue       !default;
+$secondary:         CornflowerBlue  !default;
+
+
+
+// *************************************** \\
+// ***** 03 - Social Networks Colors ***** \\
+
+// You can add or remove social networks colors variables for the needs of your project
+$facebook:          #4267b2         !default;
+$freecodecamp:      #006400         !default;
+$github:            #24292e         !default;
+$linkedin:          #0077b5         !default;
+$medium:            #029e74         !default;
+$stackoverflow:     #f48024         !default;
+$twitter:           #1da1f2         !default;
+$youtube:           #f00            !default;
+
+
+
+// ***************************** \\
+// ***** 04 - Color System ***** \\
+
+// Creates the map $colors empty
+$colors:            ()              !default;
+
+// You need to add, change or remove variables here if you have changed something above
+$colors:            map-merge(
+(
+// Basic Colors
+// Attributes keywords to each color
+"default":          $black,
+"info":             $blue,
+"classic":          $brown,
+"cancel":           $gray,
+"valid":            $green,
+"warning":          $orange,
+"delete":           $red,
+"special":          $violet,
+"base":             $white,
+"new":              $yellow,
+
+// Project Custom Colors
+// You can add other keys & values to match your project
+"primary":          $primary,
+"secondary":        $secondary,
+
+// Social Networks Colors
+// You can uncomment the social networks you need
+//"facebook":         $facebook,
+"freecodecamp":     $freecodecamp,
+"github":           $github,
+"linkedin":         $linkedin,
+//"medium":           $medium,
+"stackoverflow":    $stackoverflow,
+"twitter":          $twitter,
+//"youtube":          $youtube
+),
+$colors);
