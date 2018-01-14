@@ -1,0 +1,176 @@
+// ************************* \\
+// ***** DISPLAY MIXIN ***** \\
+// ************************* \\
+
+
+// The display mixin part includes :
+// 01 => the mixin flex who attributes negative margin to flex container & margin + width to flex items
+// 02 => the mixin set-items who attributes items alignement values to justify & align items
+// 03 => the mixin items who constructs the items classes
+// 04 => the mixin set-content who attributes content alignement values to justify & align content
+// 05 => the mixin content who constructs the content classes
+// 06 => the mixin set-self who attributes self alignement values to justify & align self item
+// 07 => the mixin self who constructs the self classes
+
+
+
+// *************************** \\
+// ***** 01 - Flex Mixin ***** \\
+
+// Attributes negative margin to container & width + margin to children
+// @param $columns  => the number of columns / row
+// @param $gutter   => the gutter value to separate flex items
+@mixin flex($columns, $gutter)
+{
+  // Selects the flex container to attributes negative margin
+  & {
+    margin: -$gutter / 2;
+
+    // Selects the flex items to attributes width & margin
+    & > * {
+      width: calc(100% / #{$columns} - #{$gutter});
+      margin: $gutter / 2;
+    }
+  }
+}
+
+
+
+// ******************************** \\
+// ***** 02 - Set Items Mixin ***** \\
+
+// Attributes items alignement values to justify & align items
+// @param $justify  => the value to justify from the map $items
+// @param $align    => the value to align from the map $items
+@mixin set-items($justify, $align)
+{
+  // Attributes the values to the items properties
+  justify-items: $justify;
+  align-items: $align;
+}
+
+
+// **************************** \\
+// ***** 03 - Items Mixin ***** \\
+
+// Constructs the items classes
+// @param $justify-key    => the key to justify from the map $items
+// @param $justify-value  => the value to justify from the map $items
+// @param $align-key      => the key to align from the map $items
+// @param $align-value    => the value to align from the map $items
+@mixin items($justify-key, $justify-value, $align-key, $align-value)
+{
+  // Checks if the 2 keys (& the 2 values) are the same
+  @if $justify-key == $align-key
+  {
+    // Constructs a simple suffix with 1 key
+    .items-#{$justify-key}
+    {
+      // Calls the set-items mixin to set the items properties
+      @include set-items($justify-value, $align-value);
+    }
+  }
+  @else
+  {
+    // Constructs a double suffix with the 2 keys
+    .items-#{$justify-key}-#{$align-key}
+    {
+      // Calls the set-items mixin to set the items properties
+      @include set-items($justify-value, $align-value);
+    }
+  }
+}
+
+
+
+// ********************************** \\
+// ***** 04 - Set Content Mixin ***** \\
+
+// Attributes content alignement values to justify & align content
+// @param $justify  => the value to justify from the map $content
+// @param $align    => the value to align from the map $content
+@mixin set-content($justify, $align)
+{
+  // Attributes the values to the content properties
+  justify-content: $justify;
+  align-content: $align;
+}
+
+
+
+// ****************************** \\
+// ***** 05 - Content Mixin ***** \\
+
+// Constructs the content classes
+// @param $justify-key    => the key to justify from the map $content
+// @param $justify-value  => the value to justify from the map $content
+// @param $align-key      => the key to align from the map $content
+// @param $align-value    => the value to align from the map $content
+@mixin content($justify-key, $justify-value, $align-key, $align-value)
+{
+  // Checks if the 2 keys (& the 2 values) are the same
+  @if $justify-key == $align-key
+  {
+    // Constructs a simple suffix with 1 key
+    .content-#{$justify-key}
+    {
+      // Calls the set-content mixin to set the content properties
+      @include set-content($justify-value, $align-value);
+    }
+  }
+  @else
+  {
+    // Constructs a double suffix with the 2 keys
+    .content-#{$justify-key}-#{$align-key}
+    {
+      // Calls the set-content mixin to set the content properties
+      @include set-content($justify-value, $align-value);
+    }
+  }
+}
+
+
+
+// ******************************* \\
+// ***** 06 - Set Self Mixin ***** \\
+
+// Attributes self alignement values to justify & align self item
+@mixin set-self($justify, $align)
+{
+  // Attributes the values to the self properties
+  justify-self: $justify;
+  align-self: $align;
+}
+
+
+
+// *************************** \\
+// ***** 07 - Self Mixin ***** \\
+
+// Constructs the self classes
+// @param $justify-key    => the key to justify from the map $items
+// @param $justify-value  => the value to justify from the map $items
+// @param $align-key      => the key to align from the map $items
+// @param $align-value    => the value to align from the map $items
+@mixin self($justify-key, $justify-value, $align-key, $align-value)
+{
+  // Checks if the 2 keys (& the 2 values) are the same
+  @if $justify-key == $align-key
+  {
+    // Constructs a simple suffix with 1 key
+    .self-#{$justify-key}
+    {
+      // Calls the set-self mixin to set the self properties
+      @include set-self($justify-value, $align-value);
+    }
+  }
+  @else
+  {
+    // Constructs a double suffix with the 2 keys
+    .self-#{$justify-key}-#{$align-key}
+    {
+      // Calls the set-self mixin to set the self properties
+      @include set-self($justify-value, $align-value);
+    }
+  }
+}
