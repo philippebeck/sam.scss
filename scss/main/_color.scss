@@ -1,0 +1,23 @@
+// ***************** \\
+// ***** COLOR ***** \\
+// ***************** \\
+
+
+// The color part includes :
+// => the colors classes constructor
+
+
+
+// ************************* \\
+/* ***** Colors Classes **** */
+
+// Creates the colors classes from the colors mixin & the $colors variables map
+@each $name, $color in $colors
+{
+  /* #{$name} color */
+  .#{$name}
+  {
+    // Calls the colors mixin on this color
+    @include colors($name);
+  }
+}
