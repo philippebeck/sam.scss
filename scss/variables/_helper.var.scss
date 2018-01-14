@@ -1,0 +1,158 @@
+// **************************** \\
+// ***** HELPER VARIABLES ***** \\
+// **************************** \\
+
+
+// The helper variables part includes :
+// 01 => the 5 size variables that can be set with custom values
+// !! => be careful for setting : this variables are the same for width & height
+// 02 => the size system map that contains the size values for all width & height helpers
+// 03 => the 5 margin variables that can be set with custom values
+// !! => be careful for setting : this variables are the same for margin & padding
+// 04 => the margin system map that contains the margin values for all margin & padding helpers
+// 05 => the text align system map that contains the text align values for all text align helpers
+// 06 => the text decoration style system map that contains the text decoration style values for the text decoration helpers
+// 07 => the text decoration line system map that contains the text decoration line values for the text decoration helpers
+// 08 => the cursor system map that contains the style values for all cursor helpers
+
+
+
+// ********************************** \\
+// ***** 01 - Size Variables ***** \\
+
+// You can add or change the size values with your own
+$size-25:         25%           !default;
+$size-33:         33.3333%      !default;
+$size-50:         50%           !default;
+$size-66:         66.666%       !default;
+$size-75:         75%           !default;
+$size-100:        100%          !default;
+
+
+
+// ******************************* \\
+// ***** 02 - Size System ***** \\
+
+// Create the map $size empty
+$size:            ()            !default;
+
+// Merge the map with the size keys & values
+$size:            map-merge(
+(
+'auto':           auto,
+'25':             $size-25,
+'33':             $size-33,
+'50':             $size-50,
+'66':             $size-66,
+'75':             $size-75,
+'100':            $size-100
+),
+$size);
+
+
+
+// ********************************* \\
+// ***** 03 - Margin Variables ***** \\
+
+// You can add or change the margin values with your own
+$margin-tn:       .5rem         !default;
+$margin-sm:       1rem          !default;
+$margin-md:       2rem          !default;
+$margin-lg:       5rem          !default;
+$margin-wd:       10rem         !default;
+
+
+
+// ****************************** \\
+// ***** 04 - Margin System ***** \\
+
+// Create the map $margin empty
+$margin:          ()            !default;
+
+// Merge the map with the margin keys & values
+$margin:          map-merge(
+(
+'auto':           auto,
+'0':              0,
+'tn':             $margin-tn,
+'sm':             $margin-sm,
+'md':             $margin-md,
+'lg':             $margin-lg,
+'wd':             $margin-wd
+),
+$margin);
+
+
+
+// ********************************** \\
+// ***** 05 - Text Align System ***** \\
+
+// Create the map $text-align empty
+$text-align:        ()            !default;
+
+// Merge the map with the size keys & values
+$text-align:        map-merge(
+(
+'center':           center,
+'justify':          justify,
+'right':            right,
+'left':             left
+),
+$text-align);
+
+
+
+// ********************************************* \\
+// ***** 06 - Text Decoration Style System ***** \\
+
+// Create the map $decoration-style empty
+$decoration-style:  ()            !default;
+
+// Merge the map with the size keys & values
+$decoration-style:  map-merge(
+(
+'solid':            solid,
+'double':           double,
+'dotted':           dotted,
+'dashed':           dashed,
+'wavy':             wavy
+),
+$decoration-style);
+
+
+
+// ********************************************* \\
+// ***** 07 - Text Decoration Line System ***** \\
+
+// Create the map $decoration-line empty
+$decoration-line:   ()            !default;
+
+// Merge the map with the size keys & values
+$decoration-line:   map-merge(
+(
+'underline':        underline,
+'overline':         overline,
+'through':          line-through
+),
+$decoration-line);
+
+
+
+// ****************************** \\
+// ***** 08 - Cursor System ***** \\
+
+// Create the map $cursor empty
+$cursor:            ()            !default;
+
+// Merge the map with the size keys & values
+$cursor:            map-merge(
+(
+'cell':             cell,
+'crosshair':        crosshair,
+'help':             help,
+'move':             move,
+'forbidden':        not-allowed,
+'pointer':          pointer,
+'text':             text
+),
+$cursor);
