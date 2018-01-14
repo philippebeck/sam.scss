@@ -1,0 +1,85 @@
+// ************************ \\
+// ***** SHADOW MIXIN ***** \\
+// ************************ \\
+
+
+// The shadow mixin part includes :
+// => the shadow mixin to create a box shadow, an inset box shadow & a text shadow
+
+
+
+// *********************** \\
+// **** Shadow Mixin ***** \\
+
+// Creates a box shadow, an inset box shadow & a text shadow
+// @param $suffix   => the suffix for the class name
+// @param $offset-x => the horizontal offset of the shadow
+// @param $offset-y => the vertical offset of the shadow
+// @param $blur     => the blur of the shadow
+// @param $spread   => the spread of the shadow
+@mixin shadow($suffix, $offset-x, $offset-y, $blur: null, $spread: null)
+{
+  // Checks if the shadow will have a blur & a spread values
+  @if $blur != null and $spread != null
+  {
+    // Constructs the spread classes
+    .#{$suffix},
+    .#{$suffix} th,
+    .#{$suffix} td {
+      box-shadow: $offset-x $offset-y $blur $spread;
+    }
+
+    // Constructs the inset spread classes
+    .inset-#{$suffix},
+    .inset-#{$suffix} th,
+    .inset-#{$suffix} td {
+      box-shadow: inset $offset-x $offset-y $blur $spread;
+    }
+  }
+  // Checks if the shadow will have a blur value
+  @else if $blur != null
+  {
+    // Constructs the blur classes
+    .#{$suffix},
+    .#{$suffix} th,
+    .#{$suffix} td {
+      box-shadow: $offset-x $offset-y $blur;
+    }
+
+    // Constructs the inset blur classes
+    .inset-#{$suffix},
+    .inset-#{$suffix} th,
+    .inset-#{$suffix} td {
+      box-shadow: inset $offset-x $offset-y $blur;
+    }
+
+    // Constructs the text blur classes
+    .text-#{$suffix},
+    .text-#{$suffix} th,
+    .text-#{$suffix} td {
+      text-shadow: $offset-x $offset-y $blur;
+    }
+  }
+  @else {
+    // Constructs the shadow classes
+    .#{$suffix},
+    .#{$suffix} th,
+    .#{$suffix} td {
+      box-shadow: $offset-x $offset-y;
+    }
+
+    // Constructs the inset shadow classes
+    .inset-#{$suffix},
+    .inset-#{$suffix} th,
+    .inset-#{$suffix} td {
+      box-shadow: inset $offset-x $offset-y;
+    }
+
+    // Constructs the text shadow classes
+    .text-#{$suffix},
+    .text-#{$suffix} th,
+    .text-#{$suffix} td {
+      text-shadow: $offset-x $offset-y;
+    }
+  }
+}
