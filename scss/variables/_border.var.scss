@@ -1,0 +1,92 @@
+// *************************** \\
+// ***** BORDER VARIABLE ***** \\
+// *************************** \\
+
+
+
+// The border variable part includes :
+// 01 => the border style system that contains the border style keys & values to give to the border mixin
+// 02 => the 5 basics kinds of angles made with the border-radius property that can be set with custom values
+// 03 => the border radius system that contains the border radius keys & values to give to the border mixin
+// 04 => the 3 defaults widths of border that can be set with custom values
+// 05 => the border width system that contains the border width keys & values to give to the border mixin
+
+
+
+// ************************************ \\
+// ***** 01 - Border Style System ***** \\
+
+// Creates the map $border-style empty
+$border-style:            ()                  !default;
+
+// You need to add, change or remove variables here if you have changed something above
+$border-style:            map-merge(
+(
+'dotted':                dotted,
+'dashed':                dashed,
+'solid':                 solid,
+'double':                double,
+'groove':                groove,
+'ridge':                 ridge,
+'inset':                 inset,
+'outset':                outset
+),
+$border-style);
+
+
+
+// ****************************** \\
+// ***** 02 - Border Radius ***** \\
+
+// You can change the border-radius values with your own
+$border-square:           none                !default;
+$border-slight:           .5rem               !default;
+$border-rounded:          1rem                !default;
+$border-rounder:          2rem                !default;
+$border-round:            50%                 !default;
+
+
+
+// ************************************* \\
+// ***** 03 - Border Radius System ***** \\
+
+// Creates the map $border-radius empty
+$border-radius:           ()                  !default;
+
+// You need to add, change or remove variables here if you have changed something above
+$border-radius:           map-merge(
+(
+'square':                $border-square,
+'slight':                $border-slight,
+'rounded':               $border-rounded,
+'rounder':               $border-rounder,
+'round':                 $border-round
+),
+$border-radius);
+
+
+
+// ***************************** \\
+// ***** 04 - Border Width ***** \\
+
+// You can change the border-width values with your own
+$border-sm:              thin                 !default;
+$border-md:              medium               !default;
+$border-lg:              thick                !default;
+
+
+
+// ************************************ \\
+// ***** 05 - Border Width System ***** \\
+
+// Creates the map $border-width empty
+$border-width:           ()                   !default;
+
+// You need to add, change or remove variables here if you have changed something above
+$border-width:           map-merge(
+(
+'sm':                   $border-sm,
+'md':                   $border-md,
+'lg':                   $border-lg
+),
+$border-width);
