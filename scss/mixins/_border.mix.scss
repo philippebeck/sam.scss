@@ -1,0 +1,83 @@
+// ************************ \\
+// ***** BORDER MIXIN ***** \\
+// ************************ \\
+
+
+// The border mixin part includes :
+// 01 => the border mixin for setting a border with style, radius & width
+// 02 => the borders mixin for creating borders named with 1, 2 or 3 keywords
+
+
+
+// ***************************** \\
+// ***** 01 - Border Mixin ***** \\
+
+// Creates a border scheme with 3 main properties of the border
+// @param $radius => the radius of the border
+// @param $style => the style of the border
+// @param $width => the width of the border
+@mixin border($style, $radius, $width)
+{
+  // Attributes the values to the properties
+  border: $width $style;
+  border-radius: $radius;
+}
+
+
+
+// ****************************** \\
+// ***** 02 - Borders Mixin ***** \\
+
+// Creates a border class named with 2 or 3 keywords
+// @param $radius-key   => the second keyword who declares the border radius
+// @param $style-key    => the first keyword who declares the border style
+// @param $width-key    => the third keyword who declares the border width
+// @param $radius-value => the radius value of the border
+// @param $style-value  => the style value of the border
+// @param $width-value  => the width value of the border
+@mixin borders(
+$style-key,
+$radius-key,
+$width-key,
+$style-value,
+$radius-value,
+$width-value)
+{
+  // Checks if radius must be set to none & if width must be set to medium
+  @if $radius-key == 'square' and $width-key == 'md'
+  {
+    // Constructs the class name only with the style key
+    .#{$style-key},
+    .#{$style-key} th,
+    .#{$style-key} td {
+      @include border($style-value, $radius-value, $width-value);
+    }
+  }
+  // Checks if radius must be set to none
+  @else if $radius-key == 'square'
+  {
+    // Constructs the class name with the style & width keys
+    .#{$style-key}-#{$width-key},
+    .#{$style-key}-#{$width-key} th,
+    .#{$style-key}-#{$width-key} td {
+      @include border($style-value, $radius-value, $width-value);
+    }
+  }
+  // Checks if width must be set to medium
+  @else if $width-key == 'md'
+  {
+    // Constructs the class name with the border style & radius keys
+    .#{$style-key}-#{$radius-key},
+    .#{$style-key}-#{$radius-key} th,    .#{$style-key}-#{$radius-key} td {
+      @include border($style-value, $radius-value, $width-value);
+    }
+  }
+  @else {
+    // Constructs the class name with the keys of the 3 maps
+    .#{$style-key}-#{$radius-key}-#{$width-key},
+    .#{$style-key}-#{$radius-key}-#{$width-key} th,
+    .#{$style-key}-#{$radius-key}-#{$width-key} td {
+      @include border($style-value, $radius-value, $width-value);
+    }
+  }
+}
