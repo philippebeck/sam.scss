@@ -1,5 +1,11 @@
-# sam
+# Sam
 Scss Animated Microframework
+
+
+
+To install via Bower :
+
+  $ bower install sam --save
 
 
 
