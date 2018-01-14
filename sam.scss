@@ -1,0 +1,107 @@
+/* ================================================== */
+/* ========== Scss Animated Microframework ========== */
+/* ================================================== */
+/* ============ github/philippebeck/sam ============= */
+/* ================================================== */
+
+
+
+// ******************* \\
+// ***** Summary ***** \\
+
+
+// Sam is a microframework SCSS who group some important CSS properties by class.
+
+// Sam is oriented towards animation through the keyframes,
+// the animation & the transform CSS properties.
+
+// Sam is provided without any JavaScript code line...
+// Sam can make a grid with flexbox layout or with grid layout!
+
+// Sam can be used without any SCSS, Sass or Ruby knowledge,
+// by using only the CSS library.
+
+// Sam is build around 6 main characteristics :
+// the display, the colors, the borders, the shadows, the animations & the helpers.
+
+// Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
+
+// The SCSS files are group by datas levels :
+
+// 01 - Variables =>  this 6 files contain all variables, lists & maps systems
+//                    about the 6 main characteristics, this files can be set
+//                    to change many values on each main characteristics
+
+// 02 - Functions =>  this file is unique for specific functions to colors,
+//                    it creates a global map of colors with 9 variations of each color,
+//                    it can be set to change the colors variations
+
+// 03 - Mixins    =>  this 6 files contain all mixins for construct the complex rules
+//                    around the 6 main characteristics, they can be set to change
+//                    class names or main CSS schemes
+
+// 04 - Init      =>  this 2 files contain the normalisation of navigators
+//                    & the initialisation of tags rules
+
+// 05 - Classes   =>  this 9 files are the chain end for the CSS library,
+//                    they contain the conditions & loops to create all classes
+//                    starting from the 6 main characteristics, but 3 files are in more,
+//                    one for the navbar, one for the buttons & one for the forms
+
+// Sam needs you if you like it : sends pull requests on GitHub to improve it !!
+
+// Notes that this project is in first a student project, so I will watch the pull requests only after the 1st of march... thank you for your understanding
+
+
+
+// ************************** \\
+// ***** 01 - Variables ***** \\
+
+@import 'scss/variables/display.var';
+@import 'scss/variables/color.var';
+@import 'scss/variables/border.var';
+@import 'scss/variables/shadow.var';
+@import 'scss/variables/animate.var';
+@import 'scss/variables/helper.var';
+
+
+
+// ************************** \\
+// ***** 02 - Functions ***** \\
+
+@import 'scss/functions/color.fun';
+
+
+
+// *********************** \\
+// ***** 03 - Mixins ***** \\
+
+@import 'scss/mixins/display.mix';
+@import 'scss/mixins/color.mix';
+@import 'scss/mixins/border.mix';
+@import 'scss/mixins/shadow.mix';
+@import 'scss/mixins/animate.mix';
+@import 'scss/mixins/helper.mix';
+
+
+
+// ********************* \\
+// ***** 04 - Init ***** \\
+
+@import 'scss/init/normalize';
+@import 'scss/init/init';
+
+
+
+// ********************* \\
+// ***** 05 - Main ***** \\
+
+@import 'scss/main/navbar';
+@import 'scss/main/button';
+@import 'scss/main/form';
+@import 'scss/main/display';
+@import 'scss/main/border';
+@import 'scss/main/shadow';
+@import 'scss/main/color';
+@import 'scss/main/animate';
+@import 'scss/main/helper';
