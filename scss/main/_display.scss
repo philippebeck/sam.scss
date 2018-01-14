@@ -1,0 +1,298 @@
+/* ******************* */
+/* ***** DISPLAY ***** */
+/* ******************* */
+
+
+
+// The display part includes :
+// 01 => the none class who hides globally the element
+// 02 => the hide class who hides visually the element
+// 03 => the container class who centred the element in a 80% width
+// 04 => the block classes for display elements like block, inline & outline
+// 05 => the flex, col & row classes for using the flexible boxes layout
+// 06 => the flex classes for changing dimensions on flex items with the flex property
+// 07 => the order classes for changing order items on flex items with the order property
+// 08 => the grid classes for each breakpoint & each number of columns
+// 09 => the gap classes for adding gutters on flex & grid containers with the grid-gap property
+// 10 => the items classes for items alignments on flex & grid containers with the justify & align items properties throught the items mixin
+// 11 => the content classes for content alignments on flex & grid containers with the justify & align content properties throught the content mixin
+// 12 => the self classes for self item alignment on flex & grid items with the justify & align self properties throught the self mixin
+
+
+
+// *************************** \\
+// ***** 01 - None Class ***** \\
+
+/* None container */
+// To hide globally a specific element
+.none {
+  display: none;
+}
+
+
+
+// *************************** \\
+// ***** 02 - Hide Class ***** \\
+
+/* Hide container */
+// To hide visually a specific element
+.hide {
+  position: absolute          !important;
+  width:    0                 !important;
+  height:   0                 !important;
+  margin:   0                 !important;
+  border:   0                 !important;
+  padding:  0                 !important;
+  overflow: hidden            !important;
+}
+
+
+
+// ******************************** \\
+// ***** 03 - Container Class ***** \\
+
+/* Simple container */
+// The container is centred in a 80% width
+.container
+{
+  max-width: 80%;
+  margin: auto;
+}
+
+
+
+// ****************************** \\
+// ***** 04 - Block Classes ***** \\
+
+/* Block containers */
+// To display a specific element like a block
+.block {
+  display: block;
+}
+
+// To display a specific element like an inline-block
+.in-block {
+  display: inline-block;
+}
+
+
+
+// **************************************** \\
+// ***** 05 - Flex, Col & Row Classes ***** \\
+
+
+/* Flex containers */
+// Selects all flex, col & row classes to display flex wrap
+[class*=" flex"],
+[class^="flex"],
+[class*=" col"],
+[class^="col"],
+[class*=" row"],
+[class^="row"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// Selects all col classes for column, wrap & x-padding
+[class*=" col"],
+[class^="col"] {
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+// Selects all row classes for row, wrap & y-padding
+[class*=" row"],
+[class^="row"] {
+  flex-direction: row;
+  padding: 1rem 0;
+}
+
+// Adds suffix to reverse column
+[class*="col-"][class*="-reverse"] {
+  flex-direction: column-reverse;
+}
+
+// Adds suffix to reverse row
+[class*="row-"][class*="-reverse"] {
+  flex-direction: row-reverse;
+}
+
+// Adds suffix to nowrap col & row
+[class*="col-"][class*="-nowrap"],
+[class*="row-"][class*="-nowrap"] {
+  flex-wrap: nowrap;
+}
+
+// Adds suffix to reverse wrap col & wrap row
+[class*="col-"][class*="-inverse"], [class*="row-"][class*="-inverse"] {
+  flex-wrap: wrap-reverse;
+}
+
+// Loops on the $breakpoints map to create the flex grids
+@each $breakpoint-key, $breakpoint-value in $breakpoints
+{
+  // Loops on the $gutters map to create the flex grids gutters
+  @each $gutter-key, $gutter-value in $gutters
+  {
+    // Checks if breakpoints & gutters are proportional
+    @if $breakpoint-key == $gutter-key
+    {
+      /* Flex grid for #{$breakpoint-key} screen size */
+      @media (min-width: $breakpoint-value)
+      {
+        // Loops from 2 columns to 12 columns
+        @for $columns from 2 through 12
+        {
+          // Constructs the classes names on each breakpoint for each number of columns
+          [class*="flex-"][class*="-#{$columns}#{$breakpoint-key}"] {
+            @include flex($columns, $gutter-value);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// ********************************* \\
+// ***** 06 - Flexible Classes ***** \\
+
+/* Changing dimensions for flex items */
+// Loops on the $flex map to create the flex classes
+@each $flex-key, $flex-value in $flex
+{
+  // Constructs the suffix with the key
+  .flexible-#{$flex-key} {
+    flex: $flex-value;
+  }
+}
+
+
+
+// ****************************** \\
+// ***** 07 - Order Classes ***** \\
+
+/* Self order for flex items */
+// Loops from 1 to 10
+@for $order from 1 through 10
+{
+  // Constructs the suffix with the order number
+  .order-#{$order} {
+    order: #{$order};
+  }
+}
+
+
+
+// ************************************* \\
+// ***** 08 - Grid & Fluid Classes ***** \\
+
+/* Grid containers */
+// Selects all grid & fluid classes to display grid
+[class*=" grid"],
+[class^="grid"],
+[class*=" fluid"],
+[class^="fluid"], {
+  display: grid;
+}
+
+// Selects all grid classes to put the content in a container
+[class*=" grid"],
+[class^="grid"] {
+  max-width: 80%;
+  margin: auto;
+}
+
+// Selects all fluid classes to put the content in all the width
+[class*=" fluid"],
+[class^="fluid"] {
+  max-width: 100%;
+}
+
+// Loops on the $breakpoints map to create the grids
+@each $breakpoint-key, $breakpoint-value in $breakpoints
+{
+  /* Grids for #{$breakpoint-key} screen size */
+  @media (min-width: $breakpoint-value)
+  {
+    // Loops from 2 columns to 12 columns
+    @for $columns from 2 through 12
+    {
+      // Constructs the classes names on each breakpoint for each number of columns
+      [class*="grid-"][class*="-#{$columns}#{$breakpoint-key}"],
+      [class*="fluid-"][class*="-#{$columns}#{$breakpoint-key}"] {
+        grid-template: auto / repeat(#{$columns}, auto);
+      }
+    }
+  }
+}
+
+
+
+// ********************************* \\
+// ***** 09 - Grid Gap Classes ***** \\
+
+/* Gutters for grid container */
+// Loops on the $grid-gap map to create the gutters
+@each $grid-gap-key, $grid-gap-value in $grid-gap
+{
+  // Constructs the suffix with the key
+  .gap-#{$grid-gap-key} {
+    grid-gap: $grid-gap-value;
+  }
+}
+
+
+
+// ****************************** \\
+// ***** 10 - Items classes ***** \\
+
+/* Items alignments in flex & grid container */
+// Loops on the $items map to justify items
+@each $justify-key, $justify-value in $items
+{
+  /* Justify items #{$justify-value} */
+  // Loops on the $items map to align items
+  @each $align-key, $align-value in $items
+  {
+    // Calls the items mixin
+    @include items($justify-key, $justify-value, $align-key, $align-value);
+  }
+}
+
+
+
+// ******************************** \\
+// ***** 11 - Content Classes ***** \\
+
+/* Content alignments in flex & grid container */
+// Loops on the $content map to justify content
+@each $justify-key, $justify-value in $content
+{
+  /* Justify content #{$justify-value} */
+  // Loops on the $content map to align content
+  @each $align-key, $align-value in $content
+  {
+    // Calls the content mixin
+    @include content($justify-key, $justify-value, $align-key, $align-value);
+  }
+}
+
+
+
+// ***************************** \\
+// ***** 12 - Self Classes ***** \\
+
+/* Self alignments for flex & grid items */
+// Loops on the $items map to justify self
+@each $justify-key, $justify-value in $items
+{
+  /* Justify self #{$justify-value} */
+  // Loops on the $items map to align self
+  @each $align-key, $align-value in $items
+  {
+    // Calls the self mixin
+    @include self($justify-key, $justify-value, $align-key, $align-value);
+  }
+}
