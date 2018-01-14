@@ -1,0 +1,105 @@
+// **************************** \\
+// ***** SHADOW VARIABLES ***** \\
+// **************************** \\
+
+
+// The shadow variables part includes :
+// 01 => the 3 box shadow variables with basic values that can be change to match your project
+// !! => be careful, the shadow variables are used for all the shadow system
+// 02 => the shadow system who contains 12 pairs of values : the offset-x & offset-y for the 3 sizes bellow on each corner
+// 03 => the blur system who contains 15 triples of values : the same than the shadow system, but with a third value & with null offset on each size
+// 04 => the spread system who contains 15 quadruples of values : the same than the blur system, but with a fourth value
+
+
+
+// ********************************* \\
+// ***** 01 - Shadow Variables ***** \\
+
+// You can change this values with your own
+$shadow-sm:         .5rem           !default;
+$shadow-md:         1rem            !default;
+$shadow-lg:         2rem            !default;
+
+
+
+// ****************************** \\
+// ***** 02 - Shadow System ***** \\
+
+// Create the list $shadows empty
+$shadows:           ()              !default;
+
+// Join the list with the shadow values
+$shadows:           join(
+(
+('shadow-tr-sm',    $shadow-sm,     -$shadow-sm),
+('shadow-br-sm',    $shadow-sm,     $shadow-sm),
+('shadow-bl-sm',    -$shadow-sm,    $shadow-sm),
+('shadow-tl-sm',    -$shadow-sm,    -$shadow-sm),
+('shadow-tr',       $shadow-md,     -$shadow-md),
+('shadow-br',       $shadow-md,     $shadow-md),
+('shadow-bl',       -$shadow-md,    $shadow-md),
+('shadow-tl',       -$shadow-md,    -$shadow-md),
+('shadow-tr-lg',    $shadow-lg,     -$shadow-lg),
+('shadow-br-lg',    $shadow-lg,     $shadow-lg),
+('shadow-bl-lg',    -$shadow-lg,    $shadow-lg),
+('shadow-tl-lg',    -$shadow-lg,    -$shadow-lg)
+),
+$shadows);
+
+
+
+// **************************** \\
+// ***** 03 - Blur System ***** \\
+
+// Create the list $shadows-blur empty
+$shadows-blur:      ()              !default;
+
+// Join the list with the blur values
+$shadows-blur:      join(
+(
+('blur-sm',         0,              0,              $shadow-sm),
+('blur-tr-sm',      $shadow-sm,     -$shadow-sm,    $shadow-sm),
+('blur-br-sm',      $shadow-sm,     $shadow-sm,     $shadow-sm),
+('blur-bl-sm',      -$shadow-sm,    $shadow-sm,     $shadow-sm),
+('blur-tl-sm',      -$shadow-sm,    -$shadow-sm,    $shadow-sm),
+('blur',            0,              0,              $shadow-md),
+('blur-tr',         $shadow-md,     -$shadow-md,    $shadow-md),
+('blur-br',         $shadow-md,     $shadow-md,     $shadow-md),
+('blur-bl',         -$shadow-md,    $shadow-md,     $shadow-md),
+('blur-tl',         -$shadow-md,    -$shadow-md,    $shadow-md),
+('blur-lg',         0,              0,              $shadow-lg),
+('blur-tr-lg',      $shadow-lg,     -$shadow-lg,    $shadow-lg),
+('blur-br-lg',      $shadow-lg,     $shadow-lg,     $shadow-lg),
+('blur-bl-lg',      -$shadow-lg,    $shadow-lg,     $shadow-lg),
+('blur-tl-lg',      -$shadow-lg,    -$shadow-lg,    $shadow-lg)
+),
+$shadows-blur);
+
+
+
+// ****************************** \\
+// ***** 04 - Spread System ***** \\
+
+// Create the list $shadows-spread empty
+$shadows-spread:    ()              !default;
+
+// Join the list with the spread values
+$shadows-spread:    join(
+(
+('spread-sm',       0,              0,              $shadow-sm,     $shadow-sm),
+('spread-tr-sm',    $shadow-sm,     -$shadow-sm,    $shadow-sm,     $shadow-sm),
+('spread-br-sm',    $shadow-sm,     $shadow-sm,     $shadow-sm,     $shadow-sm),
+('spread-bl-sm',    -$shadow-sm,    $shadow-sm,     $shadow-sm,     $shadow-sm),
+('spread-tl-sm',    -$shadow-sm,    -$shadow-sm,    $shadow-sm,     $shadow-sm),
+('spread',          0,              0,              $shadow-md,     $shadow-md),
+('spread-tr',       $shadow-md,     -$shadow-md,    $shadow-md,     $shadow-md),
+('spread-br',       $shadow-md,     $shadow-md,     $shadow-md,     $shadow-md),
+('spread-bl',       -$shadow-md,    $shadow-md,     $shadow-md,     $shadow-md),
+('spread-tl',       -$shadow-md,    -$shadow-md,    $shadow-md,     $shadow-md),
+('spread-lg',       0,              0,              $shadow-lg,     $shadow-lg),
+('spread-tr-lg',    $shadow-lg,     -$shadow-lg,    $shadow-lg,     $shadow-lg),
+('spread-br-lg',    $shadow-lg,     $shadow-lg,     $shadow-lg,     $shadow-lg),
+('spread-bl-lg',    -$shadow-lg,    $shadow-lg,     $shadow-lg,     $shadow-lg),
+('spread-tl-lg',    -$shadow-lg,    -$shadow-lg,    $shadow-lg,     $shadow-lg)
+),
+$shadows-spread);
