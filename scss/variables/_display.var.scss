@@ -1,0 +1,191 @@
+// ***************************** \\
+// ***** DISPLAY VARIABLES ***** \\
+// ***************************** \\
+
+
+// The display variables part includes :
+// 01 => the 5 breakpoints variables that can be set with custom values
+// 02 => the breakpoints system map that contains the breakpoints values for all @media rules
+// 03 => the 9 flex variables that can be set with custom values
+// 04 => the flex system map that contains the values for the flex classes
+// 05 => the 5 grid gap variables that can be set with custom values
+// 06 => the grid gap system map that contains the gutters values for the grid gap classes
+// 07 => the items system map that contains the positions values for the items & self classes
+// 08 => the content system map that contains the positions values for the content classes
+
+
+
+// ************************************** \\
+// ***** 01 - Breakpoints Variables ***** \\
+
+// You can change the breakpoints values with your own
+$break-tn:      480px           !default;
+$break-sm:      576px           !default;
+$break-md:      768px           !default;
+$break-lg:      1024px          !default;
+$break-wd:      1366px          !default;
+
+
+
+// *********************************** \\
+// ***** 02 - Breakpoints System ***** \\
+
+// Create the map $breakpoints empty
+$breakpoints:   ()              !default;
+
+// Merge the map with the breakpoints keys & values
+$breakpoints:   map-merge(
+(
+'tn':           $break-tn,
+'sm':           $break-sm,
+'md':           $break-md,
+'lg':           $break-lg,
+'wd':           $break-wd
+),
+$breakpoints);
+
+
+
+// ************************************** \\
+// ***** 03 - Flex Gutter Variables ***** \\
+
+// You can change the gutter values with your own
+$gutter-tn:     1rem            !default;
+$gutter-sm:     2rem            !default;
+$gutter-md:     4rem            !default;
+$gutter-lg:     8rem            !default;
+$gutter-wd:     16rem           !default;
+
+
+
+// *********************************** \\
+// ***** 04 - Flex Gutter System ***** \\
+
+// Create the map $gutter empty
+$gutters:       ()              !default;
+
+// Merge the map with the gutter keys & values
+$gutters:       map-merge(
+(
+'tn':           $gutter-tn,
+'sm':           $gutter-sm,
+'md':           $gutter-md,
+'lg':           $gutter-lg,
+'wd':           $gutter-wd
+),
+$gutters);
+
+
+
+// ******************************* \\
+// ***** 05 - Flex Variables ***** \\
+
+// You can change the flex values with your own
+$flex-auto:     1 1 auto        !default;
+$flex-grow:     1 0 auto        !default;
+$flex-shrink:   0 1 auto        !default;
+$flex-none:     0 0 auto        !default;
+$flex-double:   2 0 auto        !default;
+$flex-half:     0 2 auto        !default;
+$flex-third:    0 3 auto        !default;
+$flex-quarter:  0 4 auto        !default;
+$flex-all:      1 1 100%        !default;
+
+
+
+// **************************** \\
+// ***** 06 - Flex System ***** \\
+
+// Create the map $flex empty
+$flex:          ()              !default;
+
+// Merge the map with the flex keys & values
+$flex:          map-merge(
+(
+'auto':         $flex-auto,
+'grow':         $flex-grow,
+'shrink':       $flex-shrink,
+'none':         $flex-none,
+'double':       $flex-double,
+'half':         $flex-half,
+'third':        $flex-third,
+'quarter':      $flex-quarter,
+'all':          $flex-all
+),
+$flex);
+
+
+
+// *********************************** \\
+// ***** 07 - Grid Gap Variables ***** \\
+
+// You can change the gap values with your own
+$gap-tn:        .5rem           !default;
+$gap-sm:        1rem            !default;
+$gap-md:        2rem            !default;
+$gap-lg:        5rem            !default;
+$gap-wd:        10rem           !default;
+
+
+
+// ******************************** \\
+// ***** 08 - Grid Gap System ***** \\
+
+// Create the map $grid-gutters empty
+$grid-gap:      ()              !default;
+
+// Merge the map with the gutters keys & values
+$grid-gap:      map-merge(
+(
+'tn':           $gap-tn,
+'sm':           $gap-sm,
+'md':           $gap-md,
+'lg':           $gap-lg,
+'wd':           $gap-wd
+),
+$grid-gap);
+
+
+
+// ***************************** \\
+// ***** 09 - Items System ***** \\
+
+// Create the map $items empty
+$items:         ()              !default;
+
+// Merge the map with the items keys & values
+$items:         map-merge(
+(
+'stretch':      stretch,
+'base':         baseline,
+'center':       center,
+'start':        start,
+'end':          end,
+'right':        right,
+'left':         left
+),
+$items);
+
+
+
+// ******************************* \\
+// ***** 10 - Content System ***** \\
+
+// Create the map $content empty
+$content:       ()              !default;
+
+// Merge the map with the content keys & values
+$content:       map-merge(
+(
+'stretch':      stretch,
+'base':         baseline,
+'center':       center,
+'start':        start,
+'end':          end,
+'right':        right,
+'left':         left,
+'around':       space-around,
+'between':      space-between,
+'evenly':       space-evenly
+),
+$content);
