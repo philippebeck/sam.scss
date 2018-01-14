@@ -1,0 +1,56 @@
+// ****************** \\
+// ***** SHADOW ***** \\
+// ****************** \\
+
+
+// The shadow part includes :
+// 01 => the basic shadow classes constructor who calls the shadow mixin
+// 02 => the blur shadow classes constructor who calls the blur mixin
+// 03 => the spread shadow classes constructor who calls the spread mixin
+
+
+
+/* ******************* */
+/* ***** Shadows ***** */
+
+
+
+// ****************************** \\
+// ***** 01 - Basic Shadows ***** \\
+
+/* ***** Basic shadows ***** */
+// Loops on the $shadows list
+@each $suffix, $offset-x, $offset-y in $shadows
+{
+  /* #{$suffix} */
+  // Calls the shadow mixin with the values
+  @include shadow($suffix, $offset-x, $offset-y);
+}
+
+
+
+// ***************************** \\
+// ***** 02 - Blur Shadows ***** \\
+
+/* ***** Blur shadows ***** */
+// Loops on the $shadows-blur list
+@each $suffix, $offset-x, $offset-y, $blur in $shadows-blur
+{
+  /* #{$suffix} */
+  // Calls the blur mixin with the values
+  @include shadow($suffix, $offset-x, $offset-y, $blur);
+}
+
+
+
+// ******************************* \\
+// ***** 03 - Spread shadows ***** \\
+
+/* ***** Spread shadows ***** */
+// Loops on the $shadows-spread list
+@each $suffix, $offset-x, $offset-y, $blur, $spread in $shadows-spread
+{
+  /* #{$suffix} */
+  // Calls the spread mixin with the values
+  @include shadow($suffix, $offset-x, $offset-y, $blur, $spread);
+}
