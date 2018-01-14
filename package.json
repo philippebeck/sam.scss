@@ -1,0 +1,25 @@
+{
+  "name": "sam.scss",
+  "version": "0.1.0",
+  "description": "Scss Animated Microframework",
+  "main": [
+    "sam.scss",
+    "sam.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philippebeck/sam.scss.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "animation",
+    "framework"
+  ],
+  "author": "Philippe Beck <philippe@philippebeck.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philippebeck/sam.scss/issues"
+  },
+  "homepage": "https://github.com/philippebeck/sam.scss#readme"
+}

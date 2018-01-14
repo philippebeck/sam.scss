@@ -1,13 +1,20 @@
 # Sam
 Scss Animated Microframework
+****************************
 
+*
 
+To install via npm :
+
+$ npm install sam.scss
+
+*
 
 To install via Bower :
 
-  $ bower install sam --save
+$ bower install sam.scss --save
 
-
+*
 
 Sam is a microframework SCSS who group some important CSS properties by class.
 
