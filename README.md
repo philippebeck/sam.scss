@@ -1,20 +1,22 @@
-# Sam
+# Sam.scss
 Scss Animated Microframework
 ****************************
 
-*
+
+# Installation
+**************
 
 To install via npm :
 
 $ npm install sam.scss
 
-*
-
 To install via Bower :
 
 $ bower install sam.scss --save
 
-*
+
+# Overview
+**********
 
 Sam is a microframework SCSS who group some important CSS properties by class.
 
@@ -30,5 +32,9 @@ Sam is build around 6 main characteristics :
 - the display, the colors, the borders, the shadows, the animations & the helpers.
 
 Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
+
+
+# Contribution
+**************
 
 Sam needs you if you like it : sends pull requests on GitHub to improve it !!
