@@ -1,0 +1,106 @@
+// ************************* \\
+// ***** ANIMATE MIXIN ***** \\
+// ************************* \\
+
+
+
+// The animate mixin part includes:
+// 01 => the transform mixin who created the keyframes
+// 02 => the animation mixin who created the animation main class
+// 03 => the animations mixin who created the animation sub class
+// 04 => the origin mixin who created the transform origin sub class
+
+
+
+// ******************************** \\
+// ***** 01 - Transform Mixin ***** \\
+
+// Creates a keyframes using opacity & transform
+// @param $keyframes  => the keyframes name
+// @param $tranform   => the transform value
+@mixin transform($keyframes, $transform)
+{
+  // Constructs the keyframes name & the transform value
+  @keyframes #{$keyframes}
+  {
+    from {
+      opacity: 0;
+      transform: $transform;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+// ******************************** \\
+// ***** 02 - Animation Mixin ***** \\
+
+// Creates the animation main classes
+// @param $animation  => the animation name & value
+// @param $suffix     => the duration suffix
+// @param $duration   => the duration value
+@mixin animation($animation, $suffix, $duration)
+{
+  // Constructs the inital class name for the animation
+  [class*='anime'][class*='#{$animation}-#{$suffix}'],
+  [class*='child'][class*='#{$animation}-#{$suffix}'] > *,
+  [class*='hover'][class*='#{$animation}-#{$suffix}']:hover {
+    animation: #{$animation} #{$duration};
+  }
+}
+
+
+
+// ********************************* \\
+// ***** 03 - Animations Mixin ***** \\
+
+// Creates the animation sub classes
+// @param $class    => the sub class name
+// @param $suffix   => the animation property suffix
+// @param $value    => the animation value
+@mixin animations($class, $suffix, $value)
+{
+  // Constructs the sub class name for the animations
+  [class*='anime'][class*='-#{$class}'],
+  [class*='child'][class*='-#{$class}'] > *,
+  [class*='hover'][class*='-#{$class}']:hover {
+    animation-#{$suffix}: #{$value};
+  }
+}
+
+
+
+// ***************************** \\
+// ***** 04 - Origin Mixin ***** \\
+
+
+// Creates the transform origin sub classes
+// @param $prefix   => the first part of the class name
+// @param $suffix   => the last part of the class name
+// @param $origin-x => the offset-x value
+// @param $origin-y => the offset-y value
+@mixin origin($prefix, $suffix, $origin-x, $origin-y)
+{
+  // Checks to use only one property
+  @if $prefix == $suffix
+  {
+    // Gives only one name & attributes only one value
+    [class*='anime'][class*='-#{$prefix}'],
+    [class*='child'][class*='-#{$prefix}'] > *,
+    [class*='hover'][class*='-#{$prefix}']:hover {
+      transform-origin: #{$origin-x};
+    }
+  }
+  @else
+  {
+    // Gives only the 2 initials for the name & attributes the 2 values
+    [class*='anime'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}],
+    [class*='child'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}] > *,
+    [class*='hover'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}]:hover {
+      transform-origin: #{$origin-x} #{$origin-y};
+    }
+  }
+}
