@@ -1,0 +1,116 @@
+/* **************** */
+/* ***** FORM ***** */
+/* **************** */
+
+
+
+// The form part includes :
+// 01 => the forms tags rules
+// 02 => the @media forms tags rules
+
+
+
+/* **************************** */
+/* ***** Forms Tags Rules ***** */
+
+/* Display flex column */
+form,
+fieldset,
+form ul,
+form li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixed form size */
+form,
+fieldset {
+  width: 30rem;
+}
+
+/* Forms margins */
+form {
+  margin: auto;
+  padding: 2rem 0 4rem;
+}
+
+/* Corrects the fieldset position to center correctly on smartphones & tablets */
+fieldset {
+  margin-left: -1.3rem;
+  border: medium double;
+  padding: 2rem;
+}
+
+/* For better legibility of fieldset legends */
+legend {
+  font-weight: bold
+}
+
+/* Placeholders content will be centred */
+input::placeholder,
+textarea::placeholder {
+  text-align: center;
+  font-style: italic;
+  color: map-get(map-get($colors-map, 'info'), darker);
+}
+
+/* Entry fields design */
+input[type="text"],
+input[type="file"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+  line-height: 2;
+  margin: 1rem 0 2rem;
+  border: medium solid $blue;
+  border-radius: 1rem;
+  background-color: map-get(map-get($colors-map, 'info'), trans);
+}
+
+/* Normalize the form buttons */
+input[type="reset"],
+input[type="submit"] {
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+
+
+/* ****************************** */
+/* ***** Forms Medias Rules ***** */
+
+/* Corrects the fieldset position to center correctly on desktop */
+@media (min-width: $break-lg - 1)
+{
+  form,
+  fieldset {
+    width: 50rem;
+  }
+
+  form li {
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: start;
+    align-items: center;
+  }
+
+  label {
+    flex: 2 0 auto;
+    text-decoration: underline dashed;
+  }
+
+  input,
+  textarea {
+    width: 75%;
+  }
+
+}
+
+/* Corrects again the fieldset position but to center correctly on desktop */
+@media (min-width: $break-lg)
+{
+  fieldset {
+    margin-left: 0;
+  }
+}
