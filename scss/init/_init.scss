@@ -1,0 +1,113 @@
+/* **************** */
+/* ***** INIT ***** */
+/* **************** */
+
+
+
+// The init part includes :
+// 01 => the init rules for the global tags
+// 02 => the init rules for the titles tags
+// 03 => the init rules for the links tags
+// 04 => the init rules for the lists tags
+// 05 => the init rules for the tables tags
+// 06 => the init rules for the medias tags
+
+
+
+/* ****************** */
+/* ***** Global ***** */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+
+
+/* ****************** */
+/* ***** Titles ***** */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+
+
+/* ***************** */
+/* ***** Links ***** */
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* ***************** */
+/* ***** Lists ***** */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+/* ****************** */
+/* ***** Tables ***** */
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+/* ****************** */
+/* ***** Medias ***** */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
