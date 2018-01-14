@@ -1,7 +1,9 @@
 /* ================================================== */
+/* ====================== S A M ===================== */
 /* ========== Scss Animated Microframework ========== */
 /* ================================================== */
-/* ============ github/philippebeck/sam ============= */
+/* ========== github/philippebeck/sam.scss ========== */
+/* ========= www.npmjs.com/package/sam.scss ========= */
 /* ================================================== */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -5200,6 +5202,59 @@ input[type="submit"] {
 }
 .linkedin, .linkedin-btn, .linkedin-light:hover, .linkedin-dark:hover, .linkedin-outline:hover {
   border-color: #005582;
+}
+
+/* npm color */
+.npm-text, .npm-outline {
+  color: #c12127;
+}
+.npm-dark {
+  color: #e46468;
+}
+.npm, .npm-btn, .npm-sea, .npm-trans, .npm-light:hover, .npm-outline:hover {
+  color: white;
+}
+.npm-light, .npm-btn:hover {
+  color: #951a1e;
+}
+.npm-glass, .npm-dark:hover, .npm-trans:hover {
+  color: #3e0b0d;
+}
+.npm a {
+  color: #21c1bb;
+}
+.npm a:hover {
+  color: #3eded8;
+}
+.npm, .npm-btn, .npm-light:hover, .npm-dark:hover, .npm-outline:hover {
+  background-color: #c12127;
+}
+.npm-light, .npm-btn:hover {
+  background-color: #e46468;
+}
+.npm-dark {
+  background-color: #951a1e;
+}
+.npm-outline {
+  background-color: white;
+}
+.npm-sea, .npm-trans {
+  background-color: rgba(193, 33, 39, 0.9);
+}
+.npm-glass, .npm-trans:hover {
+  background-color: rgba(193, 33, 39, 0.2);
+}
+.npm-btn, .npm-outline, .npm-light, .npm-dark, .npm-trans {
+  transition: background-color 1s;
+}
+.npm-border, .npm-light, .npm-dark, .npm-sea, .npm-trans, .npm-btn:hover {
+  border-color: #c12127;
+}
+.npm-outline, .npm-glass, .npm-trans:hover {
+  border-color: #e46468;
+}
+.npm, .npm-btn, .npm-light:hover, .npm-dark:hover, .npm-outline:hover {
+  border-color: #951a1e;
 }
 
 /* stackoverflow color */
