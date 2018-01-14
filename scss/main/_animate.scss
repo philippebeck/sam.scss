@@ -1,0 +1,85 @@
+/* ******************* */
+/* ***** ANIMATE ***** */
+/* ******************* */
+
+
+
+// The animate part includes :
+// 01 => the keyframes loop who created all keyframes
+// 02 => the animation loops who created all animation main classes
+// 03 => the animation option loop who created all animation sub classes
+// 04 => the origin option loops who created all transform origin sub classes
+// 05 => the special classes to cancel the transparency or the transform animation
+
+
+
+/* ********************* */
+/* ***** Keyframes ***** */
+
+// Loops on the map $transforms to create all keyframes
+@each $name, $transform in $transforms
+{
+  // Calls the mixin transform
+  @include transform($name, $transform);
+}
+
+
+
+/* ****************************** */
+/* ***** Animations Classes ***** */
+
+// Loops on the map $transforms to get the animation name & the transform value
+@each $name, $transform in $transforms
+{
+  /* Animation Classes => #{$name} */
+  // Loops on the map $times to get the class name suffix & the duration value
+  @each $suffix, $time in $times
+  {
+    // Calls the mixin animation
+    @include animation($name, $suffix, $time);
+  }
+}
+
+
+
+/* ************************************** */
+/* ***** Animations Options Classes ***** */
+
+// Loops on the list $animations to get the class name, the suffix & the value of the property
+@each $class, $property, $value in $animations
+{
+  // Calls the mixin animations
+  @include animations($class, $property, $value);
+}
+
+
+
+/* ********************************** */
+/* ***** Origin Options Classes ***** */
+
+
+// Loops on the map $origin twice to get the names & the values
+@each $prefix, $origin-x in $origins
+{
+  /* Transform Origin-x => #{$prefix} */
+  @each $suffix, $origin-y in $origins
+  {
+    // Calls the mixin origin
+    @include origin($prefix, $suffix, $origin-x, $origin-y);
+  }
+}
+
+
+
+/* *************************** */
+/* ***** Special classes ***** */
+
+// Used to cancel the transparency on animations
+.visible {
+  opacity: 1 !important;
+}
+
+// Used on the children of the class 'child'
+.no-transform {
+  transform: none !important;
+}
