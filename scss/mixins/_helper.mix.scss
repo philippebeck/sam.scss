@@ -1,0 +1,151 @@
+// ************************ \\
+// ***** HELPER MIXIN ***** \\
+// ************************ \\
+
+
+// The helper mixin part includes :
+// 01 => the mixin width who constructs the width, the min width & the max width helpers
+// 02 => the mixin height who constructs the heigth, the min height & the max height helpers
+// 03 => the mixin margin who constructs the margin, the margin top, the margin right, the margin bottom & the margin left helpers
+// 04 => the mixin padding who constructs the padding, the padding top, the padding right, the padding bottom & the padding left helpers
+// !! => All those classes can be affect to a parent for affecting each children, for that you need to add the letter g for global just before the initial of the property of the class name
+
+
+
+// **************************** \\
+// ***** 01 - Width Mixin ***** \\
+
+// Constructs the width, the min width & the max width helpers
+// @param $suffix => the suffix to use with the class name
+// @param $value  => the value to attributes to the property
+@mixin width($suffix, $value)
+{
+  // Constructs the width helpers
+  .w#{$suffix},
+  .gw#{$suffix} > * {
+    width: $value;
+  }
+
+  // Constructs the min width helpers
+  .min-w#{$suffix},
+  .min-gw#{$suffix} > * {
+    min-width: $value;
+  }
+
+  // Constructs the max width helpers
+  .max-w#{$suffix},
+  .max-gw#{$suffix} > * {
+    max-width: $value;
+  }
+}
+
+
+
+// ***************************** \\
+// ***** 02 - Height Mixin ***** \\
+
+// Constructs the heigth, the min height & the max height helpers
+// @param $suffix => the suffix to use with the class name
+// @param $value  => the value to attributes to the property
+@mixin height($suffix, $value)
+{
+  // Constructs the height helpers
+  .h#{$suffix},
+  .gh#{$suffix} > * {
+    height: $value;
+  }
+
+  // Constructs the min height helpers
+  .min-h#{$suffix},
+  .min-gh#{$suffix} > * {
+    min-height: $value;
+  }
+
+  // Constructs the max height helpers
+  .max-h#{$suffix},
+  .max-gh#{$suffix} > * {
+    max-height: $value;
+  }
+}
+
+
+
+// ***************************** \\
+// ***** 03 - Margin Mixin ***** \\
+
+// Constructs the margin, the margin top, the margin right, the margin bottom & the margin left helpers
+// @param $suffix => the suffix to use with the class name
+// @param $value  => the value to attributes to the property
+@mixin margin($suffix, $value)
+{
+  // Constructs the margin helpers
+  .m-#{$suffix},
+  .gm-#{$suffix} > * {
+    margin: $value;
+  }
+
+  // Constructs the margin top helpers
+  .mt-#{$suffix},
+  .gmt-#{$suffix} > * {
+    margin-top: $value;
+  }
+
+  // Constructs the margin right helpers
+  .mr-#{$suffix},
+  .gmr-#{$suffix} > * {
+    margin-right: $value;
+  }
+
+  // Constructs the margin bottom helpers
+  .mb-#{$suffix},
+  .gmb-#{$suffix} > * {
+    margin-bottom: $value;
+  }
+
+  // Constructs the margin left helpers
+  .ml-#{$suffix},
+  .gml-#{$suffix} > * {
+    margin-left: $value;
+  }
+}
+
+
+
+// ****************************** \\
+// ***** 04 - Padding Mixin ***** \\
+
+// Constructs the padding, the padding top, the padding right, the padding bottom & the padding left helpers
+// @param $suffix => the suffix to use with the class name
+// @param $value  => the value to attributes to the property
+@mixin padding($suffix, $value)
+{
+  // Constructs the padding helpers
+  .p-#{$suffix},
+  .gp-#{$suffix} > * {
+    padding: $value;
+  }
+
+  // Constructs the padding top helpers
+  .pt-#{$suffix},
+  .gpt-#{$suffix} > * {
+    padding-top: $value;
+  }
+
+  // Constructs the padding right helpers
+  .pr-#{$suffix},
+  .gpr-#{$suffix} > * {
+    padding-right: $value;
+  }
+
+  // Constructs the padding bottom helpers
+  .pb-#{$suffix},
+  .gpb-#{$suffix} > * {
+    padding-bottom: $value;
+  }
+
+  // Constructs the padding left helpers
+  .pl-#{$suffix},
+  .gpl-#{$suffix} > * {
+    padding-left: $value;
+  }
+}
