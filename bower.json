@@ -1,0 +1,37 @@
+{
+  "name": "Sam",
+  "version": "0.1.0",
+  "authors": [
+    "Philippe Beck <philippe@philippebeck.net>"
+  ],
+  "description": "Scss Animated Microframework",
+  "main": [
+    "sam.scss",
+    "sam.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philippebeck/sam"
+  },
+  "devDependencies": {
+    "normalize.css": "~7.0.0"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "animation"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/philippebeck/sam/blob/master/LICENSE"
+  },
+  "homepage": "https://philippebeck.net",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
