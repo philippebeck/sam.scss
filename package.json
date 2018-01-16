@@ -1,6 +1,6 @@
 {
   "name": "sam.scss",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Scss Animated Microframework",
   "main": [
     "sam.scss",
@@ -8,7 +8,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/philippebeck/sam.scss.git"
+    "url": "https://github.com/philippebeck/sam.scss.git"
+  },
+  "devDependencies": {
+    "normalize.css": "~7.0.0"
   },
   "keywords": [
     "scss",
