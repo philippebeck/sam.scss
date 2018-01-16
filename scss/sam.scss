@@ -74,51 +74,51 @@
 // ************************** \\
 // ***** 01 - Variables ***** \\
 
-@import 'scss/variables/display.var';
-@import 'scss/variables/color.var';
-@import 'scss/variables/border.var';
-@import 'scss/variables/shadow.var';
-@import 'scss/variables/animate.var';
-@import 'scss/variables/helper.var';
+@import 'variables/display.var';
+@import 'variables/color.var';
+@import 'variables/border.var';
+@import 'variables/shadow.var';
+@import 'variables/animate.var';
+@import 'variables/helper.var';
 
 
 
 // ************************** \\
 // ***** 02 - Functions ***** \\
 
-@import 'scss/functions/color.fun';
+@import 'functions/color.fun';
 
 
 
 // *********************** \\
 // ***** 03 - Mixins ***** \\
 
-@import 'scss/mixins/display.mix';
-@import 'scss/mixins/color.mix';
-@import 'scss/mixins/border.mix';
-@import 'scss/mixins/shadow.mix';
-@import 'scss/mixins/animate.mix';
-@import 'scss/mixins/helper.mix';
+@import 'mixins/display.mix';
+@import 'mixins/color.mix';
+@import 'mixins/border.mix';
+@import 'mixins/shadow.mix';
+@import 'mixins/animate.mix';
+@import 'mixins/helper.mix';
 
 
 
 // ********************* \\
 // ***** 04 - Init ***** \\
 
-@import 'scss/init/normalize';
-@import 'scss/init/init';
+@import 'init/normalize';
+@import 'init/init';
 
 
 
 // ********************* \\
 // ***** 05 - Main ***** \\
 
-@import 'scss/main/navbar';
-@import 'scss/main/button';
-@import 'scss/main/form';
-@import 'scss/main/display';
-@import 'scss/main/border';
-@import 'scss/main/shadow';
-@import 'scss/main/color';
-@import 'scss/main/animate';
-@import 'scss/main/helper';
+@import 'main/navbar';
+@import 'main/button';
+@import 'main/form';
+@import 'main/display';
+@import 'main/border';
+@import 'main/shadow';
+@import 'main/color';
+@import 'main/animate';
+@import 'main/helper';
