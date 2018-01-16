@@ -89,43 +89,60 @@
 [class^="col"],
 [class*=" row"],
 [class^="row"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 // Selects all col classes for column, wrap & x-padding
 [class*=" col"],
 [class^="col"] {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 1rem;
 }
 
 // Selects all row classes for row, wrap & y-padding
 [class*=" row"],
 [class^="row"] {
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1rem 0;
 }
 
 // Adds suffix to reverse column
 [class*="col-"][class*="-reverse"] {
-  flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 // Adds suffix to reverse row
 [class*="row-"][class*="-reverse"] {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 // Adds suffix to nowrap col & row
 [class*="col-"][class*="-nowrap"],
 [class*="row-"][class*="-nowrap"] {
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 // Adds suffix to reverse wrap col & wrap row
 [class*="col-"][class*="-inverse"], [class*="row-"][class*="-inverse"] {
-  flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 // Loops on the $breakpoints map to create the flex grids
@@ -164,7 +181,9 @@
 {
   // Constructs the suffix with the key
   .flexible-#{$flex-key} {
-    flex: $flex-value;
+    -webkit-box-flex: $flex-value;
+        -ms-flex: $flex-value;
+            flex: $flex-value;
   }
 }
 

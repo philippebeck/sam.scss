@@ -26,14 +26,16 @@
     .#{$suffix},
     .#{$suffix} th,
     .#{$suffix} td {
-      box-shadow: $offset-x $offset-y $blur $spread;
+      -webkit-box-shadow: $offset-x $offset-y $blur $spread;
+              box-shadow: $offset-x $offset-y $blur $spread;
     }
 
     // Constructs the inset spread classes
     .inset-#{$suffix},
     .inset-#{$suffix} th,
     .inset-#{$suffix} td {
-      box-shadow: inset $offset-x $offset-y $blur $spread;
+      -webkit-box-shadow: inset $offset-x $offset-y $blur $spread;
+              box-shadow: inset $offset-x $offset-y $blur $spread;
     }
   }
   // Checks if the shadow will have a blur value
@@ -43,14 +45,16 @@
     .#{$suffix},
     .#{$suffix} th,
     .#{$suffix} td {
-      box-shadow: $offset-x $offset-y $blur;
+      -webkit-box-shadow: $offset-x $offset-y $blur;
+              box-shadow: $offset-x $offset-y $blur;
     }
 
     // Constructs the inset blur classes
     .inset-#{$suffix},
     .inset-#{$suffix} th,
     .inset-#{$suffix} td {
-      box-shadow: inset $offset-x $offset-y $blur;
+      -webkit-box-shadow: inset $offset-x $offset-y $blur;
+              box-shadow: inset $offset-x $offset-y $blur;
     }
 
     // Constructs the text blur classes
@@ -65,14 +69,16 @@
     .#{$suffix},
     .#{$suffix} th,
     .#{$suffix} td {
-      box-shadow: $offset-x $offset-y;
+      -webkit-box-shadow: $offset-x $offset-y;
+              box-shadow: $offset-x $offset-y;
     }
 
     // Constructs the inset shadow classes
     .inset-#{$suffix},
     .inset-#{$suffix} th,
     .inset-#{$suffix} td {
-      box-shadow: inset $offset-x $offset-y;
+      -webkit-box-shadow: inset $offset-x $offset-y;
+              box-shadow: inset $offset-x $offset-y;
     }
 
     // Constructs the text shadow classes

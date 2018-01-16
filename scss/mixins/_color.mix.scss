@@ -114,6 +114,7 @@
   &-light,
   &-dark,
   &-trans {
+    -webkit-transition: background-color 1s;
     transition: background-color 1s;
   }
 }

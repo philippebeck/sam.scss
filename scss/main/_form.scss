@@ -18,8 +18,13 @@ form,
 fieldset,
 form ul,
 form li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* Fixed form size */
@@ -47,6 +52,24 @@ legend {
 }
 
 /* Placeholders content will be centred */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  text-align: center;
+  font-style: italic;
+  color: map-get(map-get($colors-map, 'info'), darker);
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  text-align: center;
+  font-style: italic;
+  color: map-get(map-get($colors-map, 'info'), darker);
+}
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  text-align: center;
+  font-style: italic;
+  color: map-get(map-get($colors-map, 'info'), darker);
+}
 input::placeholder,
 textarea::placeholder {
   text-align: center;
@@ -89,15 +112,25 @@ input[type="submit"] {
   }
 
   form li {
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     justify-items: start;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   label {
-    flex: 2 0 auto;
-    text-decoration: underline dashed;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 0 auto;
+            flex: 2 0 auto;
+    -webkit-text-decoration: underline dashed;
+            text-decoration: underline dashed;
   }
 
   input,

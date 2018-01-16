@@ -110,7 +110,8 @@
   {
     // Constructs the text-decoration classes
     .#{$prefix}-#{$suffix} {
-      text-decoration: $line $style;
+      -webkit-text-decoration: $line $style;
+              text-decoration: $line $style;
     }
   }
 }

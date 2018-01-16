@@ -25,7 +25,8 @@
   {
     from {
       opacity: 0;
-      transform: $transform;
+      -webkit-transform: $transform;
+              transform: $transform;
     }
     to {
       opacity: 1;

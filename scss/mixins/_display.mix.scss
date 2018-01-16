@@ -22,7 +22,7 @@
 // @param $gutter   => the gutter value to separate flex items
 @mixin flex($columns, $gutter)
 {
-  // Selects the flex container to attributes negative margin
+  // Selects the flex container to attributes negative margin 
   & {
     margin: -$gutter / 2;
 
@@ -46,7 +46,9 @@
 {
   // Attributes the values to the items properties
   justify-items: $justify;
-  align-items: $align;
+  -webkit-box-align: $align;
+      -ms-flex-align: $align;
+          align-items: $align;
 }
 
 
@@ -93,7 +95,8 @@
 {
   // Attributes the values to the content properties
   justify-content: $justify;
-  align-content: $align;
+  -ms-flex-line-pack: $align;
+      align-content: $align;
 }
 
 
@@ -139,7 +142,8 @@
 {
   // Attributes the values to the self properties
   justify-self: $justify;
-  align-self: $align;
+  -ms-flex-item-align: $align;
+      align-self: $align;
 }
 
 
