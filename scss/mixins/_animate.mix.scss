@@ -48,6 +48,7 @@
   // Constructs the inital class name for the animation
   [class*='anime'][class*='#{$animation}-#{$suffix}'],
   [class*='child'][class*='#{$animation}-#{$suffix}'] > *,
+  [class*='active'][class*='#{$animation}-#{$suffix}']:active,
   [class*='hover'][class*='#{$animation}-#{$suffix}']:hover {
     animation: #{$animation} #{$duration};
   }
@@ -67,6 +68,7 @@
   // Constructs the sub class name for the animations
   [class*='anime'][class*='-#{$class}'],
   [class*='child'][class*='-#{$class}'] > *,
+  [class*='active'][class*='-#{$class}']:active,
   [class*='hover'][class*='-#{$class}']:hover {
     animation-#{$suffix}: #{$value};
   }
@@ -91,6 +93,7 @@
     // Gives only one name & attributes only one value
     [class*='anime'][class*='-#{$prefix}'],
     [class*='child'][class*='-#{$prefix}'] > *,
+    [class*='active'][class*='-#{$prefix}']:active,
     [class*='hover'][class*='-#{$prefix}']:hover {
       transform-origin: #{$origin-x};
     }
@@ -100,6 +103,7 @@
     // Gives only the 2 initials for the name & attributes the 2 values
     [class*='anime'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}],
     [class*='child'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}] > *,
+    [class*='active'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}]:active,
     [class*='hover'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}]:hover {
       transform-origin: #{$origin-x} #{$origin-y};
     }
