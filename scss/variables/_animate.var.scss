@@ -25,7 +25,7 @@
 $quarterX:          rotateX(90deg)              !default;
 $halfX:             rotateX(180deg)             !default;
 $fullX:             rotateX(360deg)             !default;
-
+ 
 // RotateY
 $quarterY:          rotateY(90deg)              !default;
 $halfY:             rotateY(180deg)             !default;
@@ -69,31 +69,31 @@ $bounceL:           scale(-3)                   !default;
 $bounceM:           scale(-2)                   !default;
 $bounceS:           scale(-1)                   !default;
 
-$growYbounceL:      scale(-3, 0)                !default;
-$growYbounceM:      scale(-2, 0)                !default;
-$growYbounceS:      scale(-1, 0)                !default;
+$flipperYL:         scale(-3, 0)                !default;
+$flipperYM:         scale(-2, 0)                !default;
+$flipperYS:         scale(-1, 0)                !default;
 
-$flipYshrinkL:      scale(-4, 4)                !default;
-$flipYshrinkM:      scale(-3, 3)                !default;
-$flipYshrinkS:      scale(-2, 2)                !default;
+$fallYL:            scale(-4, 4)                !default;
+$fallYM:            scale(-3, 3)                !default;
+$fallYS:            scale(-2, 2)                !default;
 
-$growXbounceL:      scale(0, -3)                !default;
-$growXbounceM:      scale(0, -2)                !default;
-$growXbounceS:      scale(0, -1)                !default;
+$flipperXL:         scale(0, -3)                !default;
+$flipperXM:         scale(0, -2)                !default;
+$flipperXS:         scale(0, -1)                !default;
 
 $grow:              scale(0)                    !default;
 
-$growXshrinkS:      scale(0, 2)                 !default;
-$growXshrinkM:      scale(0, 3)                 !default;
-$growXshrinkL:      scale(0, 4)                 !default;
+$openYS:            scale(0, 2)                 !default;
+$openYM:            scale(0, 3)                 !default;
+$openYL:            scale(0, 4)                 !default;
 
-$flipXshrinkS:      scale(2, -2)                !default;
-$flipXshrinkM:      scale(3, -3)                !default;
-$flipXshrinkL:      scale(4, -4)                !default;
+$fallXS:            scale(2, -2)                !default;
+$fallXM:            scale(3, -3)                !default;
+$fallXL:            scale(4, -4)                !default;
 
-$growYshrinkS:      scale(2, 0)                 !default;
-$growYshrinkM:      scale(3, 0)                 !default;
-$growYshrinkL:      scale(4, 0)                 !default;
+$openXS:            scale(2, 0)                 !default;
+$openXM:            scale(3, 0)                 !default;
+$openXL:            scale(4, 0)                 !default;
 
 $shrinkS:           scale(2)                    !default;
 $shrinkM:           scale(3)                    !default;
@@ -211,31 +211,31 @@ $transforms:        map-merge(
 'bounceM':          $bounceM,
 'bounceS':          $bounceS,
 
-'growYbounceL':     $growYbounceL,
-'growYbounceM':     $growYbounceM,
-'growYbounceS':     $growYbounceS,
+'flipperYL':        $flipperYL,
+'flipperYM':        $flipperYM,
+'flipperYS':        $flipperYS,
 
-'flipYshrinkL':     $flipYshrinkL,
-'flipYshrinkM':     $flipYshrinkM,
-'flipYshrinkS':     $flipYshrinkS,
+'fallYL':            $fallYL,
+'fallYM':            $fallYM,
+'fallYS':            $fallYS,
 
-'growXbounceL':     $growXbounceL,
-'growXbounceM':     $growXbounceM,
-'growXbounceS':     $growXbounceS,
+'flipperXL':        $flipperXL,
+'flipperXM':        $flipperXM,
+'flipperXS':        $flipperXS,
 
 'grow':             $grow,
 
-'growXshrinkS':     $growXshrinkS,
-'growXshrinkM':     $growXshrinkM,
-'growXshrinkL':     $growXshrinkL,
+'openYS':            $openYS,
+'openYM':            $openYM,
+'openYL':            $openYL,
 
-'flipXshrinkS':     $flipXshrinkS,
-'flipXshrinkM':     $flipXshrinkM,
-'flipXshrinkL':     $flipXshrinkL,
+'fallXS':             $fallXS,
+'fallXM':             $fallXM,
+'fallXL':             $fallXL,
 
-'growYshrinkS':     $growYshrinkS,
-'growYshrinkM':     $growYshrinkM,
-'growYshrinkL':     $growYshrinkL,
+'openXS':            $openXS,
+'openXM':            $openXM,
+'openXL':            $openXL,
 
 'shrinkL':          $shrinkL,
 'shrinkM':          $shrinkM,
