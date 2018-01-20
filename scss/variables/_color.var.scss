@@ -37,16 +37,17 @@ $secondary:         CornflowerBlue  !default;
 
 
 
-// *************************************** \\
-// ***** 03 - Social Networks Colors ***** \\
+// ***************************** \\
+// ***** 03 - Brand Colors ***** \\
 
-// You can add or remove social networks colors variables for the needs of your project
+// You can add or remove brand colors variables for the needs of your project
 $facebook:          #4267b2         !default;
 $freecodecamp:      #006400         !default;
 $github:            #24292e         !default;
 $linkedin:          #0077b5         !default;
 $medium:            #029e74         !default;
 $npm:               #c12127         !default;
+$packagist:         #f28d1a         !default;
 $stackoverflow:     #f48024         !default;
 $twitter:           #1da1f2         !default;
 
@@ -79,7 +80,7 @@ $colors:            map-merge(
 "primary":          $primary,
 "secondary":        $secondary,
 
-// Social Networks Colors
+// Brand Colors
 // You can uncomment the social networks you need
 //"facebook":         $facebook,
 "freecodecamp":     $freecodecamp,
@@ -87,6 +88,7 @@ $colors:            map-merge(
 "linkedin":         $linkedin,
 //"medium":           $medium,
 "npm":              $npm,
+"packagist":        $packagist,
 "stackoverflow":    $stackoverflow,
 "twitter":          $twitter,
 ),
