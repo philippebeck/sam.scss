@@ -5716,6 +5716,60 @@ input[type="submit"] {
   border-color: #951a1e;
 }
 
+/* packagist color */
+.packagist-text, .packagist-outline {
+  color: #f28d1a;
+}
+.packagist-dark {
+  color: #f7bd7b;
+}
+.packagist, .packagist-btn, .packagist-sea, .packagist-trans, .packagist-light:hover, .packagist-outline:hover {
+  color: white;
+}
+.packagist-light, .packagist-btn:hover {
+  color: #cd730c;
+}
+.packagist-glass, .packagist-dark:hover, .packagist-trans:hover {
+  color: #6d3d06;
+}
+.packagist a {
+  color: #1a7ff2;
+}
+.packagist a:hover {
+  color: #0d72e5;
+}
+.packagist, .packagist-btn, .packagist-light:hover, .packagist-dark:hover, .packagist-outline:hover {
+  background-color: #f28d1a;
+}
+.packagist-light, .packagist-btn:hover {
+  background-color: #f7bd7b;
+}
+.packagist-dark {
+  background-color: #cd730c;
+}
+.packagist-outline {
+  background-color: white;
+}
+.packagist-sea, .packagist-trans {
+  background-color: rgba(242, 141, 26, 0.9);
+}
+.packagist-glass, .packagist-trans:hover {
+  background-color: rgba(242, 141, 26, 0.2);
+}
+.packagist-btn, .packagist-outline, .packagist-light, .packagist-dark, .packagist-trans {
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+.packagist-border, .packagist-light, .packagist-dark, .packagist-sea, .packagist-trans, .packagist-btn:hover {
+  border-color: #f28d1a;
+}
+.packagist-outline, .packagist-glass, .packagist-trans:hover {
+  border-color: #f7bd7b;
+}
+.packagist, .packagist-btn, .packagist-light:hover, .packagist-dark:hover, .packagist-outline:hover {
+  border-color: #cd730c;
+}
+
 /* stackoverflow color */
 .stackoverflow-text, .stackoverflow-outline {
   color: #f48024;
@@ -6674,30 +6728,35 @@ input[type="submit"] {
 /* Animation Classes => quarterX */
 [class*='anime'][class*='quarterX-tn'],
 [class*='child'][class*='quarterX-tn'] > *,
+[class*='active'][class*='quarterX-tn']:active,
 [class*='hover'][class*='quarterX-tn']:hover {
   animation: quarterX 1s;
 }
 
 [class*='anime'][class*='quarterX-sm'],
 [class*='child'][class*='quarterX-sm'] > *,
+[class*='active'][class*='quarterX-sm']:active,
 [class*='hover'][class*='quarterX-sm']:hover {
   animation: quarterX 2s;
 }
 
 [class*='anime'][class*='quarterX-md'],
 [class*='child'][class*='quarterX-md'] > *,
+[class*='active'][class*='quarterX-md']:active,
 [class*='hover'][class*='quarterX-md']:hover {
   animation: quarterX 5s;
 }
 
 [class*='anime'][class*='quarterX-lg'],
 [class*='child'][class*='quarterX-lg'] > *,
+[class*='active'][class*='quarterX-lg']:active,
 [class*='hover'][class*='quarterX-lg']:hover {
   animation: quarterX 10s;
 }
 
 [class*='anime'][class*='quarterX-wd'],
 [class*='child'][class*='quarterX-wd'] > *,
+[class*='active'][class*='quarterX-wd']:active,
 [class*='hover'][class*='quarterX-wd']:hover {
   animation: quarterX 60s;
 }
@@ -6705,30 +6764,35 @@ input[type="submit"] {
 /* Animation Classes => halfX */
 [class*='anime'][class*='halfX-tn'],
 [class*='child'][class*='halfX-tn'] > *,
+[class*='active'][class*='halfX-tn']:active,
 [class*='hover'][class*='halfX-tn']:hover {
   animation: halfX 1s;
 }
 
 [class*='anime'][class*='halfX-sm'],
 [class*='child'][class*='halfX-sm'] > *,
+[class*='active'][class*='halfX-sm']:active,
 [class*='hover'][class*='halfX-sm']:hover {
   animation: halfX 2s;
 }
 
 [class*='anime'][class*='halfX-md'],
 [class*='child'][class*='halfX-md'] > *,
+[class*='active'][class*='halfX-md']:active,
 [class*='hover'][class*='halfX-md']:hover {
   animation: halfX 5s;
 }
 
 [class*='anime'][class*='halfX-lg'],
 [class*='child'][class*='halfX-lg'] > *,
+[class*='active'][class*='halfX-lg']:active,
 [class*='hover'][class*='halfX-lg']:hover {
   animation: halfX 10s;
 }
 
 [class*='anime'][class*='halfX-wd'],
 [class*='child'][class*='halfX-wd'] > *,
+[class*='active'][class*='halfX-wd']:active,
 [class*='hover'][class*='halfX-wd']:hover {
   animation: halfX 60s;
 }
@@ -6736,30 +6800,35 @@ input[type="submit"] {
 /* Animation Classes => fullX */
 [class*='anime'][class*='fullX-tn'],
 [class*='child'][class*='fullX-tn'] > *,
+[class*='active'][class*='fullX-tn']:active,
 [class*='hover'][class*='fullX-tn']:hover {
   animation: fullX 1s;
 }
 
 [class*='anime'][class*='fullX-sm'],
 [class*='child'][class*='fullX-sm'] > *,
+[class*='active'][class*='fullX-sm']:active,
 [class*='hover'][class*='fullX-sm']:hover {
   animation: fullX 2s;
 }
 
 [class*='anime'][class*='fullX-md'],
 [class*='child'][class*='fullX-md'] > *,
+[class*='active'][class*='fullX-md']:active,
 [class*='hover'][class*='fullX-md']:hover {
   animation: fullX 5s;
 }
 
 [class*='anime'][class*='fullX-lg'],
 [class*='child'][class*='fullX-lg'] > *,
+[class*='active'][class*='fullX-lg']:active,
 [class*='hover'][class*='fullX-lg']:hover {
   animation: fullX 10s;
 }
 
 [class*='anime'][class*='fullX-wd'],
 [class*='child'][class*='fullX-wd'] > *,
+[class*='active'][class*='fullX-wd']:active,
 [class*='hover'][class*='fullX-wd']:hover {
   animation: fullX 60s;
 }
@@ -6767,30 +6836,35 @@ input[type="submit"] {
 /* Animation Classes => quarterY */
 [class*='anime'][class*='quarterY-tn'],
 [class*='child'][class*='quarterY-tn'] > *,
+[class*='active'][class*='quarterY-tn']:active,
 [class*='hover'][class*='quarterY-tn']:hover {
   animation: quarterY 1s;
 }
 
 [class*='anime'][class*='quarterY-sm'],
 [class*='child'][class*='quarterY-sm'] > *,
+[class*='active'][class*='quarterY-sm']:active,
 [class*='hover'][class*='quarterY-sm']:hover {
   animation: quarterY 2s;
 }
 
 [class*='anime'][class*='quarterY-md'],
 [class*='child'][class*='quarterY-md'] > *,
+[class*='active'][class*='quarterY-md']:active,
 [class*='hover'][class*='quarterY-md']:hover {
   animation: quarterY 5s;
 }
 
 [class*='anime'][class*='quarterY-lg'],
 [class*='child'][class*='quarterY-lg'] > *,
+[class*='active'][class*='quarterY-lg']:active,
 [class*='hover'][class*='quarterY-lg']:hover {
   animation: quarterY 10s;
 }
 
 [class*='anime'][class*='quarterY-wd'],
 [class*='child'][class*='quarterY-wd'] > *,
+[class*='active'][class*='quarterY-wd']:active,
 [class*='hover'][class*='quarterY-wd']:hover {
   animation: quarterY 60s;
 }
@@ -6798,30 +6872,35 @@ input[type="submit"] {
 /* Animation Classes => halfY */
 [class*='anime'][class*='halfY-tn'],
 [class*='child'][class*='halfY-tn'] > *,
+[class*='active'][class*='halfY-tn']:active,
 [class*='hover'][class*='halfY-tn']:hover {
   animation: halfY 1s;
 }
 
 [class*='anime'][class*='halfY-sm'],
 [class*='child'][class*='halfY-sm'] > *,
+[class*='active'][class*='halfY-sm']:active,
 [class*='hover'][class*='halfY-sm']:hover {
   animation: halfY 2s;
 }
 
 [class*='anime'][class*='halfY-md'],
 [class*='child'][class*='halfY-md'] > *,
+[class*='active'][class*='halfY-md']:active,
 [class*='hover'][class*='halfY-md']:hover {
   animation: halfY 5s;
 }
 
 [class*='anime'][class*='halfY-lg'],
 [class*='child'][class*='halfY-lg'] > *,
+[class*='active'][class*='halfY-lg']:active,
 [class*='hover'][class*='halfY-lg']:hover {
   animation: halfY 10s;
 }
 
 [class*='anime'][class*='halfY-wd'],
 [class*='child'][class*='halfY-wd'] > *,
+[class*='active'][class*='halfY-wd']:active,
 [class*='hover'][class*='halfY-wd']:hover {
   animation: halfY 60s;
 }
@@ -6829,30 +6908,35 @@ input[type="submit"] {
 /* Animation Classes => fullY */
 [class*='anime'][class*='fullY-tn'],
 [class*='child'][class*='fullY-tn'] > *,
+[class*='active'][class*='fullY-tn']:active,
 [class*='hover'][class*='fullY-tn']:hover {
   animation: fullY 1s;
 }
 
 [class*='anime'][class*='fullY-sm'],
 [class*='child'][class*='fullY-sm'] > *,
+[class*='active'][class*='fullY-sm']:active,
 [class*='hover'][class*='fullY-sm']:hover {
   animation: fullY 2s;
 }
 
 [class*='anime'][class*='fullY-md'],
 [class*='child'][class*='fullY-md'] > *,
+[class*='active'][class*='fullY-md']:active,
 [class*='hover'][class*='fullY-md']:hover {
   animation: fullY 5s;
 }
 
 [class*='anime'][class*='fullY-lg'],
 [class*='child'][class*='fullY-lg'] > *,
+[class*='active'][class*='fullY-lg']:active,
 [class*='hover'][class*='fullY-lg']:hover {
   animation: fullY 10s;
 }
 
 [class*='anime'][class*='fullY-wd'],
 [class*='child'][class*='fullY-wd'] > *,
+[class*='active'][class*='fullY-wd']:active,
 [class*='hover'][class*='fullY-wd']:hover {
   animation: fullY 60s;
 }
@@ -6860,30 +6944,35 @@ input[type="submit"] {
 /* Animation Classes => quarter */
 [class*='anime'][class*='quarter-tn'],
 [class*='child'][class*='quarter-tn'] > *,
+[class*='active'][class*='quarter-tn']:active,
 [class*='hover'][class*='quarter-tn']:hover {
   animation: quarter 1s;
 }
 
 [class*='anime'][class*='quarter-sm'],
 [class*='child'][class*='quarter-sm'] > *,
+[class*='active'][class*='quarter-sm']:active,
 [class*='hover'][class*='quarter-sm']:hover {
   animation: quarter 2s;
 }
 
 [class*='anime'][class*='quarter-md'],
 [class*='child'][class*='quarter-md'] > *,
+[class*='active'][class*='quarter-md']:active,
 [class*='hover'][class*='quarter-md']:hover {
   animation: quarter 5s;
 }
 
 [class*='anime'][class*='quarter-lg'],
 [class*='child'][class*='quarter-lg'] > *,
+[class*='active'][class*='quarter-lg']:active,
 [class*='hover'][class*='quarter-lg']:hover {
   animation: quarter 10s;
 }
 
 [class*='anime'][class*='quarter-wd'],
 [class*='child'][class*='quarter-wd'] > *,
+[class*='active'][class*='quarter-wd']:active,
 [class*='hover'][class*='quarter-wd']:hover {
   animation: quarter 60s;
 }
@@ -6891,30 +6980,35 @@ input[type="submit"] {
 /* Animation Classes => half */
 [class*='anime'][class*='half-tn'],
 [class*='child'][class*='half-tn'] > *,
+[class*='active'][class*='half-tn']:active,
 [class*='hover'][class*='half-tn']:hover {
   animation: half 1s;
 }
 
 [class*='anime'][class*='half-sm'],
 [class*='child'][class*='half-sm'] > *,
+[class*='active'][class*='half-sm']:active,
 [class*='hover'][class*='half-sm']:hover {
   animation: half 2s;
 }
 
 [class*='anime'][class*='half-md'],
 [class*='child'][class*='half-md'] > *,
+[class*='active'][class*='half-md']:active,
 [class*='hover'][class*='half-md']:hover {
   animation: half 5s;
 }
 
 [class*='anime'][class*='half-lg'],
 [class*='child'][class*='half-lg'] > *,
+[class*='active'][class*='half-lg']:active,
 [class*='hover'][class*='half-lg']:hover {
   animation: half 10s;
 }
 
 [class*='anime'][class*='half-wd'],
 [class*='child'][class*='half-wd'] > *,
+[class*='active'][class*='half-wd']:active,
 [class*='hover'][class*='half-wd']:hover {
   animation: half 60s;
 }
@@ -6922,30 +7016,35 @@ input[type="submit"] {
 /* Animation Classes => full */
 [class*='anime'][class*='full-tn'],
 [class*='child'][class*='full-tn'] > *,
+[class*='active'][class*='full-tn']:active,
 [class*='hover'][class*='full-tn']:hover {
   animation: full 1s;
 }
 
 [class*='anime'][class*='full-sm'],
 [class*='child'][class*='full-sm'] > *,
+[class*='active'][class*='full-sm']:active,
 [class*='hover'][class*='full-sm']:hover {
   animation: full 2s;
 }
 
 [class*='anime'][class*='full-md'],
 [class*='child'][class*='full-md'] > *,
+[class*='active'][class*='full-md']:active,
 [class*='hover'][class*='full-md']:hover {
   animation: full 5s;
 }
 
 [class*='anime'][class*='full-lg'],
 [class*='child'][class*='full-lg'] > *,
+[class*='active'][class*='full-lg']:active,
 [class*='hover'][class*='full-lg']:hover {
   animation: full 10s;
 }
 
 [class*='anime'][class*='full-wd'],
 [class*='child'][class*='full-wd'] > *,
+[class*='active'][class*='full-wd']:active,
 [class*='hover'][class*='full-wd']:hover {
   animation: full 60s;
 }
@@ -6953,30 +7052,35 @@ input[type="submit"] {
 /* Animation Classes => quarterX3d */
 [class*='anime'][class*='quarterX3d-tn'],
 [class*='child'][class*='quarterX3d-tn'] > *,
+[class*='active'][class*='quarterX3d-tn']:active,
 [class*='hover'][class*='quarterX3d-tn']:hover {
   animation: quarterX3d 1s;
 }
 
 [class*='anime'][class*='quarterX3d-sm'],
 [class*='child'][class*='quarterX3d-sm'] > *,
+[class*='active'][class*='quarterX3d-sm']:active,
 [class*='hover'][class*='quarterX3d-sm']:hover {
   animation: quarterX3d 2s;
 }
 
 [class*='anime'][class*='quarterX3d-md'],
 [class*='child'][class*='quarterX3d-md'] > *,
+[class*='active'][class*='quarterX3d-md']:active,
 [class*='hover'][class*='quarterX3d-md']:hover {
   animation: quarterX3d 5s;
 }
 
 [class*='anime'][class*='quarterX3d-lg'],
 [class*='child'][class*='quarterX3d-lg'] > *,
+[class*='active'][class*='quarterX3d-lg']:active,
 [class*='hover'][class*='quarterX3d-lg']:hover {
   animation: quarterX3d 10s;
 }
 
 [class*='anime'][class*='quarterX3d-wd'],
 [class*='child'][class*='quarterX3d-wd'] > *,
+[class*='active'][class*='quarterX3d-wd']:active,
 [class*='hover'][class*='quarterX3d-wd']:hover {
   animation: quarterX3d 60s;
 }
@@ -6984,30 +7088,35 @@ input[type="submit"] {
 /* Animation Classes => halfX3d */
 [class*='anime'][class*='halfX3d-tn'],
 [class*='child'][class*='halfX3d-tn'] > *,
+[class*='active'][class*='halfX3d-tn']:active,
 [class*='hover'][class*='halfX3d-tn']:hover {
   animation: halfX3d 1s;
 }
 
 [class*='anime'][class*='halfX3d-sm'],
 [class*='child'][class*='halfX3d-sm'] > *,
+[class*='active'][class*='halfX3d-sm']:active,
 [class*='hover'][class*='halfX3d-sm']:hover {
   animation: halfX3d 2s;
 }
 
 [class*='anime'][class*='halfX3d-md'],
 [class*='child'][class*='halfX3d-md'] > *,
+[class*='active'][class*='halfX3d-md']:active,
 [class*='hover'][class*='halfX3d-md']:hover {
   animation: halfX3d 5s;
 }
 
 [class*='anime'][class*='halfX3d-lg'],
 [class*='child'][class*='halfX3d-lg'] > *,
+[class*='active'][class*='halfX3d-lg']:active,
 [class*='hover'][class*='halfX3d-lg']:hover {
   animation: halfX3d 10s;
 }
 
 [class*='anime'][class*='halfX3d-wd'],
 [class*='child'][class*='halfX3d-wd'] > *,
+[class*='active'][class*='halfX3d-wd']:active,
 [class*='hover'][class*='halfX3d-wd']:hover {
   animation: halfX3d 60s;
 }
@@ -7015,30 +7124,35 @@ input[type="submit"] {
 /* Animation Classes => fullX3d */
 [class*='anime'][class*='fullX3d-tn'],
 [class*='child'][class*='fullX3d-tn'] > *,
+[class*='active'][class*='fullX3d-tn']:active,
 [class*='hover'][class*='fullX3d-tn']:hover {
   animation: fullX3d 1s;
 }
 
 [class*='anime'][class*='fullX3d-sm'],
 [class*='child'][class*='fullX3d-sm'] > *,
+[class*='active'][class*='fullX3d-sm']:active,
 [class*='hover'][class*='fullX3d-sm']:hover {
   animation: fullX3d 2s;
 }
 
 [class*='anime'][class*='fullX3d-md'],
 [class*='child'][class*='fullX3d-md'] > *,
+[class*='active'][class*='fullX3d-md']:active,
 [class*='hover'][class*='fullX3d-md']:hover {
   animation: fullX3d 5s;
 }
 
 [class*='anime'][class*='fullX3d-lg'],
 [class*='child'][class*='fullX3d-lg'] > *,
+[class*='active'][class*='fullX3d-lg']:active,
 [class*='hover'][class*='fullX3d-lg']:hover {
   animation: fullX3d 10s;
 }
 
 [class*='anime'][class*='fullX3d-wd'],
 [class*='child'][class*='fullX3d-wd'] > *,
+[class*='active'][class*='fullX3d-wd']:active,
 [class*='hover'][class*='fullX3d-wd']:hover {
   animation: fullX3d 60s;
 }
@@ -7046,30 +7160,35 @@ input[type="submit"] {
 /* Animation Classes => quarterY3d */
 [class*='anime'][class*='quarterY3d-tn'],
 [class*='child'][class*='quarterY3d-tn'] > *,
+[class*='active'][class*='quarterY3d-tn']:active,
 [class*='hover'][class*='quarterY3d-tn']:hover {
   animation: quarterY3d 1s;
 }
 
 [class*='anime'][class*='quarterY3d-sm'],
 [class*='child'][class*='quarterY3d-sm'] > *,
+[class*='active'][class*='quarterY3d-sm']:active,
 [class*='hover'][class*='quarterY3d-sm']:hover {
   animation: quarterY3d 2s;
 }
 
 [class*='anime'][class*='quarterY3d-md'],
 [class*='child'][class*='quarterY3d-md'] > *,
+[class*='active'][class*='quarterY3d-md']:active,
 [class*='hover'][class*='quarterY3d-md']:hover {
   animation: quarterY3d 5s;
 }
 
 [class*='anime'][class*='quarterY3d-lg'],
 [class*='child'][class*='quarterY3d-lg'] > *,
+[class*='active'][class*='quarterY3d-lg']:active,
 [class*='hover'][class*='quarterY3d-lg']:hover {
   animation: quarterY3d 10s;
 }
 
 [class*='anime'][class*='quarterY3d-wd'],
 [class*='child'][class*='quarterY3d-wd'] > *,
+[class*='active'][class*='quarterY3d-wd']:active,
 [class*='hover'][class*='quarterY3d-wd']:hover {
   animation: quarterY3d 60s;
 }
@@ -7077,30 +7196,35 @@ input[type="submit"] {
 /* Animation Classes => halfY3d */
 [class*='anime'][class*='halfY3d-tn'],
 [class*='child'][class*='halfY3d-tn'] > *,
+[class*='active'][class*='halfY3d-tn']:active,
 [class*='hover'][class*='halfY3d-tn']:hover {
   animation: halfY3d 1s;
 }
 
 [class*='anime'][class*='halfY3d-sm'],
 [class*='child'][class*='halfY3d-sm'] > *,
+[class*='active'][class*='halfY3d-sm']:active,
 [class*='hover'][class*='halfY3d-sm']:hover {
   animation: halfY3d 2s;
 }
 
 [class*='anime'][class*='halfY3d-md'],
 [class*='child'][class*='halfY3d-md'] > *,
+[class*='active'][class*='halfY3d-md']:active,
 [class*='hover'][class*='halfY3d-md']:hover {
   animation: halfY3d 5s;
 }
 
 [class*='anime'][class*='halfY3d-lg'],
 [class*='child'][class*='halfY3d-lg'] > *,
+[class*='active'][class*='halfY3d-lg']:active,
 [class*='hover'][class*='halfY3d-lg']:hover {
   animation: halfY3d 10s;
 }
 
 [class*='anime'][class*='halfY3d-wd'],
 [class*='child'][class*='halfY3d-wd'] > *,
+[class*='active'][class*='halfY3d-wd']:active,
 [class*='hover'][class*='halfY3d-wd']:hover {
   animation: halfY3d 60s;
 }
@@ -7108,30 +7232,35 @@ input[type="submit"] {
 /* Animation Classes => fullY3d */
 [class*='anime'][class*='fullY3d-tn'],
 [class*='child'][class*='fullY3d-tn'] > *,
+[class*='active'][class*='fullY3d-tn']:active,
 [class*='hover'][class*='fullY3d-tn']:hover {
   animation: fullY3d 1s;
 }
 
 [class*='anime'][class*='fullY3d-sm'],
 [class*='child'][class*='fullY3d-sm'] > *,
+[class*='active'][class*='fullY3d-sm']:active,
 [class*='hover'][class*='fullY3d-sm']:hover {
   animation: fullY3d 2s;
 }
 
 [class*='anime'][class*='fullY3d-md'],
 [class*='child'][class*='fullY3d-md'] > *,
+[class*='active'][class*='fullY3d-md']:active,
 [class*='hover'][class*='fullY3d-md']:hover {
   animation: fullY3d 5s;
 }
 
 [class*='anime'][class*='fullY3d-lg'],
 [class*='child'][class*='fullY3d-lg'] > *,
+[class*='active'][class*='fullY3d-lg']:active,
 [class*='hover'][class*='fullY3d-lg']:hover {
   animation: fullY3d 10s;
 }
 
 [class*='anime'][class*='fullY3d-wd'],
 [class*='child'][class*='fullY3d-wd'] > *,
+[class*='active'][class*='fullY3d-wd']:active,
 [class*='hover'][class*='fullY3d-wd']:hover {
   animation: fullY3d 60s;
 }
@@ -7139,30 +7268,35 @@ input[type="submit"] {
 /* Animation Classes => quarterZ3d */
 [class*='anime'][class*='quarterZ3d-tn'],
 [class*='child'][class*='quarterZ3d-tn'] > *,
+[class*='active'][class*='quarterZ3d-tn']:active,
 [class*='hover'][class*='quarterZ3d-tn']:hover {
   animation: quarterZ3d 1s;
 }
 
 [class*='anime'][class*='quarterZ3d-sm'],
 [class*='child'][class*='quarterZ3d-sm'] > *,
+[class*='active'][class*='quarterZ3d-sm']:active,
 [class*='hover'][class*='quarterZ3d-sm']:hover {
   animation: quarterZ3d 2s;
 }
 
 [class*='anime'][class*='quarterZ3d-md'],
 [class*='child'][class*='quarterZ3d-md'] > *,
+[class*='active'][class*='quarterZ3d-md']:active,
 [class*='hover'][class*='quarterZ3d-md']:hover {
   animation: quarterZ3d 5s;
 }
 
 [class*='anime'][class*='quarterZ3d-lg'],
 [class*='child'][class*='quarterZ3d-lg'] > *,
+[class*='active'][class*='quarterZ3d-lg']:active,
 [class*='hover'][class*='quarterZ3d-lg']:hover {
   animation: quarterZ3d 10s;
 }
 
 [class*='anime'][class*='quarterZ3d-wd'],
 [class*='child'][class*='quarterZ3d-wd'] > *,
+[class*='active'][class*='quarterZ3d-wd']:active,
 [class*='hover'][class*='quarterZ3d-wd']:hover {
   animation: quarterZ3d 60s;
 }
@@ -7170,30 +7304,35 @@ input[type="submit"] {
 /* Animation Classes => halfZ3d */
 [class*='anime'][class*='halfZ3d-tn'],
 [class*='child'][class*='halfZ3d-tn'] > *,
+[class*='active'][class*='halfZ3d-tn']:active,
 [class*='hover'][class*='halfZ3d-tn']:hover {
   animation: halfZ3d 1s;
 }
 
 [class*='anime'][class*='halfZ3d-sm'],
 [class*='child'][class*='halfZ3d-sm'] > *,
+[class*='active'][class*='halfZ3d-sm']:active,
 [class*='hover'][class*='halfZ3d-sm']:hover {
   animation: halfZ3d 2s;
 }
 
 [class*='anime'][class*='halfZ3d-md'],
 [class*='child'][class*='halfZ3d-md'] > *,
+[class*='active'][class*='halfZ3d-md']:active,
 [class*='hover'][class*='halfZ3d-md']:hover {
   animation: halfZ3d 5s;
 }
 
 [class*='anime'][class*='halfZ3d-lg'],
 [class*='child'][class*='halfZ3d-lg'] > *,
+[class*='active'][class*='halfZ3d-lg']:active,
 [class*='hover'][class*='halfZ3d-lg']:hover {
   animation: halfZ3d 10s;
 }
 
 [class*='anime'][class*='halfZ3d-wd'],
 [class*='child'][class*='halfZ3d-wd'] > *,
+[class*='active'][class*='halfZ3d-wd']:active,
 [class*='hover'][class*='halfZ3d-wd']:hover {
   animation: halfZ3d 60s;
 }
@@ -7201,30 +7340,35 @@ input[type="submit"] {
 /* Animation Classes => fullZ3d */
 [class*='anime'][class*='fullZ3d-tn'],
 [class*='child'][class*='fullZ3d-tn'] > *,
+[class*='active'][class*='fullZ3d-tn']:active,
 [class*='hover'][class*='fullZ3d-tn']:hover {
   animation: fullZ3d 1s;
 }
 
 [class*='anime'][class*='fullZ3d-sm'],
 [class*='child'][class*='fullZ3d-sm'] > *,
+[class*='active'][class*='fullZ3d-sm']:active,
 [class*='hover'][class*='fullZ3d-sm']:hover {
   animation: fullZ3d 2s;
 }
 
 [class*='anime'][class*='fullZ3d-md'],
 [class*='child'][class*='fullZ3d-md'] > *,
+[class*='active'][class*='fullZ3d-md']:active,
 [class*='hover'][class*='fullZ3d-md']:hover {
   animation: fullZ3d 5s;
 }
 
 [class*='anime'][class*='fullZ3d-lg'],
 [class*='child'][class*='fullZ3d-lg'] > *,
+[class*='active'][class*='fullZ3d-lg']:active,
 [class*='hover'][class*='fullZ3d-lg']:hover {
   animation: fullZ3d 10s;
 }
 
 [class*='anime'][class*='fullZ3d-wd'],
 [class*='child'][class*='fullZ3d-wd'] > *,
+[class*='active'][class*='fullZ3d-wd']:active,
 [class*='hover'][class*='fullZ3d-wd']:hover {
   animation: fullZ3d 60s;
 }
@@ -7232,30 +7376,35 @@ input[type="submit"] {
 /* Animation Classes => quarter3d */
 [class*='anime'][class*='quarter3d-tn'],
 [class*='child'][class*='quarter3d-tn'] > *,
+[class*='active'][class*='quarter3d-tn']:active,
 [class*='hover'][class*='quarter3d-tn']:hover {
   animation: quarter3d 1s;
 }
 
 [class*='anime'][class*='quarter3d-sm'],
 [class*='child'][class*='quarter3d-sm'] > *,
+[class*='active'][class*='quarter3d-sm']:active,
 [class*='hover'][class*='quarter3d-sm']:hover {
   animation: quarter3d 2s;
 }
 
 [class*='anime'][class*='quarter3d-md'],
 [class*='child'][class*='quarter3d-md'] > *,
+[class*='active'][class*='quarter3d-md']:active,
 [class*='hover'][class*='quarter3d-md']:hover {
   animation: quarter3d 5s;
 }
 
 [class*='anime'][class*='quarter3d-lg'],
 [class*='child'][class*='quarter3d-lg'] > *,
+[class*='active'][class*='quarter3d-lg']:active,
 [class*='hover'][class*='quarter3d-lg']:hover {
   animation: quarter3d 10s;
 }
 
 [class*='anime'][class*='quarter3d-wd'],
 [class*='child'][class*='quarter3d-wd'] > *,
+[class*='active'][class*='quarter3d-wd']:active,
 [class*='hover'][class*='quarter3d-wd']:hover {
   animation: quarter3d 60s;
 }
@@ -7263,30 +7412,35 @@ input[type="submit"] {
 /* Animation Classes => half3d */
 [class*='anime'][class*='half3d-tn'],
 [class*='child'][class*='half3d-tn'] > *,
+[class*='active'][class*='half3d-tn']:active,
 [class*='hover'][class*='half3d-tn']:hover {
   animation: half3d 1s;
 }
 
 [class*='anime'][class*='half3d-sm'],
 [class*='child'][class*='half3d-sm'] > *,
+[class*='active'][class*='half3d-sm']:active,
 [class*='hover'][class*='half3d-sm']:hover {
   animation: half3d 2s;
 }
 
 [class*='anime'][class*='half3d-md'],
 [class*='child'][class*='half3d-md'] > *,
+[class*='active'][class*='half3d-md']:active,
 [class*='hover'][class*='half3d-md']:hover {
   animation: half3d 5s;
 }
 
 [class*='anime'][class*='half3d-lg'],
 [class*='child'][class*='half3d-lg'] > *,
+[class*='active'][class*='half3d-lg']:active,
 [class*='hover'][class*='half3d-lg']:hover {
   animation: half3d 10s;
 }
 
 [class*='anime'][class*='half3d-wd'],
 [class*='child'][class*='half3d-wd'] > *,
+[class*='active'][class*='half3d-wd']:active,
 [class*='hover'][class*='half3d-wd']:hover {
   animation: half3d 60s;
 }
@@ -7294,30 +7448,35 @@ input[type="submit"] {
 /* Animation Classes => full3d */
 [class*='anime'][class*='full3d-tn'],
 [class*='child'][class*='full3d-tn'] > *,
+[class*='active'][class*='full3d-tn']:active,
 [class*='hover'][class*='full3d-tn']:hover {
   animation: full3d 1s;
 }
 
 [class*='anime'][class*='full3d-sm'],
 [class*='child'][class*='full3d-sm'] > *,
+[class*='active'][class*='full3d-sm']:active,
 [class*='hover'][class*='full3d-sm']:hover {
   animation: full3d 2s;
 }
 
 [class*='anime'][class*='full3d-md'],
 [class*='child'][class*='full3d-md'] > *,
+[class*='active'][class*='full3d-md']:active,
 [class*='hover'][class*='full3d-md']:hover {
   animation: full3d 5s;
 }
 
 [class*='anime'][class*='full3d-lg'],
 [class*='child'][class*='full3d-lg'] > *,
+[class*='active'][class*='full3d-lg']:active,
 [class*='hover'][class*='full3d-lg']:hover {
   animation: full3d 10s;
 }
 
 [class*='anime'][class*='full3d-wd'],
 [class*='child'][class*='full3d-wd'] > *,
+[class*='active'][class*='full3d-wd']:active,
 [class*='hover'][class*='full3d-wd']:hover {
   animation: full3d 60s;
 }
@@ -7325,30 +7484,35 @@ input[type="submit"] {
 /* Animation Classes => flipY */
 [class*='anime'][class*='flipY-tn'],
 [class*='child'][class*='flipY-tn'] > *,
+[class*='active'][class*='flipY-tn']:active,
 [class*='hover'][class*='flipY-tn']:hover {
   animation: flipY 1s;
 }
 
 [class*='anime'][class*='flipY-sm'],
 [class*='child'][class*='flipY-sm'] > *,
+[class*='active'][class*='flipY-sm']:active,
 [class*='hover'][class*='flipY-sm']:hover {
   animation: flipY 2s;
 }
 
 [class*='anime'][class*='flipY-md'],
 [class*='child'][class*='flipY-md'] > *,
+[class*='active'][class*='flipY-md']:active,
 [class*='hover'][class*='flipY-md']:hover {
   animation: flipY 5s;
 }
 
 [class*='anime'][class*='flipY-lg'],
 [class*='child'][class*='flipY-lg'] > *,
+[class*='active'][class*='flipY-lg']:active,
 [class*='hover'][class*='flipY-lg']:hover {
   animation: flipY 10s;
 }
 
 [class*='anime'][class*='flipY-wd'],
 [class*='child'][class*='flipY-wd'] > *,
+[class*='active'][class*='flipY-wd']:active,
 [class*='hover'][class*='flipY-wd']:hover {
   animation: flipY 60s;
 }
@@ -7356,30 +7520,35 @@ input[type="submit"] {
 /* Animation Classes => growX */
 [class*='anime'][class*='growX-tn'],
 [class*='child'][class*='growX-tn'] > *,
+[class*='active'][class*='growX-tn']:active,
 [class*='hover'][class*='growX-tn']:hover {
   animation: growX 1s;
 }
 
 [class*='anime'][class*='growX-sm'],
 [class*='child'][class*='growX-sm'] > *,
+[class*='active'][class*='growX-sm']:active,
 [class*='hover'][class*='growX-sm']:hover {
   animation: growX 2s;
 }
 
 [class*='anime'][class*='growX-md'],
 [class*='child'][class*='growX-md'] > *,
+[class*='active'][class*='growX-md']:active,
 [class*='hover'][class*='growX-md']:hover {
   animation: growX 5s;
 }
 
 [class*='anime'][class*='growX-lg'],
 [class*='child'][class*='growX-lg'] > *,
+[class*='active'][class*='growX-lg']:active,
 [class*='hover'][class*='growX-lg']:hover {
   animation: growX 10s;
 }
 
 [class*='anime'][class*='growX-wd'],
 [class*='child'][class*='growX-wd'] > *,
+[class*='active'][class*='growX-wd']:active,
 [class*='hover'][class*='growX-wd']:hover {
   animation: growX 60s;
 }
@@ -7387,30 +7556,35 @@ input[type="submit"] {
 /* Animation Classes => shrinkX */
 [class*='anime'][class*='shrinkX-tn'],
 [class*='child'][class*='shrinkX-tn'] > *,
+[class*='active'][class*='shrinkX-tn']:active,
 [class*='hover'][class*='shrinkX-tn']:hover {
   animation: shrinkX 1s;
 }
 
 [class*='anime'][class*='shrinkX-sm'],
 [class*='child'][class*='shrinkX-sm'] > *,
+[class*='active'][class*='shrinkX-sm']:active,
 [class*='hover'][class*='shrinkX-sm']:hover {
   animation: shrinkX 2s;
 }
 
 [class*='anime'][class*='shrinkX-md'],
 [class*='child'][class*='shrinkX-md'] > *,
+[class*='active'][class*='shrinkX-md']:active,
 [class*='hover'][class*='shrinkX-md']:hover {
   animation: shrinkX 5s;
 }
 
 [class*='anime'][class*='shrinkX-lg'],
 [class*='child'][class*='shrinkX-lg'] > *,
+[class*='active'][class*='shrinkX-lg']:active,
 [class*='hover'][class*='shrinkX-lg']:hover {
   animation: shrinkX 10s;
 }
 
 [class*='anime'][class*='shrinkX-wd'],
 [class*='child'][class*='shrinkX-wd'] > *,
+[class*='active'][class*='shrinkX-wd']:active,
 [class*='hover'][class*='shrinkX-wd']:hover {
   animation: shrinkX 60s;
 }
@@ -7418,30 +7592,35 @@ input[type="submit"] {
 /* Animation Classes => flipX */
 [class*='anime'][class*='flipX-tn'],
 [class*='child'][class*='flipX-tn'] > *,
+[class*='active'][class*='flipX-tn']:active,
 [class*='hover'][class*='flipX-tn']:hover {
   animation: flipX 1s;
 }
 
 [class*='anime'][class*='flipX-sm'],
 [class*='child'][class*='flipX-sm'] > *,
+[class*='active'][class*='flipX-sm']:active,
 [class*='hover'][class*='flipX-sm']:hover {
   animation: flipX 2s;
 }
 
 [class*='anime'][class*='flipX-md'],
 [class*='child'][class*='flipX-md'] > *,
+[class*='active'][class*='flipX-md']:active,
 [class*='hover'][class*='flipX-md']:hover {
   animation: flipX 5s;
 }
 
 [class*='anime'][class*='flipX-lg'],
 [class*='child'][class*='flipX-lg'] > *,
+[class*='active'][class*='flipX-lg']:active,
 [class*='hover'][class*='flipX-lg']:hover {
   animation: flipX 10s;
 }
 
 [class*='anime'][class*='flipX-wd'],
 [class*='child'][class*='flipX-wd'] > *,
+[class*='active'][class*='flipX-wd']:active,
 [class*='hover'][class*='flipX-wd']:hover {
   animation: flipX 60s;
 }
@@ -7449,30 +7628,35 @@ input[type="submit"] {
 /* Animation Classes => growY */
 [class*='anime'][class*='growY-tn'],
 [class*='child'][class*='growY-tn'] > *,
+[class*='active'][class*='growY-tn']:active,
 [class*='hover'][class*='growY-tn']:hover {
   animation: growY 1s;
 }
 
 [class*='anime'][class*='growY-sm'],
 [class*='child'][class*='growY-sm'] > *,
+[class*='active'][class*='growY-sm']:active,
 [class*='hover'][class*='growY-sm']:hover {
   animation: growY 2s;
 }
 
 [class*='anime'][class*='growY-md'],
 [class*='child'][class*='growY-md'] > *,
+[class*='active'][class*='growY-md']:active,
 [class*='hover'][class*='growY-md']:hover {
   animation: growY 5s;
 }
 
 [class*='anime'][class*='growY-lg'],
 [class*='child'][class*='growY-lg'] > *,
+[class*='active'][class*='growY-lg']:active,
 [class*='hover'][class*='growY-lg']:hover {
   animation: growY 10s;
 }
 
 [class*='anime'][class*='growY-wd'],
 [class*='child'][class*='growY-wd'] > *,
+[class*='active'][class*='growY-wd']:active,
 [class*='hover'][class*='growY-wd']:hover {
   animation: growY 60s;
 }
@@ -7480,30 +7664,35 @@ input[type="submit"] {
 /* Animation Classes => shrinkY */
 [class*='anime'][class*='shrinkY-tn'],
 [class*='child'][class*='shrinkY-tn'] > *,
+[class*='active'][class*='shrinkY-tn']:active,
 [class*='hover'][class*='shrinkY-tn']:hover {
   animation: shrinkY 1s;
 }
 
 [class*='anime'][class*='shrinkY-sm'],
 [class*='child'][class*='shrinkY-sm'] > *,
+[class*='active'][class*='shrinkY-sm']:active,
 [class*='hover'][class*='shrinkY-sm']:hover {
   animation: shrinkY 2s;
 }
 
 [class*='anime'][class*='shrinkY-md'],
 [class*='child'][class*='shrinkY-md'] > *,
+[class*='active'][class*='shrinkY-md']:active,
 [class*='hover'][class*='shrinkY-md']:hover {
   animation: shrinkY 5s;
 }
 
 [class*='anime'][class*='shrinkY-lg'],
 [class*='child'][class*='shrinkY-lg'] > *,
+[class*='active'][class*='shrinkY-lg']:active,
 [class*='hover'][class*='shrinkY-lg']:hover {
   animation: shrinkY 10s;
 }
 
 [class*='anime'][class*='shrinkY-wd'],
 [class*='child'][class*='shrinkY-wd'] > *,
+[class*='active'][class*='shrinkY-wd']:active,
 [class*='hover'][class*='shrinkY-wd']:hover {
   animation: shrinkY 60s;
 }
@@ -7511,30 +7700,35 @@ input[type="submit"] {
 /* Animation Classes => bounceL */
 [class*='anime'][class*='bounceL-tn'],
 [class*='child'][class*='bounceL-tn'] > *,
+[class*='active'][class*='bounceL-tn']:active,
 [class*='hover'][class*='bounceL-tn']:hover {
   animation: bounceL 1s;
 }
 
 [class*='anime'][class*='bounceL-sm'],
 [class*='child'][class*='bounceL-sm'] > *,
+[class*='active'][class*='bounceL-sm']:active,
 [class*='hover'][class*='bounceL-sm']:hover {
   animation: bounceL 2s;
 }
 
 [class*='anime'][class*='bounceL-md'],
 [class*='child'][class*='bounceL-md'] > *,
+[class*='active'][class*='bounceL-md']:active,
 [class*='hover'][class*='bounceL-md']:hover {
   animation: bounceL 5s;
 }
 
 [class*='anime'][class*='bounceL-lg'],
 [class*='child'][class*='bounceL-lg'] > *,
+[class*='active'][class*='bounceL-lg']:active,
 [class*='hover'][class*='bounceL-lg']:hover {
   animation: bounceL 10s;
 }
 
 [class*='anime'][class*='bounceL-wd'],
 [class*='child'][class*='bounceL-wd'] > *,
+[class*='active'][class*='bounceL-wd']:active,
 [class*='hover'][class*='bounceL-wd']:hover {
   animation: bounceL 60s;
 }
@@ -7542,30 +7736,35 @@ input[type="submit"] {
 /* Animation Classes => bounceM */
 [class*='anime'][class*='bounceM-tn'],
 [class*='child'][class*='bounceM-tn'] > *,
+[class*='active'][class*='bounceM-tn']:active,
 [class*='hover'][class*='bounceM-tn']:hover {
   animation: bounceM 1s;
 }
 
 [class*='anime'][class*='bounceM-sm'],
 [class*='child'][class*='bounceM-sm'] > *,
+[class*='active'][class*='bounceM-sm']:active,
 [class*='hover'][class*='bounceM-sm']:hover {
   animation: bounceM 2s;
 }
 
 [class*='anime'][class*='bounceM-md'],
 [class*='child'][class*='bounceM-md'] > *,
+[class*='active'][class*='bounceM-md']:active,
 [class*='hover'][class*='bounceM-md']:hover {
   animation: bounceM 5s;
 }
 
 [class*='anime'][class*='bounceM-lg'],
 [class*='child'][class*='bounceM-lg'] > *,
+[class*='active'][class*='bounceM-lg']:active,
 [class*='hover'][class*='bounceM-lg']:hover {
   animation: bounceM 10s;
 }
 
 [class*='anime'][class*='bounceM-wd'],
 [class*='child'][class*='bounceM-wd'] > *,
+[class*='active'][class*='bounceM-wd']:active,
 [class*='hover'][class*='bounceM-wd']:hover {
   animation: bounceM 60s;
 }
@@ -7573,30 +7772,35 @@ input[type="submit"] {
 /* Animation Classes => bounceS */
 [class*='anime'][class*='bounceS-tn'],
 [class*='child'][class*='bounceS-tn'] > *,
+[class*='active'][class*='bounceS-tn']:active,
 [class*='hover'][class*='bounceS-tn']:hover {
   animation: bounceS 1s;
 }
 
 [class*='anime'][class*='bounceS-sm'],
 [class*='child'][class*='bounceS-sm'] > *,
+[class*='active'][class*='bounceS-sm']:active,
 [class*='hover'][class*='bounceS-sm']:hover {
   animation: bounceS 2s;
 }
 
 [class*='anime'][class*='bounceS-md'],
 [class*='child'][class*='bounceS-md'] > *,
+[class*='active'][class*='bounceS-md']:active,
 [class*='hover'][class*='bounceS-md']:hover {
   animation: bounceS 5s;
 }
 
 [class*='anime'][class*='bounceS-lg'],
 [class*='child'][class*='bounceS-lg'] > *,
+[class*='active'][class*='bounceS-lg']:active,
 [class*='hover'][class*='bounceS-lg']:hover {
   animation: bounceS 10s;
 }
 
 [class*='anime'][class*='bounceS-wd'],
 [class*='child'][class*='bounceS-wd'] > *,
+[class*='active'][class*='bounceS-wd']:active,
 [class*='hover'][class*='bounceS-wd']:hover {
   animation: bounceS 60s;
 }
@@ -7604,30 +7808,35 @@ input[type="submit"] {
 /* Animation Classes => flipperYL */
 [class*='anime'][class*='flipperYL-tn'],
 [class*='child'][class*='flipperYL-tn'] > *,
+[class*='active'][class*='flipperYL-tn']:active,
 [class*='hover'][class*='flipperYL-tn']:hover {
   animation: flipperYL 1s;
 }
 
 [class*='anime'][class*='flipperYL-sm'],
 [class*='child'][class*='flipperYL-sm'] > *,
+[class*='active'][class*='flipperYL-sm']:active,
 [class*='hover'][class*='flipperYL-sm']:hover {
   animation: flipperYL 2s;
 }
 
 [class*='anime'][class*='flipperYL-md'],
 [class*='child'][class*='flipperYL-md'] > *,
+[class*='active'][class*='flipperYL-md']:active,
 [class*='hover'][class*='flipperYL-md']:hover {
   animation: flipperYL 5s;
 }
 
 [class*='anime'][class*='flipperYL-lg'],
 [class*='child'][class*='flipperYL-lg'] > *,
+[class*='active'][class*='flipperYL-lg']:active,
 [class*='hover'][class*='flipperYL-lg']:hover {
   animation: flipperYL 10s;
 }
 
 [class*='anime'][class*='flipperYL-wd'],
 [class*='child'][class*='flipperYL-wd'] > *,
+[class*='active'][class*='flipperYL-wd']:active,
 [class*='hover'][class*='flipperYL-wd']:hover {
   animation: flipperYL 60s;
 }
@@ -7635,30 +7844,35 @@ input[type="submit"] {
 /* Animation Classes => flipperYM */
 [class*='anime'][class*='flipperYM-tn'],
 [class*='child'][class*='flipperYM-tn'] > *,
+[class*='active'][class*='flipperYM-tn']:active,
 [class*='hover'][class*='flipperYM-tn']:hover {
   animation: flipperYM 1s;
 }
 
 [class*='anime'][class*='flipperYM-sm'],
 [class*='child'][class*='flipperYM-sm'] > *,
+[class*='active'][class*='flipperYM-sm']:active,
 [class*='hover'][class*='flipperYM-sm']:hover {
   animation: flipperYM 2s;
 }
 
 [class*='anime'][class*='flipperYM-md'],
 [class*='child'][class*='flipperYM-md'] > *,
+[class*='active'][class*='flipperYM-md']:active,
 [class*='hover'][class*='flipperYM-md']:hover {
   animation: flipperYM 5s;
 }
 
 [class*='anime'][class*='flipperYM-lg'],
 [class*='child'][class*='flipperYM-lg'] > *,
+[class*='active'][class*='flipperYM-lg']:active,
 [class*='hover'][class*='flipperYM-lg']:hover {
   animation: flipperYM 10s;
 }
 
 [class*='anime'][class*='flipperYM-wd'],
 [class*='child'][class*='flipperYM-wd'] > *,
+[class*='active'][class*='flipperYM-wd']:active,
 [class*='hover'][class*='flipperYM-wd']:hover {
   animation: flipperYM 60s;
 }
@@ -7666,30 +7880,35 @@ input[type="submit"] {
 /* Animation Classes => flipperYS */
 [class*='anime'][class*='flipperYS-tn'],
 [class*='child'][class*='flipperYS-tn'] > *,
+[class*='active'][class*='flipperYS-tn']:active,
 [class*='hover'][class*='flipperYS-tn']:hover {
   animation: flipperYS 1s;
 }
 
 [class*='anime'][class*='flipperYS-sm'],
 [class*='child'][class*='flipperYS-sm'] > *,
+[class*='active'][class*='flipperYS-sm']:active,
 [class*='hover'][class*='flipperYS-sm']:hover {
   animation: flipperYS 2s;
 }
 
 [class*='anime'][class*='flipperYS-md'],
 [class*='child'][class*='flipperYS-md'] > *,
+[class*='active'][class*='flipperYS-md']:active,
 [class*='hover'][class*='flipperYS-md']:hover {
   animation: flipperYS 5s;
 }
 
 [class*='anime'][class*='flipperYS-lg'],
 [class*='child'][class*='flipperYS-lg'] > *,
+[class*='active'][class*='flipperYS-lg']:active,
 [class*='hover'][class*='flipperYS-lg']:hover {
   animation: flipperYS 10s;
 }
 
 [class*='anime'][class*='flipperYS-wd'],
 [class*='child'][class*='flipperYS-wd'] > *,
+[class*='active'][class*='flipperYS-wd']:active,
 [class*='hover'][class*='flipperYS-wd']:hover {
   animation: flipperYS 60s;
 }
@@ -7697,30 +7916,35 @@ input[type="submit"] {
 /* Animation Classes => fallYL */
 [class*='anime'][class*='fallYL-tn'],
 [class*='child'][class*='fallYL-tn'] > *,
+[class*='active'][class*='fallYL-tn']:active,
 [class*='hover'][class*='fallYL-tn']:hover {
   animation: fallYL 1s;
 }
 
 [class*='anime'][class*='fallYL-sm'],
 [class*='child'][class*='fallYL-sm'] > *,
+[class*='active'][class*='fallYL-sm']:active,
 [class*='hover'][class*='fallYL-sm']:hover {
   animation: fallYL 2s;
 }
 
 [class*='anime'][class*='fallYL-md'],
 [class*='child'][class*='fallYL-md'] > *,
+[class*='active'][class*='fallYL-md']:active,
 [class*='hover'][class*='fallYL-md']:hover {
   animation: fallYL 5s;
 }
 
 [class*='anime'][class*='fallYL-lg'],
 [class*='child'][class*='fallYL-lg'] > *,
+[class*='active'][class*='fallYL-lg']:active,
 [class*='hover'][class*='fallYL-lg']:hover {
   animation: fallYL 10s;
 }
 
 [class*='anime'][class*='fallYL-wd'],
 [class*='child'][class*='fallYL-wd'] > *,
+[class*='active'][class*='fallYL-wd']:active,
 [class*='hover'][class*='fallYL-wd']:hover {
   animation: fallYL 60s;
 }
@@ -7728,30 +7952,35 @@ input[type="submit"] {
 /* Animation Classes => fallYM */
 [class*='anime'][class*='fallYM-tn'],
 [class*='child'][class*='fallYM-tn'] > *,
+[class*='active'][class*='fallYM-tn']:active,
 [class*='hover'][class*='fallYM-tn']:hover {
   animation: fallYM 1s;
 }
 
 [class*='anime'][class*='fallYM-sm'],
 [class*='child'][class*='fallYM-sm'] > *,
+[class*='active'][class*='fallYM-sm']:active,
 [class*='hover'][class*='fallYM-sm']:hover {
   animation: fallYM 2s;
 }
 
 [class*='anime'][class*='fallYM-md'],
 [class*='child'][class*='fallYM-md'] > *,
+[class*='active'][class*='fallYM-md']:active,
 [class*='hover'][class*='fallYM-md']:hover {
   animation: fallYM 5s;
 }
 
 [class*='anime'][class*='fallYM-lg'],
 [class*='child'][class*='fallYM-lg'] > *,
+[class*='active'][class*='fallYM-lg']:active,
 [class*='hover'][class*='fallYM-lg']:hover {
   animation: fallYM 10s;
 }
 
 [class*='anime'][class*='fallYM-wd'],
 [class*='child'][class*='fallYM-wd'] > *,
+[class*='active'][class*='fallYM-wd']:active,
 [class*='hover'][class*='fallYM-wd']:hover {
   animation: fallYM 60s;
 }
@@ -7759,30 +7988,35 @@ input[type="submit"] {
 /* Animation Classes => fallYS */
 [class*='anime'][class*='fallYS-tn'],
 [class*='child'][class*='fallYS-tn'] > *,
+[class*='active'][class*='fallYS-tn']:active,
 [class*='hover'][class*='fallYS-tn']:hover {
   animation: fallYS 1s;
 }
 
 [class*='anime'][class*='fallYS-sm'],
 [class*='child'][class*='fallYS-sm'] > *,
+[class*='active'][class*='fallYS-sm']:active,
 [class*='hover'][class*='fallYS-sm']:hover {
   animation: fallYS 2s;
 }
 
 [class*='anime'][class*='fallYS-md'],
 [class*='child'][class*='fallYS-md'] > *,
+[class*='active'][class*='fallYS-md']:active,
 [class*='hover'][class*='fallYS-md']:hover {
   animation: fallYS 5s;
 }
 
 [class*='anime'][class*='fallYS-lg'],
 [class*='child'][class*='fallYS-lg'] > *,
+[class*='active'][class*='fallYS-lg']:active,
 [class*='hover'][class*='fallYS-lg']:hover {
   animation: fallYS 10s;
 }
 
 [class*='anime'][class*='fallYS-wd'],
 [class*='child'][class*='fallYS-wd'] > *,
+[class*='active'][class*='fallYS-wd']:active,
 [class*='hover'][class*='fallYS-wd']:hover {
   animation: fallYS 60s;
 }
@@ -7790,30 +8024,35 @@ input[type="submit"] {
 /* Animation Classes => flipperXL */
 [class*='anime'][class*='flipperXL-tn'],
 [class*='child'][class*='flipperXL-tn'] > *,
+[class*='active'][class*='flipperXL-tn']:active,
 [class*='hover'][class*='flipperXL-tn']:hover {
   animation: flipperXL 1s;
 }
 
 [class*='anime'][class*='flipperXL-sm'],
 [class*='child'][class*='flipperXL-sm'] > *,
+[class*='active'][class*='flipperXL-sm']:active,
 [class*='hover'][class*='flipperXL-sm']:hover {
   animation: flipperXL 2s;
 }
 
 [class*='anime'][class*='flipperXL-md'],
 [class*='child'][class*='flipperXL-md'] > *,
+[class*='active'][class*='flipperXL-md']:active,
 [class*='hover'][class*='flipperXL-md']:hover {
   animation: flipperXL 5s;
 }
 
 [class*='anime'][class*='flipperXL-lg'],
 [class*='child'][class*='flipperXL-lg'] > *,
+[class*='active'][class*='flipperXL-lg']:active,
 [class*='hover'][class*='flipperXL-lg']:hover {
   animation: flipperXL 10s;
 }
 
 [class*='anime'][class*='flipperXL-wd'],
 [class*='child'][class*='flipperXL-wd'] > *,
+[class*='active'][class*='flipperXL-wd']:active,
 [class*='hover'][class*='flipperXL-wd']:hover {
   animation: flipperXL 60s;
 }
@@ -7821,30 +8060,35 @@ input[type="submit"] {
 /* Animation Classes => flipperXM */
 [class*='anime'][class*='flipperXM-tn'],
 [class*='child'][class*='flipperXM-tn'] > *,
+[class*='active'][class*='flipperXM-tn']:active,
 [class*='hover'][class*='flipperXM-tn']:hover {
   animation: flipperXM 1s;
 }
 
 [class*='anime'][class*='flipperXM-sm'],
 [class*='child'][class*='flipperXM-sm'] > *,
+[class*='active'][class*='flipperXM-sm']:active,
 [class*='hover'][class*='flipperXM-sm']:hover {
   animation: flipperXM 2s;
 }
 
 [class*='anime'][class*='flipperXM-md'],
 [class*='child'][class*='flipperXM-md'] > *,
+[class*='active'][class*='flipperXM-md']:active,
 [class*='hover'][class*='flipperXM-md']:hover {
   animation: flipperXM 5s;
 }
 
 [class*='anime'][class*='flipperXM-lg'],
 [class*='child'][class*='flipperXM-lg'] > *,
+[class*='active'][class*='flipperXM-lg']:active,
 [class*='hover'][class*='flipperXM-lg']:hover {
   animation: flipperXM 10s;
 }
 
 [class*='anime'][class*='flipperXM-wd'],
 [class*='child'][class*='flipperXM-wd'] > *,
+[class*='active'][class*='flipperXM-wd']:active,
 [class*='hover'][class*='flipperXM-wd']:hover {
   animation: flipperXM 60s;
 }
@@ -7852,30 +8096,35 @@ input[type="submit"] {
 /* Animation Classes => flipperXS */
 [class*='anime'][class*='flipperXS-tn'],
 [class*='child'][class*='flipperXS-tn'] > *,
+[class*='active'][class*='flipperXS-tn']:active,
 [class*='hover'][class*='flipperXS-tn']:hover {
   animation: flipperXS 1s;
 }
 
 [class*='anime'][class*='flipperXS-sm'],
 [class*='child'][class*='flipperXS-sm'] > *,
+[class*='active'][class*='flipperXS-sm']:active,
 [class*='hover'][class*='flipperXS-sm']:hover {
   animation: flipperXS 2s;
 }
 
 [class*='anime'][class*='flipperXS-md'],
 [class*='child'][class*='flipperXS-md'] > *,
+[class*='active'][class*='flipperXS-md']:active,
 [class*='hover'][class*='flipperXS-md']:hover {
   animation: flipperXS 5s;
 }
 
 [class*='anime'][class*='flipperXS-lg'],
 [class*='child'][class*='flipperXS-lg'] > *,
+[class*='active'][class*='flipperXS-lg']:active,
 [class*='hover'][class*='flipperXS-lg']:hover {
   animation: flipperXS 10s;
 }
 
 [class*='anime'][class*='flipperXS-wd'],
 [class*='child'][class*='flipperXS-wd'] > *,
+[class*='active'][class*='flipperXS-wd']:active,
 [class*='hover'][class*='flipperXS-wd']:hover {
   animation: flipperXS 60s;
 }
@@ -7883,30 +8132,35 @@ input[type="submit"] {
 /* Animation Classes => grow */
 [class*='anime'][class*='grow-tn'],
 [class*='child'][class*='grow-tn'] > *,
+[class*='active'][class*='grow-tn']:active,
 [class*='hover'][class*='grow-tn']:hover {
   animation: grow 1s;
 }
 
 [class*='anime'][class*='grow-sm'],
 [class*='child'][class*='grow-sm'] > *,
+[class*='active'][class*='grow-sm']:active,
 [class*='hover'][class*='grow-sm']:hover {
   animation: grow 2s;
 }
 
 [class*='anime'][class*='grow-md'],
 [class*='child'][class*='grow-md'] > *,
+[class*='active'][class*='grow-md']:active,
 [class*='hover'][class*='grow-md']:hover {
   animation: grow 5s;
 }
 
 [class*='anime'][class*='grow-lg'],
 [class*='child'][class*='grow-lg'] > *,
+[class*='active'][class*='grow-lg']:active,
 [class*='hover'][class*='grow-lg']:hover {
   animation: grow 10s;
 }
 
 [class*='anime'][class*='grow-wd'],
 [class*='child'][class*='grow-wd'] > *,
+[class*='active'][class*='grow-wd']:active,
 [class*='hover'][class*='grow-wd']:hover {
   animation: grow 60s;
 }
@@ -7914,30 +8168,35 @@ input[type="submit"] {
 /* Animation Classes => openYS */
 [class*='anime'][class*='openYS-tn'],
 [class*='child'][class*='openYS-tn'] > *,
+[class*='active'][class*='openYS-tn']:active,
 [class*='hover'][class*='openYS-tn']:hover {
   animation: openYS 1s;
 }
 
 [class*='anime'][class*='openYS-sm'],
 [class*='child'][class*='openYS-sm'] > *,
+[class*='active'][class*='openYS-sm']:active,
 [class*='hover'][class*='openYS-sm']:hover {
   animation: openYS 2s;
 }
 
 [class*='anime'][class*='openYS-md'],
 [class*='child'][class*='openYS-md'] > *,
+[class*='active'][class*='openYS-md']:active,
 [class*='hover'][class*='openYS-md']:hover {
   animation: openYS 5s;
 }
 
 [class*='anime'][class*='openYS-lg'],
 [class*='child'][class*='openYS-lg'] > *,
+[class*='active'][class*='openYS-lg']:active,
 [class*='hover'][class*='openYS-lg']:hover {
   animation: openYS 10s;
 }
 
 [class*='anime'][class*='openYS-wd'],
 [class*='child'][class*='openYS-wd'] > *,
+[class*='active'][class*='openYS-wd']:active,
 [class*='hover'][class*='openYS-wd']:hover {
   animation: openYS 60s;
 }
@@ -7945,30 +8204,35 @@ input[type="submit"] {
 /* Animation Classes => openYM */
 [class*='anime'][class*='openYM-tn'],
 [class*='child'][class*='openYM-tn'] > *,
+[class*='active'][class*='openYM-tn']:active,
 [class*='hover'][class*='openYM-tn']:hover {
   animation: openYM 1s;
 }
 
 [class*='anime'][class*='openYM-sm'],
 [class*='child'][class*='openYM-sm'] > *,
+[class*='active'][class*='openYM-sm']:active,
 [class*='hover'][class*='openYM-sm']:hover {
   animation: openYM 2s;
 }
 
 [class*='anime'][class*='openYM-md'],
 [class*='child'][class*='openYM-md'] > *,
+[class*='active'][class*='openYM-md']:active,
 [class*='hover'][class*='openYM-md']:hover {
   animation: openYM 5s;
 }
 
 [class*='anime'][class*='openYM-lg'],
 [class*='child'][class*='openYM-lg'] > *,
+[class*='active'][class*='openYM-lg']:active,
 [class*='hover'][class*='openYM-lg']:hover {
   animation: openYM 10s;
 }
 
 [class*='anime'][class*='openYM-wd'],
 [class*='child'][class*='openYM-wd'] > *,
+[class*='active'][class*='openYM-wd']:active,
 [class*='hover'][class*='openYM-wd']:hover {
   animation: openYM 60s;
 }
@@ -7976,30 +8240,35 @@ input[type="submit"] {
 /* Animation Classes => openYL */
 [class*='anime'][class*='openYL-tn'],
 [class*='child'][class*='openYL-tn'] > *,
+[class*='active'][class*='openYL-tn']:active,
 [class*='hover'][class*='openYL-tn']:hover {
   animation: openYL 1s;
 }
 
 [class*='anime'][class*='openYL-sm'],
 [class*='child'][class*='openYL-sm'] > *,
+[class*='active'][class*='openYL-sm']:active,
 [class*='hover'][class*='openYL-sm']:hover {
   animation: openYL 2s;
 }
 
 [class*='anime'][class*='openYL-md'],
 [class*='child'][class*='openYL-md'] > *,
+[class*='active'][class*='openYL-md']:active,
 [class*='hover'][class*='openYL-md']:hover {
   animation: openYL 5s;
 }
 
 [class*='anime'][class*='openYL-lg'],
 [class*='child'][class*='openYL-lg'] > *,
+[class*='active'][class*='openYL-lg']:active,
 [class*='hover'][class*='openYL-lg']:hover {
   animation: openYL 10s;
 }
 
 [class*='anime'][class*='openYL-wd'],
 [class*='child'][class*='openYL-wd'] > *,
+[class*='active'][class*='openYL-wd']:active,
 [class*='hover'][class*='openYL-wd']:hover {
   animation: openYL 60s;
 }
@@ -8007,30 +8276,35 @@ input[type="submit"] {
 /* Animation Classes => fallXS */
 [class*='anime'][class*='fallXS-tn'],
 [class*='child'][class*='fallXS-tn'] > *,
+[class*='active'][class*='fallXS-tn']:active,
 [class*='hover'][class*='fallXS-tn']:hover {
   animation: fallXS 1s;
 }
 
 [class*='anime'][class*='fallXS-sm'],
 [class*='child'][class*='fallXS-sm'] > *,
+[class*='active'][class*='fallXS-sm']:active,
 [class*='hover'][class*='fallXS-sm']:hover {
   animation: fallXS 2s;
 }
 
 [class*='anime'][class*='fallXS-md'],
 [class*='child'][class*='fallXS-md'] > *,
+[class*='active'][class*='fallXS-md']:active,
 [class*='hover'][class*='fallXS-md']:hover {
   animation: fallXS 5s;
 }
 
 [class*='anime'][class*='fallXS-lg'],
 [class*='child'][class*='fallXS-lg'] > *,
+[class*='active'][class*='fallXS-lg']:active,
 [class*='hover'][class*='fallXS-lg']:hover {
   animation: fallXS 10s;
 }
 
 [class*='anime'][class*='fallXS-wd'],
 [class*='child'][class*='fallXS-wd'] > *,
+[class*='active'][class*='fallXS-wd']:active,
 [class*='hover'][class*='fallXS-wd']:hover {
   animation: fallXS 60s;
 }
@@ -8038,30 +8312,35 @@ input[type="submit"] {
 /* Animation Classes => fallXM */
 [class*='anime'][class*='fallXM-tn'],
 [class*='child'][class*='fallXM-tn'] > *,
+[class*='active'][class*='fallXM-tn']:active,
 [class*='hover'][class*='fallXM-tn']:hover {
   animation: fallXM 1s;
 }
 
 [class*='anime'][class*='fallXM-sm'],
 [class*='child'][class*='fallXM-sm'] > *,
+[class*='active'][class*='fallXM-sm']:active,
 [class*='hover'][class*='fallXM-sm']:hover {
   animation: fallXM 2s;
 }
 
 [class*='anime'][class*='fallXM-md'],
 [class*='child'][class*='fallXM-md'] > *,
+[class*='active'][class*='fallXM-md']:active,
 [class*='hover'][class*='fallXM-md']:hover {
   animation: fallXM 5s;
 }
 
 [class*='anime'][class*='fallXM-lg'],
 [class*='child'][class*='fallXM-lg'] > *,
+[class*='active'][class*='fallXM-lg']:active,
 [class*='hover'][class*='fallXM-lg']:hover {
   animation: fallXM 10s;
 }
 
 [class*='anime'][class*='fallXM-wd'],
 [class*='child'][class*='fallXM-wd'] > *,
+[class*='active'][class*='fallXM-wd']:active,
 [class*='hover'][class*='fallXM-wd']:hover {
   animation: fallXM 60s;
 }
@@ -8069,30 +8348,35 @@ input[type="submit"] {
 /* Animation Classes => fallXL */
 [class*='anime'][class*='fallXL-tn'],
 [class*='child'][class*='fallXL-tn'] > *,
+[class*='active'][class*='fallXL-tn']:active,
 [class*='hover'][class*='fallXL-tn']:hover {
   animation: fallXL 1s;
 }
 
 [class*='anime'][class*='fallXL-sm'],
 [class*='child'][class*='fallXL-sm'] > *,
+[class*='active'][class*='fallXL-sm']:active,
 [class*='hover'][class*='fallXL-sm']:hover {
   animation: fallXL 2s;
 }
 
 [class*='anime'][class*='fallXL-md'],
 [class*='child'][class*='fallXL-md'] > *,
+[class*='active'][class*='fallXL-md']:active,
 [class*='hover'][class*='fallXL-md']:hover {
   animation: fallXL 5s;
 }
 
 [class*='anime'][class*='fallXL-lg'],
 [class*='child'][class*='fallXL-lg'] > *,
+[class*='active'][class*='fallXL-lg']:active,
 [class*='hover'][class*='fallXL-lg']:hover {
   animation: fallXL 10s;
 }
 
 [class*='anime'][class*='fallXL-wd'],
 [class*='child'][class*='fallXL-wd'] > *,
+[class*='active'][class*='fallXL-wd']:active,
 [class*='hover'][class*='fallXL-wd']:hover {
   animation: fallXL 60s;
 }
@@ -8100,30 +8384,35 @@ input[type="submit"] {
 /* Animation Classes => openXS */
 [class*='anime'][class*='openXS-tn'],
 [class*='child'][class*='openXS-tn'] > *,
+[class*='active'][class*='openXS-tn']:active,
 [class*='hover'][class*='openXS-tn']:hover {
   animation: openXS 1s;
 }
 
 [class*='anime'][class*='openXS-sm'],
 [class*='child'][class*='openXS-sm'] > *,
+[class*='active'][class*='openXS-sm']:active,
 [class*='hover'][class*='openXS-sm']:hover {
   animation: openXS 2s;
 }
 
 [class*='anime'][class*='openXS-md'],
 [class*='child'][class*='openXS-md'] > *,
+[class*='active'][class*='openXS-md']:active,
 [class*='hover'][class*='openXS-md']:hover {
   animation: openXS 5s;
 }
 
 [class*='anime'][class*='openXS-lg'],
 [class*='child'][class*='openXS-lg'] > *,
+[class*='active'][class*='openXS-lg']:active,
 [class*='hover'][class*='openXS-lg']:hover {
   animation: openXS 10s;
 }
 
 [class*='anime'][class*='openXS-wd'],
 [class*='child'][class*='openXS-wd'] > *,
+[class*='active'][class*='openXS-wd']:active,
 [class*='hover'][class*='openXS-wd']:hover {
   animation: openXS 60s;
 }
@@ -8131,30 +8420,35 @@ input[type="submit"] {
 /* Animation Classes => openXM */
 [class*='anime'][class*='openXM-tn'],
 [class*='child'][class*='openXM-tn'] > *,
+[class*='active'][class*='openXM-tn']:active,
 [class*='hover'][class*='openXM-tn']:hover {
   animation: openXM 1s;
 }
 
 [class*='anime'][class*='openXM-sm'],
 [class*='child'][class*='openXM-sm'] > *,
+[class*='active'][class*='openXM-sm']:active,
 [class*='hover'][class*='openXM-sm']:hover {
   animation: openXM 2s;
 }
 
 [class*='anime'][class*='openXM-md'],
 [class*='child'][class*='openXM-md'] > *,
+[class*='active'][class*='openXM-md']:active,
 [class*='hover'][class*='openXM-md']:hover {
   animation: openXM 5s;
 }
 
 [class*='anime'][class*='openXM-lg'],
 [class*='child'][class*='openXM-lg'] > *,
+[class*='active'][class*='openXM-lg']:active,
 [class*='hover'][class*='openXM-lg']:hover {
   animation: openXM 10s;
 }
 
 [class*='anime'][class*='openXM-wd'],
 [class*='child'][class*='openXM-wd'] > *,
+[class*='active'][class*='openXM-wd']:active,
 [class*='hover'][class*='openXM-wd']:hover {
   animation: openXM 60s;
 }
@@ -8162,30 +8456,35 @@ input[type="submit"] {
 /* Animation Classes => openXL */
 [class*='anime'][class*='openXL-tn'],
 [class*='child'][class*='openXL-tn'] > *,
+[class*='active'][class*='openXL-tn']:active,
 [class*='hover'][class*='openXL-tn']:hover {
   animation: openXL 1s;
 }
 
 [class*='anime'][class*='openXL-sm'],
 [class*='child'][class*='openXL-sm'] > *,
+[class*='active'][class*='openXL-sm']:active,
 [class*='hover'][class*='openXL-sm']:hover {
   animation: openXL 2s;
 }
 
 [class*='anime'][class*='openXL-md'],
 [class*='child'][class*='openXL-md'] > *,
+[class*='active'][class*='openXL-md']:active,
 [class*='hover'][class*='openXL-md']:hover {
   animation: openXL 5s;
 }
 
 [class*='anime'][class*='openXL-lg'],
 [class*='child'][class*='openXL-lg'] > *,
+[class*='active'][class*='openXL-lg']:active,
 [class*='hover'][class*='openXL-lg']:hover {
   animation: openXL 10s;
 }
 
 [class*='anime'][class*='openXL-wd'],
 [class*='child'][class*='openXL-wd'] > *,
+[class*='active'][class*='openXL-wd']:active,
 [class*='hover'][class*='openXL-wd']:hover {
   animation: openXL 60s;
 }
@@ -8193,30 +8492,35 @@ input[type="submit"] {
 /* Animation Classes => shrinkL */
 [class*='anime'][class*='shrinkL-tn'],
 [class*='child'][class*='shrinkL-tn'] > *,
+[class*='active'][class*='shrinkL-tn']:active,
 [class*='hover'][class*='shrinkL-tn']:hover {
   animation: shrinkL 1s;
 }
 
 [class*='anime'][class*='shrinkL-sm'],
 [class*='child'][class*='shrinkL-sm'] > *,
+[class*='active'][class*='shrinkL-sm']:active,
 [class*='hover'][class*='shrinkL-sm']:hover {
   animation: shrinkL 2s;
 }
 
 [class*='anime'][class*='shrinkL-md'],
 [class*='child'][class*='shrinkL-md'] > *,
+[class*='active'][class*='shrinkL-md']:active,
 [class*='hover'][class*='shrinkL-md']:hover {
   animation: shrinkL 5s;
 }
 
 [class*='anime'][class*='shrinkL-lg'],
 [class*='child'][class*='shrinkL-lg'] > *,
+[class*='active'][class*='shrinkL-lg']:active,
 [class*='hover'][class*='shrinkL-lg']:hover {
   animation: shrinkL 10s;
 }
 
 [class*='anime'][class*='shrinkL-wd'],
 [class*='child'][class*='shrinkL-wd'] > *,
+[class*='active'][class*='shrinkL-wd']:active,
 [class*='hover'][class*='shrinkL-wd']:hover {
   animation: shrinkL 60s;
 }
@@ -8224,30 +8528,35 @@ input[type="submit"] {
 /* Animation Classes => shrinkM */
 [class*='anime'][class*='shrinkM-tn'],
 [class*='child'][class*='shrinkM-tn'] > *,
+[class*='active'][class*='shrinkM-tn']:active,
 [class*='hover'][class*='shrinkM-tn']:hover {
   animation: shrinkM 1s;
 }
 
 [class*='anime'][class*='shrinkM-sm'],
 [class*='child'][class*='shrinkM-sm'] > *,
+[class*='active'][class*='shrinkM-sm']:active,
 [class*='hover'][class*='shrinkM-sm']:hover {
   animation: shrinkM 2s;
 }
 
 [class*='anime'][class*='shrinkM-md'],
 [class*='child'][class*='shrinkM-md'] > *,
+[class*='active'][class*='shrinkM-md']:active,
 [class*='hover'][class*='shrinkM-md']:hover {
   animation: shrinkM 5s;
 }
 
 [class*='anime'][class*='shrinkM-lg'],
 [class*='child'][class*='shrinkM-lg'] > *,
+[class*='active'][class*='shrinkM-lg']:active,
 [class*='hover'][class*='shrinkM-lg']:hover {
   animation: shrinkM 10s;
 }
 
 [class*='anime'][class*='shrinkM-wd'],
 [class*='child'][class*='shrinkM-wd'] > *,
+[class*='active'][class*='shrinkM-wd']:active,
 [class*='hover'][class*='shrinkM-wd']:hover {
   animation: shrinkM 60s;
 }
@@ -8255,30 +8564,35 @@ input[type="submit"] {
 /* Animation Classes => shrinkS */
 [class*='anime'][class*='shrinkS-tn'],
 [class*='child'][class*='shrinkS-tn'] > *,
+[class*='active'][class*='shrinkS-tn']:active,
 [class*='hover'][class*='shrinkS-tn']:hover {
   animation: shrinkS 1s;
 }
 
 [class*='anime'][class*='shrinkS-sm'],
 [class*='child'][class*='shrinkS-sm'] > *,
+[class*='active'][class*='shrinkS-sm']:active,
 [class*='hover'][class*='shrinkS-sm']:hover {
   animation: shrinkS 2s;
 }
 
 [class*='anime'][class*='shrinkS-md'],
 [class*='child'][class*='shrinkS-md'] > *,
+[class*='active'][class*='shrinkS-md']:active,
 [class*='hover'][class*='shrinkS-md']:hover {
   animation: shrinkS 5s;
 }
 
 [class*='anime'][class*='shrinkS-lg'],
 [class*='child'][class*='shrinkS-lg'] > *,
+[class*='active'][class*='shrinkS-lg']:active,
 [class*='hover'][class*='shrinkS-lg']:hover {
   animation: shrinkS 10s;
 }
 
 [class*='anime'][class*='shrinkS-wd'],
 [class*='child'][class*='shrinkS-wd'] > *,
+[class*='active'][class*='shrinkS-wd']:active,
 [class*='hover'][class*='shrinkS-wd']:hover {
   animation: shrinkS 60s;
 }
@@ -8286,30 +8600,35 @@ input[type="submit"] {
 /* Animation Classes => twistR */
 [class*='anime'][class*='twistR-tn'],
 [class*='child'][class*='twistR-tn'] > *,
+[class*='active'][class*='twistR-tn']:active,
 [class*='hover'][class*='twistR-tn']:hover {
   animation: twistR 1s;
 }
 
 [class*='anime'][class*='twistR-sm'],
 [class*='child'][class*='twistR-sm'] > *,
+[class*='active'][class*='twistR-sm']:active,
 [class*='hover'][class*='twistR-sm']:hover {
   animation: twistR 2s;
 }
 
 [class*='anime'][class*='twistR-md'],
 [class*='child'][class*='twistR-md'] > *,
+[class*='active'][class*='twistR-md']:active,
 [class*='hover'][class*='twistR-md']:hover {
   animation: twistR 5s;
 }
 
 [class*='anime'][class*='twistR-lg'],
 [class*='child'][class*='twistR-lg'] > *,
+[class*='active'][class*='twistR-lg']:active,
 [class*='hover'][class*='twistR-lg']:hover {
   animation: twistR 10s;
 }
 
 [class*='anime'][class*='twistR-wd'],
 [class*='child'][class*='twistR-wd'] > *,
+[class*='active'][class*='twistR-wd']:active,
 [class*='hover'][class*='twistR-wd']:hover {
   animation: twistR 60s;
 }
@@ -8317,30 +8636,35 @@ input[type="submit"] {
 /* Animation Classes => twistL */
 [class*='anime'][class*='twistL-tn'],
 [class*='child'][class*='twistL-tn'] > *,
+[class*='active'][class*='twistL-tn']:active,
 [class*='hover'][class*='twistL-tn']:hover {
   animation: twistL 1s;
 }
 
 [class*='anime'][class*='twistL-sm'],
 [class*='child'][class*='twistL-sm'] > *,
+[class*='active'][class*='twistL-sm']:active,
 [class*='hover'][class*='twistL-sm']:hover {
   animation: twistL 2s;
 }
 
 [class*='anime'][class*='twistL-md'],
 [class*='child'][class*='twistL-md'] > *,
+[class*='active'][class*='twistL-md']:active,
 [class*='hover'][class*='twistL-md']:hover {
   animation: twistL 5s;
 }
 
 [class*='anime'][class*='twistL-lg'],
 [class*='child'][class*='twistL-lg'] > *,
+[class*='active'][class*='twistL-lg']:active,
 [class*='hover'][class*='twistL-lg']:hover {
   animation: twistL 10s;
 }
 
 [class*='anime'][class*='twistL-wd'],
 [class*='child'][class*='twistL-wd'] > *,
+[class*='active'][class*='twistL-wd']:active,
 [class*='hover'][class*='twistL-wd']:hover {
   animation: twistL 60s;
 }
@@ -8348,30 +8672,35 @@ input[type="submit"] {
 /* Animation Classes => torsionR */
 [class*='anime'][class*='torsionR-tn'],
 [class*='child'][class*='torsionR-tn'] > *,
+[class*='active'][class*='torsionR-tn']:active,
 [class*='hover'][class*='torsionR-tn']:hover {
   animation: torsionR 1s;
 }
 
 [class*='anime'][class*='torsionR-sm'],
 [class*='child'][class*='torsionR-sm'] > *,
+[class*='active'][class*='torsionR-sm']:active,
 [class*='hover'][class*='torsionR-sm']:hover {
   animation: torsionR 2s;
 }
 
 [class*='anime'][class*='torsionR-md'],
 [class*='child'][class*='torsionR-md'] > *,
+[class*='active'][class*='torsionR-md']:active,
 [class*='hover'][class*='torsionR-md']:hover {
   animation: torsionR 5s;
 }
 
 [class*='anime'][class*='torsionR-lg'],
 [class*='child'][class*='torsionR-lg'] > *,
+[class*='active'][class*='torsionR-lg']:active,
 [class*='hover'][class*='torsionR-lg']:hover {
   animation: torsionR 10s;
 }
 
 [class*='anime'][class*='torsionR-wd'],
 [class*='child'][class*='torsionR-wd'] > *,
+[class*='active'][class*='torsionR-wd']:active,
 [class*='hover'][class*='torsionR-wd']:hover {
   animation: torsionR 60s;
 }
@@ -8379,30 +8708,35 @@ input[type="submit"] {
 /* Animation Classes => torsionL */
 [class*='anime'][class*='torsionL-tn'],
 [class*='child'][class*='torsionL-tn'] > *,
+[class*='active'][class*='torsionL-tn']:active,
 [class*='hover'][class*='torsionL-tn']:hover {
   animation: torsionL 1s;
 }
 
 [class*='anime'][class*='torsionL-sm'],
 [class*='child'][class*='torsionL-sm'] > *,
+[class*='active'][class*='torsionL-sm']:active,
 [class*='hover'][class*='torsionL-sm']:hover {
   animation: torsionL 2s;
 }
 
 [class*='anime'][class*='torsionL-md'],
 [class*='child'][class*='torsionL-md'] > *,
+[class*='active'][class*='torsionL-md']:active,
 [class*='hover'][class*='torsionL-md']:hover {
   animation: torsionL 5s;
 }
 
 [class*='anime'][class*='torsionL-lg'],
 [class*='child'][class*='torsionL-lg'] > *,
+[class*='active'][class*='torsionL-lg']:active,
 [class*='hover'][class*='torsionL-lg']:hover {
   animation: torsionL 10s;
 }
 
 [class*='anime'][class*='torsionL-wd'],
 [class*='child'][class*='torsionL-wd'] > *,
+[class*='active'][class*='torsionL-wd']:active,
 [class*='hover'][class*='torsionL-wd']:hover {
   animation: torsionL 60s;
 }
@@ -8410,30 +8744,35 @@ input[type="submit"] {
 /* Animation Classes => twistT */
 [class*='anime'][class*='twistT-tn'],
 [class*='child'][class*='twistT-tn'] > *,
+[class*='active'][class*='twistT-tn']:active,
 [class*='hover'][class*='twistT-tn']:hover {
   animation: twistT 1s;
 }
 
 [class*='anime'][class*='twistT-sm'],
 [class*='child'][class*='twistT-sm'] > *,
+[class*='active'][class*='twistT-sm']:active,
 [class*='hover'][class*='twistT-sm']:hover {
   animation: twistT 2s;
 }
 
 [class*='anime'][class*='twistT-md'],
 [class*='child'][class*='twistT-md'] > *,
+[class*='active'][class*='twistT-md']:active,
 [class*='hover'][class*='twistT-md']:hover {
   animation: twistT 5s;
 }
 
 [class*='anime'][class*='twistT-lg'],
 [class*='child'][class*='twistT-lg'] > *,
+[class*='active'][class*='twistT-lg']:active,
 [class*='hover'][class*='twistT-lg']:hover {
   animation: twistT 10s;
 }
 
 [class*='anime'][class*='twistT-wd'],
 [class*='child'][class*='twistT-wd'] > *,
+[class*='active'][class*='twistT-wd']:active,
 [class*='hover'][class*='twistT-wd']:hover {
   animation: twistT 60s;
 }
@@ -8441,30 +8780,35 @@ input[type="submit"] {
 /* Animation Classes => twistB */
 [class*='anime'][class*='twistB-tn'],
 [class*='child'][class*='twistB-tn'] > *,
+[class*='active'][class*='twistB-tn']:active,
 [class*='hover'][class*='twistB-tn']:hover {
   animation: twistB 1s;
 }
 
 [class*='anime'][class*='twistB-sm'],
 [class*='child'][class*='twistB-sm'] > *,
+[class*='active'][class*='twistB-sm']:active,
 [class*='hover'][class*='twistB-sm']:hover {
   animation: twistB 2s;
 }
 
 [class*='anime'][class*='twistB-md'],
 [class*='child'][class*='twistB-md'] > *,
+[class*='active'][class*='twistB-md']:active,
 [class*='hover'][class*='twistB-md']:hover {
   animation: twistB 5s;
 }
 
 [class*='anime'][class*='twistB-lg'],
 [class*='child'][class*='twistB-lg'] > *,
+[class*='active'][class*='twistB-lg']:active,
 [class*='hover'][class*='twistB-lg']:hover {
   animation: twistB 10s;
 }
 
 [class*='anime'][class*='twistB-wd'],
 [class*='child'][class*='twistB-wd'] > *,
+[class*='active'][class*='twistB-wd']:active,
 [class*='hover'][class*='twistB-wd']:hover {
   animation: twistB 60s;
 }
@@ -8472,30 +8816,35 @@ input[type="submit"] {
 /* Animation Classes => torsionT */
 [class*='anime'][class*='torsionT-tn'],
 [class*='child'][class*='torsionT-tn'] > *,
+[class*='active'][class*='torsionT-tn']:active,
 [class*='hover'][class*='torsionT-tn']:hover {
   animation: torsionT 1s;
 }
 
 [class*='anime'][class*='torsionT-sm'],
 [class*='child'][class*='torsionT-sm'] > *,
+[class*='active'][class*='torsionT-sm']:active,
 [class*='hover'][class*='torsionT-sm']:hover {
   animation: torsionT 2s;
 }
 
 [class*='anime'][class*='torsionT-md'],
 [class*='child'][class*='torsionT-md'] > *,
+[class*='active'][class*='torsionT-md']:active,
 [class*='hover'][class*='torsionT-md']:hover {
   animation: torsionT 5s;
 }
 
 [class*='anime'][class*='torsionT-lg'],
 [class*='child'][class*='torsionT-lg'] > *,
+[class*='active'][class*='torsionT-lg']:active,
 [class*='hover'][class*='torsionT-lg']:hover {
   animation: torsionT 10s;
 }
 
 [class*='anime'][class*='torsionT-wd'],
 [class*='child'][class*='torsionT-wd'] > *,
+[class*='active'][class*='torsionT-wd']:active,
 [class*='hover'][class*='torsionT-wd']:hover {
   animation: torsionT 60s;
 }
@@ -8503,30 +8852,35 @@ input[type="submit"] {
 /* Animation Classes => torsionB */
 [class*='anime'][class*='torsionB-tn'],
 [class*='child'][class*='torsionB-tn'] > *,
+[class*='active'][class*='torsionB-tn']:active,
 [class*='hover'][class*='torsionB-tn']:hover {
   animation: torsionB 1s;
 }
 
 [class*='anime'][class*='torsionB-sm'],
 [class*='child'][class*='torsionB-sm'] > *,
+[class*='active'][class*='torsionB-sm']:active,
 [class*='hover'][class*='torsionB-sm']:hover {
   animation: torsionB 2s;
 }
 
 [class*='anime'][class*='torsionB-md'],
 [class*='child'][class*='torsionB-md'] > *,
+[class*='active'][class*='torsionB-md']:active,
 [class*='hover'][class*='torsionB-md']:hover {
   animation: torsionB 5s;
 }
 
 [class*='anime'][class*='torsionB-lg'],
 [class*='child'][class*='torsionB-lg'] > *,
+[class*='active'][class*='torsionB-lg']:active,
 [class*='hover'][class*='torsionB-lg']:hover {
   animation: torsionB 10s;
 }
 
 [class*='anime'][class*='torsionB-wd'],
 [class*='child'][class*='torsionB-wd'] > *,
+[class*='active'][class*='torsionB-wd']:active,
 [class*='hover'][class*='torsionB-wd']:hover {
   animation: torsionB 60s;
 }
@@ -8534,30 +8888,35 @@ input[type="submit"] {
 /* Animation Classes => twisterR */
 [class*='anime'][class*='twisterR-tn'],
 [class*='child'][class*='twisterR-tn'] > *,
+[class*='active'][class*='twisterR-tn']:active,
 [class*='hover'][class*='twisterR-tn']:hover {
   animation: twisterR 1s;
 }
 
 [class*='anime'][class*='twisterR-sm'],
 [class*='child'][class*='twisterR-sm'] > *,
+[class*='active'][class*='twisterR-sm']:active,
 [class*='hover'][class*='twisterR-sm']:hover {
   animation: twisterR 2s;
 }
 
 [class*='anime'][class*='twisterR-md'],
 [class*='child'][class*='twisterR-md'] > *,
+[class*='active'][class*='twisterR-md']:active,
 [class*='hover'][class*='twisterR-md']:hover {
   animation: twisterR 5s;
 }
 
 [class*='anime'][class*='twisterR-lg'],
 [class*='child'][class*='twisterR-lg'] > *,
+[class*='active'][class*='twisterR-lg']:active,
 [class*='hover'][class*='twisterR-lg']:hover {
   animation: twisterR 10s;
 }
 
 [class*='anime'][class*='twisterR-wd'],
 [class*='child'][class*='twisterR-wd'] > *,
+[class*='active'][class*='twisterR-wd']:active,
 [class*='hover'][class*='twisterR-wd']:hover {
   animation: twisterR 60s;
 }
@@ -8565,30 +8924,35 @@ input[type="submit"] {
 /* Animation Classes => twisterL */
 [class*='anime'][class*='twisterL-tn'],
 [class*='child'][class*='twisterL-tn'] > *,
+[class*='active'][class*='twisterL-tn']:active,
 [class*='hover'][class*='twisterL-tn']:hover {
   animation: twisterL 1s;
 }
 
 [class*='anime'][class*='twisterL-sm'],
 [class*='child'][class*='twisterL-sm'] > *,
+[class*='active'][class*='twisterL-sm']:active,
 [class*='hover'][class*='twisterL-sm']:hover {
   animation: twisterL 2s;
 }
 
 [class*='anime'][class*='twisterL-md'],
 [class*='child'][class*='twisterL-md'] > *,
+[class*='active'][class*='twisterL-md']:active,
 [class*='hover'][class*='twisterL-md']:hover {
   animation: twisterL 5s;
 }
 
 [class*='anime'][class*='twisterL-lg'],
 [class*='child'][class*='twisterL-lg'] > *,
+[class*='active'][class*='twisterL-lg']:active,
 [class*='hover'][class*='twisterL-lg']:hover {
   animation: twisterL 10s;
 }
 
 [class*='anime'][class*='twisterL-wd'],
 [class*='child'][class*='twisterL-wd'] > *,
+[class*='active'][class*='twisterL-wd']:active,
 [class*='hover'][class*='twisterL-wd']:hover {
   animation: twisterL 60s;
 }
@@ -8596,30 +8960,35 @@ input[type="submit"] {
 /* Animation Classes => twisterT */
 [class*='anime'][class*='twisterT-tn'],
 [class*='child'][class*='twisterT-tn'] > *,
+[class*='active'][class*='twisterT-tn']:active,
 [class*='hover'][class*='twisterT-tn']:hover {
   animation: twisterT 1s;
 }
 
 [class*='anime'][class*='twisterT-sm'],
 [class*='child'][class*='twisterT-sm'] > *,
+[class*='active'][class*='twisterT-sm']:active,
 [class*='hover'][class*='twisterT-sm']:hover {
   animation: twisterT 2s;
 }
 
 [class*='anime'][class*='twisterT-md'],
 [class*='child'][class*='twisterT-md'] > *,
+[class*='active'][class*='twisterT-md']:active,
 [class*='hover'][class*='twisterT-md']:hover {
   animation: twisterT 5s;
 }
 
 [class*='anime'][class*='twisterT-lg'],
 [class*='child'][class*='twisterT-lg'] > *,
+[class*='active'][class*='twisterT-lg']:active,
 [class*='hover'][class*='twisterT-lg']:hover {
   animation: twisterT 10s;
 }
 
 [class*='anime'][class*='twisterT-wd'],
 [class*='child'][class*='twisterT-wd'] > *,
+[class*='active'][class*='twisterT-wd']:active,
 [class*='hover'][class*='twisterT-wd']:hover {
   animation: twisterT 60s;
 }
@@ -8627,30 +8996,35 @@ input[type="submit"] {
 /* Animation Classes => twisterB */
 [class*='anime'][class*='twisterB-tn'],
 [class*='child'][class*='twisterB-tn'] > *,
+[class*='active'][class*='twisterB-tn']:active,
 [class*='hover'][class*='twisterB-tn']:hover {
   animation: twisterB 1s;
 }
 
 [class*='anime'][class*='twisterB-sm'],
 [class*='child'][class*='twisterB-sm'] > *,
+[class*='active'][class*='twisterB-sm']:active,
 [class*='hover'][class*='twisterB-sm']:hover {
   animation: twisterB 2s;
 }
 
 [class*='anime'][class*='twisterB-md'],
 [class*='child'][class*='twisterB-md'] > *,
+[class*='active'][class*='twisterB-md']:active,
 [class*='hover'][class*='twisterB-md']:hover {
   animation: twisterB 5s;
 }
 
 [class*='anime'][class*='twisterB-lg'],
 [class*='child'][class*='twisterB-lg'] > *,
+[class*='active'][class*='twisterB-lg']:active,
 [class*='hover'][class*='twisterB-lg']:hover {
   animation: twisterB 10s;
 }
 
 [class*='anime'][class*='twisterB-wd'],
 [class*='child'][class*='twisterB-wd'] > *,
+[class*='active'][class*='twisterB-wd']:active,
 [class*='hover'][class*='twisterB-wd']:hover {
   animation: twisterB 60s;
 }
@@ -8658,30 +9032,35 @@ input[type="submit"] {
 /* Animation Classes => cycloneR */
 [class*='anime'][class*='cycloneR-tn'],
 [class*='child'][class*='cycloneR-tn'] > *,
+[class*='active'][class*='cycloneR-tn']:active,
 [class*='hover'][class*='cycloneR-tn']:hover {
   animation: cycloneR 1s;
 }
 
 [class*='anime'][class*='cycloneR-sm'],
 [class*='child'][class*='cycloneR-sm'] > *,
+[class*='active'][class*='cycloneR-sm']:active,
 [class*='hover'][class*='cycloneR-sm']:hover {
   animation: cycloneR 2s;
 }
 
 [class*='anime'][class*='cycloneR-md'],
 [class*='child'][class*='cycloneR-md'] > *,
+[class*='active'][class*='cycloneR-md']:active,
 [class*='hover'][class*='cycloneR-md']:hover {
   animation: cycloneR 5s;
 }
 
 [class*='anime'][class*='cycloneR-lg'],
 [class*='child'][class*='cycloneR-lg'] > *,
+[class*='active'][class*='cycloneR-lg']:active,
 [class*='hover'][class*='cycloneR-lg']:hover {
   animation: cycloneR 10s;
 }
 
 [class*='anime'][class*='cycloneR-wd'],
 [class*='child'][class*='cycloneR-wd'] > *,
+[class*='active'][class*='cycloneR-wd']:active,
 [class*='hover'][class*='cycloneR-wd']:hover {
   animation: cycloneR 60s;
 }
@@ -8689,30 +9068,35 @@ input[type="submit"] {
 /* Animation Classes => cycloneL */
 [class*='anime'][class*='cycloneL-tn'],
 [class*='child'][class*='cycloneL-tn'] > *,
+[class*='active'][class*='cycloneL-tn']:active,
 [class*='hover'][class*='cycloneL-tn']:hover {
   animation: cycloneL 1s;
 }
 
 [class*='anime'][class*='cycloneL-sm'],
 [class*='child'][class*='cycloneL-sm'] > *,
+[class*='active'][class*='cycloneL-sm']:active,
 [class*='hover'][class*='cycloneL-sm']:hover {
   animation: cycloneL 2s;
 }
 
 [class*='anime'][class*='cycloneL-md'],
 [class*='child'][class*='cycloneL-md'] > *,
+[class*='active'][class*='cycloneL-md']:active,
 [class*='hover'][class*='cycloneL-md']:hover {
   animation: cycloneL 5s;
 }
 
 [class*='anime'][class*='cycloneL-lg'],
 [class*='child'][class*='cycloneL-lg'] > *,
+[class*='active'][class*='cycloneL-lg']:active,
 [class*='hover'][class*='cycloneL-lg']:hover {
   animation: cycloneL 10s;
 }
 
 [class*='anime'][class*='cycloneL-wd'],
 [class*='child'][class*='cycloneL-wd'] > *,
+[class*='active'][class*='cycloneL-wd']:active,
 [class*='hover'][class*='cycloneL-wd']:hover {
   animation: cycloneL 60s;
 }
@@ -8720,30 +9104,35 @@ input[type="submit"] {
 /* Animation Classes => cycloneT */
 [class*='anime'][class*='cycloneT-tn'],
 [class*='child'][class*='cycloneT-tn'] > *,
+[class*='active'][class*='cycloneT-tn']:active,
 [class*='hover'][class*='cycloneT-tn']:hover {
   animation: cycloneT 1s;
 }
 
 [class*='anime'][class*='cycloneT-sm'],
 [class*='child'][class*='cycloneT-sm'] > *,
+[class*='active'][class*='cycloneT-sm']:active,
 [class*='hover'][class*='cycloneT-sm']:hover {
   animation: cycloneT 2s;
 }
 
 [class*='anime'][class*='cycloneT-md'],
 [class*='child'][class*='cycloneT-md'] > *,
+[class*='active'][class*='cycloneT-md']:active,
 [class*='hover'][class*='cycloneT-md']:hover {
   animation: cycloneT 5s;
 }
 
 [class*='anime'][class*='cycloneT-lg'],
 [class*='child'][class*='cycloneT-lg'] > *,
+[class*='active'][class*='cycloneT-lg']:active,
 [class*='hover'][class*='cycloneT-lg']:hover {
   animation: cycloneT 10s;
 }
 
 [class*='anime'][class*='cycloneT-wd'],
 [class*='child'][class*='cycloneT-wd'] > *,
+[class*='active'][class*='cycloneT-wd']:active,
 [class*='hover'][class*='cycloneT-wd']:hover {
   animation: cycloneT 60s;
 }
@@ -8751,30 +9140,35 @@ input[type="submit"] {
 /* Animation Classes => cycloneB */
 [class*='anime'][class*='cycloneB-tn'],
 [class*='child'][class*='cycloneB-tn'] > *,
+[class*='active'][class*='cycloneB-tn']:active,
 [class*='hover'][class*='cycloneB-tn']:hover {
   animation: cycloneB 1s;
 }
 
 [class*='anime'][class*='cycloneB-sm'],
 [class*='child'][class*='cycloneB-sm'] > *,
+[class*='active'][class*='cycloneB-sm']:active,
 [class*='hover'][class*='cycloneB-sm']:hover {
   animation: cycloneB 2s;
 }
 
 [class*='anime'][class*='cycloneB-md'],
 [class*='child'][class*='cycloneB-md'] > *,
+[class*='active'][class*='cycloneB-md']:active,
 [class*='hover'][class*='cycloneB-md']:hover {
   animation: cycloneB 5s;
 }
 
 [class*='anime'][class*='cycloneB-lg'],
 [class*='child'][class*='cycloneB-lg'] > *,
+[class*='active'][class*='cycloneB-lg']:active,
 [class*='hover'][class*='cycloneB-lg']:hover {
   animation: cycloneB 10s;
 }
 
 [class*='anime'][class*='cycloneB-wd'],
 [class*='child'][class*='cycloneB-wd'] > *,
+[class*='active'][class*='cycloneB-wd']:active,
 [class*='hover'][class*='cycloneB-wd']:hover {
   animation: cycloneB 60s;
 }
@@ -8782,30 +9176,35 @@ input[type="submit"] {
 /* Animation Classes => slipR */
 [class*='anime'][class*='slipR-tn'],
 [class*='child'][class*='slipR-tn'] > *,
+[class*='active'][class*='slipR-tn']:active,
 [class*='hover'][class*='slipR-tn']:hover {
   animation: slipR 1s;
 }
 
 [class*='anime'][class*='slipR-sm'],
 [class*='child'][class*='slipR-sm'] > *,
+[class*='active'][class*='slipR-sm']:active,
 [class*='hover'][class*='slipR-sm']:hover {
   animation: slipR 2s;
 }
 
 [class*='anime'][class*='slipR-md'],
 [class*='child'][class*='slipR-md'] > *,
+[class*='active'][class*='slipR-md']:active,
 [class*='hover'][class*='slipR-md']:hover {
   animation: slipR 5s;
 }
 
 [class*='anime'][class*='slipR-lg'],
 [class*='child'][class*='slipR-lg'] > *,
+[class*='active'][class*='slipR-lg']:active,
 [class*='hover'][class*='slipR-lg']:hover {
   animation: slipR 10s;
 }
 
 [class*='anime'][class*='slipR-wd'],
 [class*='child'][class*='slipR-wd'] > *,
+[class*='active'][class*='slipR-wd']:active,
 [class*='hover'][class*='slipR-wd']:hover {
   animation: slipR 60s;
 }
@@ -8813,30 +9212,35 @@ input[type="submit"] {
 /* Animation Classes => slipL */
 [class*='anime'][class*='slipL-tn'],
 [class*='child'][class*='slipL-tn'] > *,
+[class*='active'][class*='slipL-tn']:active,
 [class*='hover'][class*='slipL-tn']:hover {
   animation: slipL 1s;
 }
 
 [class*='anime'][class*='slipL-sm'],
 [class*='child'][class*='slipL-sm'] > *,
+[class*='active'][class*='slipL-sm']:active,
 [class*='hover'][class*='slipL-sm']:hover {
   animation: slipL 2s;
 }
 
 [class*='anime'][class*='slipL-md'],
 [class*='child'][class*='slipL-md'] > *,
+[class*='active'][class*='slipL-md']:active,
 [class*='hover'][class*='slipL-md']:hover {
   animation: slipL 5s;
 }
 
 [class*='anime'][class*='slipL-lg'],
 [class*='child'][class*='slipL-lg'] > *,
+[class*='active'][class*='slipL-lg']:active,
 [class*='hover'][class*='slipL-lg']:hover {
   animation: slipL 10s;
 }
 
 [class*='anime'][class*='slipL-wd'],
 [class*='child'][class*='slipL-wd'] > *,
+[class*='active'][class*='slipL-wd']:active,
 [class*='hover'][class*='slipL-wd']:hover {
   animation: slipL 60s;
 }
@@ -8844,30 +9248,35 @@ input[type="submit"] {
 /* Animation Classes => slideR */
 [class*='anime'][class*='slideR-tn'],
 [class*='child'][class*='slideR-tn'] > *,
+[class*='active'][class*='slideR-tn']:active,
 [class*='hover'][class*='slideR-tn']:hover {
   animation: slideR 1s;
 }
 
 [class*='anime'][class*='slideR-sm'],
 [class*='child'][class*='slideR-sm'] > *,
+[class*='active'][class*='slideR-sm']:active,
 [class*='hover'][class*='slideR-sm']:hover {
   animation: slideR 2s;
 }
 
 [class*='anime'][class*='slideR-md'],
 [class*='child'][class*='slideR-md'] > *,
+[class*='active'][class*='slideR-md']:active,
 [class*='hover'][class*='slideR-md']:hover {
   animation: slideR 5s;
 }
 
 [class*='anime'][class*='slideR-lg'],
 [class*='child'][class*='slideR-lg'] > *,
+[class*='active'][class*='slideR-lg']:active,
 [class*='hover'][class*='slideR-lg']:hover {
   animation: slideR 10s;
 }
 
 [class*='anime'][class*='slideR-wd'],
 [class*='child'][class*='slideR-wd'] > *,
+[class*='active'][class*='slideR-wd']:active,
 [class*='hover'][class*='slideR-wd']:hover {
   animation: slideR 60s;
 }
@@ -8875,30 +9284,35 @@ input[type="submit"] {
 /* Animation Classes => slideL */
 [class*='anime'][class*='slideL-tn'],
 [class*='child'][class*='slideL-tn'] > *,
+[class*='active'][class*='slideL-tn']:active,
 [class*='hover'][class*='slideL-tn']:hover {
   animation: slideL 1s;
 }
 
 [class*='anime'][class*='slideL-sm'],
 [class*='child'][class*='slideL-sm'] > *,
+[class*='active'][class*='slideL-sm']:active,
 [class*='hover'][class*='slideL-sm']:hover {
   animation: slideL 2s;
 }
 
 [class*='anime'][class*='slideL-md'],
 [class*='child'][class*='slideL-md'] > *,
+[class*='active'][class*='slideL-md']:active,
 [class*='hover'][class*='slideL-md']:hover {
   animation: slideL 5s;
 }
 
 [class*='anime'][class*='slideL-lg'],
 [class*='child'][class*='slideL-lg'] > *,
+[class*='active'][class*='slideL-lg']:active,
 [class*='hover'][class*='slideL-lg']:hover {
   animation: slideL 10s;
 }
 
 [class*='anime'][class*='slideL-wd'],
 [class*='child'][class*='slideL-wd'] > *,
+[class*='active'][class*='slideL-wd']:active,
 [class*='hover'][class*='slideL-wd']:hover {
   animation: slideL 60s;
 }
@@ -8906,30 +9320,35 @@ input[type="submit"] {
 /* Animation Classes => slipT */
 [class*='anime'][class*='slipT-tn'],
 [class*='child'][class*='slipT-tn'] > *,
+[class*='active'][class*='slipT-tn']:active,
 [class*='hover'][class*='slipT-tn']:hover {
   animation: slipT 1s;
 }
 
 [class*='anime'][class*='slipT-sm'],
 [class*='child'][class*='slipT-sm'] > *,
+[class*='active'][class*='slipT-sm']:active,
 [class*='hover'][class*='slipT-sm']:hover {
   animation: slipT 2s;
 }
 
 [class*='anime'][class*='slipT-md'],
 [class*='child'][class*='slipT-md'] > *,
+[class*='active'][class*='slipT-md']:active,
 [class*='hover'][class*='slipT-md']:hover {
   animation: slipT 5s;
 }
 
 [class*='anime'][class*='slipT-lg'],
 [class*='child'][class*='slipT-lg'] > *,
+[class*='active'][class*='slipT-lg']:active,
 [class*='hover'][class*='slipT-lg']:hover {
   animation: slipT 10s;
 }
 
 [class*='anime'][class*='slipT-wd'],
 [class*='child'][class*='slipT-wd'] > *,
+[class*='active'][class*='slipT-wd']:active,
 [class*='hover'][class*='slipT-wd']:hover {
   animation: slipT 60s;
 }
@@ -8937,30 +9356,35 @@ input[type="submit"] {
 /* Animation Classes => slipB */
 [class*='anime'][class*='slipB-tn'],
 [class*='child'][class*='slipB-tn'] > *,
+[class*='active'][class*='slipB-tn']:active,
 [class*='hover'][class*='slipB-tn']:hover {
   animation: slipB 1s;
 }
 
 [class*='anime'][class*='slipB-sm'],
 [class*='child'][class*='slipB-sm'] > *,
+[class*='active'][class*='slipB-sm']:active,
 [class*='hover'][class*='slipB-sm']:hover {
   animation: slipB 2s;
 }
 
 [class*='anime'][class*='slipB-md'],
 [class*='child'][class*='slipB-md'] > *,
+[class*='active'][class*='slipB-md']:active,
 [class*='hover'][class*='slipB-md']:hover {
   animation: slipB 5s;
 }
 
 [class*='anime'][class*='slipB-lg'],
 [class*='child'][class*='slipB-lg'] > *,
+[class*='active'][class*='slipB-lg']:active,
 [class*='hover'][class*='slipB-lg']:hover {
   animation: slipB 10s;
 }
 
 [class*='anime'][class*='slipB-wd'],
 [class*='child'][class*='slipB-wd'] > *,
+[class*='active'][class*='slipB-wd']:active,
 [class*='hover'][class*='slipB-wd']:hover {
   animation: slipB 60s;
 }
@@ -8968,30 +9392,35 @@ input[type="submit"] {
 /* Animation Classes => slideT */
 [class*='anime'][class*='slideT-tn'],
 [class*='child'][class*='slideT-tn'] > *,
+[class*='active'][class*='slideT-tn']:active,
 [class*='hover'][class*='slideT-tn']:hover {
   animation: slideT 1s;
 }
 
 [class*='anime'][class*='slideT-sm'],
 [class*='child'][class*='slideT-sm'] > *,
+[class*='active'][class*='slideT-sm']:active,
 [class*='hover'][class*='slideT-sm']:hover {
   animation: slideT 2s;
 }
 
 [class*='anime'][class*='slideT-md'],
 [class*='child'][class*='slideT-md'] > *,
+[class*='active'][class*='slideT-md']:active,
 [class*='hover'][class*='slideT-md']:hover {
   animation: slideT 5s;
 }
 
 [class*='anime'][class*='slideT-lg'],
 [class*='child'][class*='slideT-lg'] > *,
+[class*='active'][class*='slideT-lg']:active,
 [class*='hover'][class*='slideT-lg']:hover {
   animation: slideT 10s;
 }
 
 [class*='anime'][class*='slideT-wd'],
 [class*='child'][class*='slideT-wd'] > *,
+[class*='active'][class*='slideT-wd']:active,
 [class*='hover'][class*='slideT-wd']:hover {
   animation: slideT 60s;
 }
@@ -8999,30 +9428,35 @@ input[type="submit"] {
 /* Animation Classes => slideB */
 [class*='anime'][class*='slideB-tn'],
 [class*='child'][class*='slideB-tn'] > *,
+[class*='active'][class*='slideB-tn']:active,
 [class*='hover'][class*='slideB-tn']:hover {
   animation: slideB 1s;
 }
 
 [class*='anime'][class*='slideB-sm'],
 [class*='child'][class*='slideB-sm'] > *,
+[class*='active'][class*='slideB-sm']:active,
 [class*='hover'][class*='slideB-sm']:hover {
   animation: slideB 2s;
 }
 
 [class*='anime'][class*='slideB-md'],
 [class*='child'][class*='slideB-md'] > *,
+[class*='active'][class*='slideB-md']:active,
 [class*='hover'][class*='slideB-md']:hover {
   animation: slideB 5s;
 }
 
 [class*='anime'][class*='slideB-lg'],
 [class*='child'][class*='slideB-lg'] > *,
+[class*='active'][class*='slideB-lg']:active,
 [class*='hover'][class*='slideB-lg']:hover {
   animation: slideB 10s;
 }
 
 [class*='anime'][class*='slideB-wd'],
 [class*='child'][class*='slideB-wd'] > *,
+[class*='active'][class*='slideB-wd']:active,
 [class*='hover'][class*='slideB-wd']:hover {
   animation: slideB 60s;
 }
@@ -9030,30 +9464,35 @@ input[type="submit"] {
 /* Animation Classes => slipTR */
 [class*='anime'][class*='slipTR-tn'],
 [class*='child'][class*='slipTR-tn'] > *,
+[class*='active'][class*='slipTR-tn']:active,
 [class*='hover'][class*='slipTR-tn']:hover {
   animation: slipTR 1s;
 }
 
 [class*='anime'][class*='slipTR-sm'],
 [class*='child'][class*='slipTR-sm'] > *,
+[class*='active'][class*='slipTR-sm']:active,
 [class*='hover'][class*='slipTR-sm']:hover {
   animation: slipTR 2s;
 }
 
 [class*='anime'][class*='slipTR-md'],
 [class*='child'][class*='slipTR-md'] > *,
+[class*='active'][class*='slipTR-md']:active,
 [class*='hover'][class*='slipTR-md']:hover {
   animation: slipTR 5s;
 }
 
 [class*='anime'][class*='slipTR-lg'],
 [class*='child'][class*='slipTR-lg'] > *,
+[class*='active'][class*='slipTR-lg']:active,
 [class*='hover'][class*='slipTR-lg']:hover {
   animation: slipTR 10s;
 }
 
 [class*='anime'][class*='slipTR-wd'],
 [class*='child'][class*='slipTR-wd'] > *,
+[class*='active'][class*='slipTR-wd']:active,
 [class*='hover'][class*='slipTR-wd']:hover {
   animation: slipTR 60s;
 }
@@ -9061,30 +9500,35 @@ input[type="submit"] {
 /* Animation Classes => slipBR */
 [class*='anime'][class*='slipBR-tn'],
 [class*='child'][class*='slipBR-tn'] > *,
+[class*='active'][class*='slipBR-tn']:active,
 [class*='hover'][class*='slipBR-tn']:hover {
   animation: slipBR 1s;
 }
 
 [class*='anime'][class*='slipBR-sm'],
 [class*='child'][class*='slipBR-sm'] > *,
+[class*='active'][class*='slipBR-sm']:active,
 [class*='hover'][class*='slipBR-sm']:hover {
   animation: slipBR 2s;
 }
 
 [class*='anime'][class*='slipBR-md'],
 [class*='child'][class*='slipBR-md'] > *,
+[class*='active'][class*='slipBR-md']:active,
 [class*='hover'][class*='slipBR-md']:hover {
   animation: slipBR 5s;
 }
 
 [class*='anime'][class*='slipBR-lg'],
 [class*='child'][class*='slipBR-lg'] > *,
+[class*='active'][class*='slipBR-lg']:active,
 [class*='hover'][class*='slipBR-lg']:hover {
   animation: slipBR 10s;
 }
 
 [class*='anime'][class*='slipBR-wd'],
 [class*='child'][class*='slipBR-wd'] > *,
+[class*='active'][class*='slipBR-wd']:active,
 [class*='hover'][class*='slipBR-wd']:hover {
   animation: slipBR 60s;
 }
@@ -9092,30 +9536,35 @@ input[type="submit"] {
 /* Animation Classes => slipTL */
 [class*='anime'][class*='slipTL-tn'],
 [class*='child'][class*='slipTL-tn'] > *,
+[class*='active'][class*='slipTL-tn']:active,
 [class*='hover'][class*='slipTL-tn']:hover {
   animation: slipTL 1s;
 }
 
 [class*='anime'][class*='slipTL-sm'],
 [class*='child'][class*='slipTL-sm'] > *,
+[class*='active'][class*='slipTL-sm']:active,
 [class*='hover'][class*='slipTL-sm']:hover {
   animation: slipTL 2s;
 }
 
 [class*='anime'][class*='slipTL-md'],
 [class*='child'][class*='slipTL-md'] > *,
+[class*='active'][class*='slipTL-md']:active,
 [class*='hover'][class*='slipTL-md']:hover {
   animation: slipTL 5s;
 }
 
 [class*='anime'][class*='slipTL-lg'],
 [class*='child'][class*='slipTL-lg'] > *,
+[class*='active'][class*='slipTL-lg']:active,
 [class*='hover'][class*='slipTL-lg']:hover {
   animation: slipTL 10s;
 }
 
 [class*='anime'][class*='slipTL-wd'],
 [class*='child'][class*='slipTL-wd'] > *,
+[class*='active'][class*='slipTL-wd']:active,
 [class*='hover'][class*='slipTL-wd']:hover {
   animation: slipTL 60s;
 }
@@ -9123,30 +9572,35 @@ input[type="submit"] {
 /* Animation Classes => slipBL */
 [class*='anime'][class*='slipBL-tn'],
 [class*='child'][class*='slipBL-tn'] > *,
+[class*='active'][class*='slipBL-tn']:active,
 [class*='hover'][class*='slipBL-tn']:hover {
   animation: slipBL 1s;
 }
 
 [class*='anime'][class*='slipBL-sm'],
 [class*='child'][class*='slipBL-sm'] > *,
+[class*='active'][class*='slipBL-sm']:active,
 [class*='hover'][class*='slipBL-sm']:hover {
   animation: slipBL 2s;
 }
 
 [class*='anime'][class*='slipBL-md'],
 [class*='child'][class*='slipBL-md'] > *,
+[class*='active'][class*='slipBL-md']:active,
 [class*='hover'][class*='slipBL-md']:hover {
   animation: slipBL 5s;
 }
 
 [class*='anime'][class*='slipBL-lg'],
 [class*='child'][class*='slipBL-lg'] > *,
+[class*='active'][class*='slipBL-lg']:active,
 [class*='hover'][class*='slipBL-lg']:hover {
   animation: slipBL 10s;
 }
 
 [class*='anime'][class*='slipBL-wd'],
 [class*='child'][class*='slipBL-wd'] > *,
+[class*='active'][class*='slipBL-wd']:active,
 [class*='hover'][class*='slipBL-wd']:hover {
   animation: slipBL 60s;
 }
@@ -9154,30 +9608,35 @@ input[type="submit"] {
 /* Animation Classes => slideTR */
 [class*='anime'][class*='slideTR-tn'],
 [class*='child'][class*='slideTR-tn'] > *,
+[class*='active'][class*='slideTR-tn']:active,
 [class*='hover'][class*='slideTR-tn']:hover {
   animation: slideTR 1s;
 }
 
 [class*='anime'][class*='slideTR-sm'],
 [class*='child'][class*='slideTR-sm'] > *,
+[class*='active'][class*='slideTR-sm']:active,
 [class*='hover'][class*='slideTR-sm']:hover {
   animation: slideTR 2s;
 }
 
 [class*='anime'][class*='slideTR-md'],
 [class*='child'][class*='slideTR-md'] > *,
+[class*='active'][class*='slideTR-md']:active,
 [class*='hover'][class*='slideTR-md']:hover {
   animation: slideTR 5s;
 }
 
 [class*='anime'][class*='slideTR-lg'],
 [class*='child'][class*='slideTR-lg'] > *,
+[class*='active'][class*='slideTR-lg']:active,
 [class*='hover'][class*='slideTR-lg']:hover {
   animation: slideTR 10s;
 }
 
 [class*='anime'][class*='slideTR-wd'],
 [class*='child'][class*='slideTR-wd'] > *,
+[class*='active'][class*='slideTR-wd']:active,
 [class*='hover'][class*='slideTR-wd']:hover {
   animation: slideTR 60s;
 }
@@ -9185,30 +9644,35 @@ input[type="submit"] {
 /* Animation Classes => slideBR */
 [class*='anime'][class*='slideBR-tn'],
 [class*='child'][class*='slideBR-tn'] > *,
+[class*='active'][class*='slideBR-tn']:active,
 [class*='hover'][class*='slideBR-tn']:hover {
   animation: slideBR 1s;
 }
 
 [class*='anime'][class*='slideBR-sm'],
 [class*='child'][class*='slideBR-sm'] > *,
+[class*='active'][class*='slideBR-sm']:active,
 [class*='hover'][class*='slideBR-sm']:hover {
   animation: slideBR 2s;
 }
 
 [class*='anime'][class*='slideBR-md'],
 [class*='child'][class*='slideBR-md'] > *,
+[class*='active'][class*='slideBR-md']:active,
 [class*='hover'][class*='slideBR-md']:hover {
   animation: slideBR 5s;
 }
 
 [class*='anime'][class*='slideBR-lg'],
 [class*='child'][class*='slideBR-lg'] > *,
+[class*='active'][class*='slideBR-lg']:active,
 [class*='hover'][class*='slideBR-lg']:hover {
   animation: slideBR 10s;
 }
 
 [class*='anime'][class*='slideBR-wd'],
 [class*='child'][class*='slideBR-wd'] > *,
+[class*='active'][class*='slideBR-wd']:active,
 [class*='hover'][class*='slideBR-wd']:hover {
   animation: slideBR 60s;
 }
@@ -9216,30 +9680,35 @@ input[type="submit"] {
 /* Animation Classes => slideTL */
 [class*='anime'][class*='slideTL-tn'],
 [class*='child'][class*='slideTL-tn'] > *,
+[class*='active'][class*='slideTL-tn']:active,
 [class*='hover'][class*='slideTL-tn']:hover {
   animation: slideTL 1s;
 }
 
 [class*='anime'][class*='slideTL-sm'],
 [class*='child'][class*='slideTL-sm'] > *,
+[class*='active'][class*='slideTL-sm']:active,
 [class*='hover'][class*='slideTL-sm']:hover {
   animation: slideTL 2s;
 }
 
 [class*='anime'][class*='slideTL-md'],
 [class*='child'][class*='slideTL-md'] > *,
+[class*='active'][class*='slideTL-md']:active,
 [class*='hover'][class*='slideTL-md']:hover {
   animation: slideTL 5s;
 }
 
 [class*='anime'][class*='slideTL-lg'],
 [class*='child'][class*='slideTL-lg'] > *,
+[class*='active'][class*='slideTL-lg']:active,
 [class*='hover'][class*='slideTL-lg']:hover {
   animation: slideTL 10s;
 }
 
 [class*='anime'][class*='slideTL-wd'],
 [class*='child'][class*='slideTL-wd'] > *,
+[class*='active'][class*='slideTL-wd']:active,
 [class*='hover'][class*='slideTL-wd']:hover {
   animation: slideTL 60s;
 }
@@ -9247,30 +9716,35 @@ input[type="submit"] {
 /* Animation Classes => slideBL */
 [class*='anime'][class*='slideBL-tn'],
 [class*='child'][class*='slideBL-tn'] > *,
+[class*='active'][class*='slideBL-tn']:active,
 [class*='hover'][class*='slideBL-tn']:hover {
   animation: slideBL 1s;
 }
 
 [class*='anime'][class*='slideBL-sm'],
 [class*='child'][class*='slideBL-sm'] > *,
+[class*='active'][class*='slideBL-sm']:active,
 [class*='hover'][class*='slideBL-sm']:hover {
   animation: slideBL 2s;
 }
 
 [class*='anime'][class*='slideBL-md'],
 [class*='child'][class*='slideBL-md'] > *,
+[class*='active'][class*='slideBL-md']:active,
 [class*='hover'][class*='slideBL-md']:hover {
   animation: slideBL 5s;
 }
 
 [class*='anime'][class*='slideBL-lg'],
 [class*='child'][class*='slideBL-lg'] > *,
+[class*='active'][class*='slideBL-lg']:active,
 [class*='hover'][class*='slideBL-lg']:hover {
   animation: slideBL 10s;
 }
 
 [class*='anime'][class*='slideBL-wd'],
 [class*='child'][class*='slideBL-wd'] > *,
+[class*='active'][class*='slideBL-wd']:active,
 [class*='hover'][class*='slideBL-wd']:hover {
   animation: slideBL 60s;
 }
@@ -9279,144 +9753,168 @@ input[type="submit"] {
 /* ***** Animations Options Classes ***** */
 [class*='anime'][class*='-in'],
 [class*='child'][class*='-in'] > *,
+[class*='active'][class*='-in']:active,
 [class*='hover'][class*='-in']:hover {
   animation-timing-function: ease-in;
 }
 
 [class*='anime'][class*='-out'],
 [class*='child'][class*='-out'] > *,
+[class*='active'][class*='-out']:active,
 [class*='hover'][class*='-out']:hover {
   animation-timing-function: ease-out;
 }
 
 [class*='anime'][class*='-ease'],
 [class*='child'][class*='-ease'] > *,
+[class*='active'][class*='-ease']:active,
 [class*='hover'][class*='-ease']:hover {
   animation-timing-function: ease-in-out;
 }
 
 [class*='anime'][class*='-linear'],
 [class*='child'][class*='-linear'] > *,
+[class*='active'][class*='-linear']:active,
 [class*='hover'][class*='-linear']:hover {
   animation-timing-function: linear;
 }
 
 [class*='anime'][class*='-start'],
 [class*='child'][class*='-start'] > *,
+[class*='active'][class*='-start']:active,
 [class*='hover'][class*='-start']:hover {
   animation-timing-function: steps(4, start);
 }
 
 [class*='anime'][class*='-end'],
 [class*='child'][class*='-end'] > *,
+[class*='active'][class*='-end']:active,
 [class*='hover'][class*='-end']:hover {
   animation-timing-function: steps(4);
 }
 
 [class*='anime'][class*='-chrono'],
 [class*='child'][class*='-chrono'] > *,
+[class*='active'][class*='-chrono']:active,
 [class*='hover'][class*='-chrono']:hover {
   animation-timing-function: steps(60, start);
 }
 
 [class*='anime'][class*='-springS'],
 [class*='child'][class*='-springS'] > *,
+[class*='active'][class*='-springS']:active,
 [class*='hover'][class*='-springS']:hover {
   animation-timing-function: cubic-bezier(1, 2, 1, -2);
 }
 
 [class*='anime'][class*='-springM'],
 [class*='child'][class*='-springM'] > *,
+[class*='active'][class*='-springM']:active,
 [class*='hover'][class*='-springM']:hover {
   animation-timing-function: cubic-bezier(1, 5, 1, -5);
 }
 
 [class*='anime'][class*='-springL'],
 [class*='child'][class*='-springL'] > *,
+[class*='active'][class*='-springL']:active,
 [class*='hover'][class*='-springL']:hover {
   animation-timing-function: cubic-bezier(1, 10, 1, -10);
 }
 
 [class*='anime'][class*='-tiny'],
 [class*='child'][class*='-tiny'] > *,
+[class*='active'][class*='-tiny']:active,
 [class*='hover'][class*='-tiny']:hover {
   animation-delay: 1s;
 }
 
 [class*='anime'][class*='-small'],
 [class*='child'][class*='-small'] > *,
+[class*='active'][class*='-small']:active,
 [class*='hover'][class*='-small']:hover {
   animation-delay: 2s;
 }
 
 [class*='anime'][class*='-medium'],
 [class*='child'][class*='-medium'] > *,
+[class*='active'][class*='-medium']:active,
 [class*='hover'][class*='-medium']:hover {
   animation-delay: 5s;
 }
 
 [class*='anime'][class*='-large'],
 [class*='child'][class*='-large'] > *,
+[class*='active'][class*='-large']:active,
 [class*='hover'][class*='-large']:hover {
   animation-delay: 10s;
 }
 
 [class*='anime'][class*='-wide'],
 [class*='child'][class*='-wide'] > *,
+[class*='active'][class*='-wide']:active,
 [class*='hover'][class*='-wide']:hover {
   animation-delay: 60s;
 }
 
 [class*='anime'][class*='-double'],
 [class*='child'][class*='-double'] > *,
+[class*='active'][class*='-double']:active,
 [class*='hover'][class*='-double']:hover {
   animation-iteration-count: 2;
 }
 
 [class*='anime'][class*='-triple'],
 [class*='child'][class*='-triple'] > *,
+[class*='active'][class*='-triple']:active,
 [class*='hover'][class*='-triple']:hover {
   animation-iteration-count: 3;
 }
 
 [class*='anime'][class*='-loop'],
 [class*='child'][class*='-loop'] > *,
+[class*='active'][class*='-loop']:active,
 [class*='hover'][class*='-loop']:hover {
   animation-iteration-count: infinite;
 }
 
 [class*='anime'][class*='-rev'],
 [class*='child'][class*='-rev'] > *,
+[class*='active'][class*='-rev']:active,
 [class*='hover'][class*='-rev']:hover {
   animation-direction: reverse;
 }
 
 [class*='anime'][class*='-alt'],
 [class*='child'][class*='-alt'] > *,
+[class*='active'][class*='-alt']:active,
 [class*='hover'][class*='-alt']:hover {
   animation-direction: alternate;
 }
 
 [class*='anime'][class*='-inv'],
 [class*='child'][class*='-inv'] > *,
+[class*='active'][class*='-inv']:active,
 [class*='hover'][class*='-inv']:hover {
   animation-direction: alternate-reverse;
 }
 
 [class*='anime'][class*='-front'],
 [class*='child'][class*='-front'] > *,
+[class*='active'][class*='-front']:active,
 [class*='hover'][class*='-front']:hover {
   animation-fill-mode: forwards;
 }
 
 [class*='anime'][class*='-back'],
 [class*='child'][class*='-back'] > *,
+[class*='active'][class*='-back']:active,
 [class*='hover'][class*='-back']:hover {
   animation-fill-mode: backwards;
 }
 
 [class*='anime'][class*='-both'],
 [class*='child'][class*='-both'] > *,
+[class*='active'][class*='-both']:active,
 [class*='hover'][class*='-both']:hover {
   animation-fill-mode: both;
 }
@@ -9426,30 +9924,35 @@ input[type="submit"] {
 /* Transform Origin-x => center */
 [class*='anime'][class*='-center'],
 [class*='child'][class*='-center'] > *,
+[class*='active'][class*='-center']:active,
 [class*='hover'][class*='-center']:hover {
   transform-origin: center;
 }
 
 [class*='anime'][class*=-ct],
 [class*='child'][class*=-ct] > *,
+[class*='active'][class*=-ct]:active,
 [class*='hover'][class*=-ct]:hover {
   transform-origin: center top;
 }
 
 [class*='anime'][class*=-cr],
 [class*='child'][class*=-cr] > *,
+[class*='active'][class*=-cr]:active,
 [class*='hover'][class*=-cr]:hover {
   transform-origin: center right;
 }
 
 [class*='anime'][class*=-cb],
 [class*='child'][class*=-cb] > *,
+[class*='active'][class*=-cb]:active,
 [class*='hover'][class*=-cb]:hover {
   transform-origin: center bottom;
 }
 
 [class*='anime'][class*=-cl],
 [class*='child'][class*=-cl] > *,
+[class*='active'][class*=-cl]:active,
 [class*='hover'][class*=-cl]:hover {
   transform-origin: center left;
 }
@@ -9457,30 +9960,35 @@ input[type="submit"] {
 /* Transform Origin-x => top */
 [class*='anime'][class*=-tc],
 [class*='child'][class*=-tc] > *,
+[class*='active'][class*=-tc]:active,
 [class*='hover'][class*=-tc]:hover {
   transform-origin: top center;
 }
 
 [class*='anime'][class*='-top'],
 [class*='child'][class*='-top'] > *,
+[class*='active'][class*='-top']:active,
 [class*='hover'][class*='-top']:hover {
   transform-origin: top;
 }
 
 [class*='anime'][class*=-tr],
 [class*='child'][class*=-tr] > *,
+[class*='active'][class*=-tr]:active,
 [class*='hover'][class*=-tr]:hover {
   transform-origin: top right;
 }
 
 [class*='anime'][class*=-tb],
 [class*='child'][class*=-tb] > *,
+[class*='active'][class*=-tb]:active,
 [class*='hover'][class*=-tb]:hover {
   transform-origin: top bottom;
 }
 
 [class*='anime'][class*=-tl],
 [class*='child'][class*=-tl] > *,
+[class*='active'][class*=-tl]:active,
 [class*='hover'][class*=-tl]:hover {
   transform-origin: top left;
 }
@@ -9488,30 +9996,35 @@ input[type="submit"] {
 /* Transform Origin-x => right */
 [class*='anime'][class*=-rc],
 [class*='child'][class*=-rc] > *,
+[class*='active'][class*=-rc]:active,
 [class*='hover'][class*=-rc]:hover {
   transform-origin: right center;
 }
 
 [class*='anime'][class*=-rt],
 [class*='child'][class*=-rt] > *,
+[class*='active'][class*=-rt]:active,
 [class*='hover'][class*=-rt]:hover {
   transform-origin: right top;
 }
 
 [class*='anime'][class*='-right'],
 [class*='child'][class*='-right'] > *,
+[class*='active'][class*='-right']:active,
 [class*='hover'][class*='-right']:hover {
   transform-origin: right;
 }
 
 [class*='anime'][class*=-rb],
 [class*='child'][class*=-rb] > *,
+[class*='active'][class*=-rb]:active,
 [class*='hover'][class*=-rb]:hover {
   transform-origin: right bottom;
 }
 
 [class*='anime'][class*=-rl],
 [class*='child'][class*=-rl] > *,
+[class*='active'][class*=-rl]:active,
 [class*='hover'][class*=-rl]:hover {
   transform-origin: right left;
 }
@@ -9519,30 +10032,35 @@ input[type="submit"] {
 /* Transform Origin-x => bottom */
 [class*='anime'][class*=-bc],
 [class*='child'][class*=-bc] > *,
+[class*='active'][class*=-bc]:active,
 [class*='hover'][class*=-bc]:hover {
   transform-origin: bottom center;
 }
 
 [class*='anime'][class*=-bt],
 [class*='child'][class*=-bt] > *,
+[class*='active'][class*=-bt]:active,
 [class*='hover'][class*=-bt]:hover {
   transform-origin: bottom top;
 }
 
 [class*='anime'][class*=-br],
 [class*='child'][class*=-br] > *,
+[class*='active'][class*=-br]:active,
 [class*='hover'][class*=-br]:hover {
   transform-origin: bottom right;
 }
 
 [class*='anime'][class*='-bottom'],
 [class*='child'][class*='-bottom'] > *,
+[class*='active'][class*='-bottom']:active,
 [class*='hover'][class*='-bottom']:hover {
   transform-origin: bottom;
 }
 
 [class*='anime'][class*=-bl],
 [class*='child'][class*=-bl] > *,
+[class*='active'][class*=-bl]:active,
 [class*='hover'][class*=-bl]:hover {
   transform-origin: bottom left;
 }
@@ -9550,30 +10068,35 @@ input[type="submit"] {
 /* Transform Origin-x => left */
 [class*='anime'][class*=-lc],
 [class*='child'][class*=-lc] > *,
+[class*='active'][class*=-lc]:active,
 [class*='hover'][class*=-lc]:hover {
   transform-origin: left center;
 }
 
 [class*='anime'][class*=-lt],
 [class*='child'][class*=-lt] > *,
+[class*='active'][class*=-lt]:active,
 [class*='hover'][class*=-lt]:hover {
   transform-origin: left top;
 }
 
 [class*='anime'][class*=-lr],
 [class*='child'][class*=-lr] > *,
+[class*='active'][class*=-lr]:active,
 [class*='hover'][class*=-lr]:hover {
   transform-origin: left right;
 }
 
 [class*='anime'][class*=-lb],
 [class*='child'][class*=-lb] > *,
+[class*='active'][class*=-lb]:active,
 [class*='hover'][class*=-lb]:hover {
   transform-origin: left bottom;
 }
 
 [class*='anime'][class*='-left'],
 [class*='child'][class*='-left'] > *,
+[class*='active'][class*='-left']:active,
 [class*='hover'][class*='-left']:hover {
   transform-origin: left;
 }
