@@ -132,8 +132,8 @@
     }
 
     input {
-      margin: 0 .5rem 0 0 !important; 
-      -webkit-box-shadow: unset; 
+      margin: 0 .5rem 0 0 !important;
+      -webkit-box-shadow: unset;
               box-shadow: unset;
       background-color: map-get(map-get($colors-map, 'info'), bright);
     }
@@ -330,35 +330,36 @@
 .main-title {
   margin-top: 4rem;
   margin-bottom: 0;
-  padding: -1rem 0 1rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
 
   // @rules 1st breakpoint
   @media (min-width: $break-tn)
   {
-    padding-top: .8rem;
+    padding-top: 1.5rem;
   }
 
   // @rules 2nd breakpoint
   @media (min-width: $break-sm)
   {
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
   }
 
   // @rules 3rd breakpoint
   @media (min-width: $break-md)
   {
-    padding-top: 2.3rem;
+    padding-top: 3rem;
   }
 
   // @rules 4th breakpoint
   @media (min-width: $break-lg)
   {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
   }
 
   // @rules 5th breakpoint
   @media (min-width: $break-wd)
   {
-    padding-top: 3.6rem;
+    padding-top: 4rem;
   }
 }
