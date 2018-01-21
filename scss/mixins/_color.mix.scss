@@ -29,7 +29,6 @@
     color: map-get(map-get($colors-map, $color), bright);
   }
 
-  &,
   &-btn,
   &-sea,
   &-trans,
@@ -61,7 +60,21 @@
   {
     color: map-get(map-get($colors-map, $color), inv);
   }
+
+  // Checks if the current color is a white or a yellow
+  @if $color == 'base' or $color == 'new'
+  {
+    & {
+      color: map-get(map-get($colors-map, $color), inv);
+    }
+  }
+  @else {
+    & {
+      color: map-get(map-get($colors-map, $color), brighter);
+    }
+  }
 }
+
 
 
 
