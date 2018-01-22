@@ -5,11 +5,10 @@
 
 // The navbar part includes :
 // 01 => the navbar class with a specific flex box layout system
-// 02 => the fixed classes to set the position to absolute on the fourth directions
-// 03 => the brand nav class to change the height of brand logo with some @media rules
-// 04 => the main nav class to hide then display labels on the main buttons
-// 05 => the user nav class to change the height of user picture & to hide then display welcome message
-// 06 => the main title class to align the first element after a fixed navbar
+// 02 => the brand nav class to change the height of brand logo with some @media rules
+// 03 => the main nav class to hide then display labels on the main buttons
+// 04 => the user nav class to change the height of user picture & to hide then display welcome message
+// 05 => the main title class to align the first element after a fixed navbar
 
 
 
@@ -147,40 +146,6 @@
       width: 15rem;
     }
   }
-}
-
-
-
-/* ************************* */
-/* ***** Fixed Classes ***** */
-
-[class*="fixed"] {
-  position: fixed;
-  z-index: 1000;
-}
-
-.fixed-top {
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-.fixed-right {
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.fixed-bottom {
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.fixed-left {
-  bottom: 0;
-  left: 0;
-  top: 0;
 }
 
 

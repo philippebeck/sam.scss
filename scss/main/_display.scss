@@ -9,14 +9,15 @@
 // 02 => the hide class who hides visually the element
 // 03 => the container class who centred the element in a 80% width
 // 04 => the block classes for display elements like block, inline & outline
-// 05 => the flex, col & row classes for using the flexible boxes layout
-// 06 => the flex classes for changing dimensions on flex items with the flex property
-// 07 => the order classes for changing order items on flex items with the order property
-// 08 => the grid classes for each breakpoint & each number of columns
-// 09 => the gap classes for adding gutters on flex & grid containers with the grid-gap property
-// 10 => the items classes for items alignments on flex & grid containers with the justify & align items properties throught the items mixin
-// 11 => the content classes for content alignments on flex & grid containers with the justify & align content properties throught the content mixin
-// 12 => the self classes for self item alignment on flex & grid items with the justify & align self properties throught the self mixin
+// 05 => the fixed classes to fix the element position
+// 06 => the flex, col & row classes for using the flexible boxes layout
+// 07 => the flex classes for changing dimensions on flex items with the flex property
+// 08 => the order classes for changing order items on flex items with the order property
+// 09 => the grid classes for each breakpoint & each number of columns
+// 10 => the gap classes for adding gutters on flex & grid containers with the grid-gap property
+// 11 => the items classes for items alignments on flex & grid containers with the justify & align items properties throught the items mixin
+// 12 => the content classes for content alignments on flex & grid containers with the justify & align content properties throught the content mixin
+// 13 => the self classes for self item alignment on flex & grid items with the justify & align self properties throught the self mixin
 
 
 
@@ -77,8 +78,90 @@
 
 
 
+// ****************************** \\
+// ***** 05 - Fixed Classes ***** \\
+
+/* Fixed classes */
+[class*="fixed"] {
+  position: fixed;
+  z-index: 1000;
+}
+
+// Fixed base classes
+.fixed-top {
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.fixed-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fixed-bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fixed-left {
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+// Fixed center classes
+.fixed-ct {
+  top: 0;
+  right: 50%;
+  left: 50%;
+}
+
+.fixed-cr {
+  top: 50%;
+  right: 0;
+  bottom: 50%;
+}
+
+.fixed-cb {
+  right: 50%;
+  bottom: 0;
+  left: 50%;
+}
+
+.fixed-cl {
+  top: 50%;
+  left: 0;
+  bottom: 50%;
+}
+
+// Fixed corner classes
+.fixed-tr {
+  top: 0;
+  right: 0;
+}
+
+.fixed-br {
+  bottom: 0;
+  right: 0;
+}
+
+.fixed-bl {
+  bottom: 0;
+  left: 0;
+}
+
+.fixed-tl {
+  top: 0;
+  left: 0;
+}
+
+
+
 // **************************************** \\
-// ***** 05 - Flex, Col & Row Classes ***** \\
+// ***** 06 - Flex, Col & Row Classes ***** \\
 
 
 /* Flex containers */
@@ -173,7 +256,7 @@
 
 
 // ********************************* \\
-// ***** 06 - Flexible Classes ***** \\
+// ***** 07 - Flexible Classes ***** \\
 
 /* Changing dimensions for flex items */
 // Loops on the $flex map to create the flex classes
@@ -190,7 +273,7 @@
 
 
 // ****************************** \\
-// ***** 07 - Order Classes ***** \\
+// ***** 08 - Order Classes ***** \\
 
 /* Self order for flex items */
 // Loops from 1 to 10
@@ -205,7 +288,7 @@
 
 
 // ************************************* \\
-// ***** 08 - Grid & Fluid Classes ***** \\
+// ***** 09 - Grid & Fluid Classes ***** \\
 
 /* Grid containers */
 // Selects all grid & fluid classes to display grid
@@ -250,7 +333,7 @@
 
 
 // ********************************* \\
-// ***** 09 - Grid Gap Classes ***** \\
+// ***** 10 - Grid Gap Classes ***** \\
 
 /* Gutters for grid container */
 // Loops on the $grid-gap map to create the gutters
@@ -265,7 +348,7 @@
 
 
 // ****************************** \\
-// ***** 10 - Items classes ***** \\
+// ***** 11 - Items classes ***** \\
 
 /* Items alignments in flex & grid container */
 // Loops on the $items map to justify items
@@ -283,7 +366,7 @@
 
 
 // ******************************** \\
-// ***** 11 - Content Classes ***** \\
+// ***** 12 - Content Classes ***** \\
 
 /* Content alignments in flex & grid container */
 // Loops on the $content map to justify content
@@ -301,7 +384,7 @@
 
 
 // ***************************** \\
-// ***** 12 - Self Classes ***** \\
+// ***** 13 - Self Classes ***** \\
 
 /* Self alignments for flex & grid items */
 // Loops on the $items map to justify self
