@@ -605,11 +605,10 @@ video {
     justify-content: space-evenly;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .navbar form,
-  .navbar input,
-  .navbar button {
-    width: 4rem;
+  .navbar input {
+    width: 10rem;
     height: 4rem;
   }
   .navbar form {
@@ -627,6 +626,13 @@ video {
     -webkit-box-shadow: unset;
     box-shadow: unset;
     background-color: #84c2ff;
+  }
+}
+@media (min-width: 1366px) {
+  .navbar form,
+  .navbar input,
+  .navbar button {
+    width: 15rem;
   }
 }
 

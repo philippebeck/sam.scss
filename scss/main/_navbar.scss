@@ -110,13 +110,12 @@
             justify-content: space-evenly;
   }
 
-  // @rules 4th breakpoint (1px more to exclude tablets)
-  @media (min-width: $break-lg + 1)
+  // @rules 4th breakpoint
+  @media (min-width: $break-lg)
   {
     form,
-    input,
-    button {
-      width: 4rem;
+    input {
+      width: 10rem;
       height: 4rem;
     }
 
@@ -136,6 +135,16 @@
       -webkit-box-shadow: unset;
               box-shadow: unset;
       background-color: map-get(map-get($colors-map, 'info'), bright);
+    }
+  }
+
+  // @rules 5th breakpoint
+  @media (min-width: $break-wd)
+  {
+    form,
+    input,
+    button {
+      width: 15rem;
     }
   }
 }
