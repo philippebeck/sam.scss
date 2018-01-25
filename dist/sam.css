@@ -10084,13 +10084,6 @@ input[type="submit"] {
   animation-iteration-count: 2;
 }
 
-[class*='anime'][class*='-triple'],
-[class*='child'][class*='-triple'] > *,
-[class*='active'][class*='-triple']:active,
-[class*='hover'][class*='-triple']:hover {
-  animation-iteration-count: 3;
-}
-
 [class*='anime'][class*='-loop'],
 [class*='child'][class*='-loop'] > *,
 [class*='active'][class*='-loop']:active,
