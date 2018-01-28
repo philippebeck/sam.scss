@@ -33,7 +33,7 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 
 # Documentation
 
-The documentation will be added before the 31th of January... please apologize for the inconvenience...
+You will find the documentation very soon here => https://philippebeck.net/index.php?access=pjs!sam
 
 
 # Contribution
