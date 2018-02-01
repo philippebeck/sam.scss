@@ -892,7 +892,7 @@ input[type="password"],
 textarea {
   line-height: 2;
   margin: 1rem 0 2rem;
-  border: medium solid DodgerBlue;
+  border: thin solid #004384;
   border-radius: 1rem;
   background-color: rgba(30, 144, 255, 0.2);
 }

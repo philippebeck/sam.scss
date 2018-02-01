@@ -86,7 +86,7 @@ input[type="password"],
 textarea {
   line-height: 2;
   margin: 1rem 0 2rem;
-  border: medium solid map-get(map-get($colors-map, 'info'), darker);
+  border: thin solid map-get(map-get($colors-map, 'info'), darker);
   border-radius: 1rem;
   background-color: map-get(map-get($colors-map, 'info'), trans);
 }
