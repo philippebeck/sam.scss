@@ -10331,22 +10331,6 @@ input[type="submit"] {
 /* ****************** */
 /* ************************* */
 /* ***** Width Helpers ***** */
-/* Width auto */
-.wauto,
-.gwauto > * {
-  width: auto;
-}
-
-.min-wauto,
-.min-gwauto > * {
-  min-width: auto;
-}
-
-.max-wauto,
-.max-gwauto > * {
-  max-width: auto;
-}
-
 /* Width 25 */
 .w25,
 .gw25 > * {
@@ -10445,22 +10429,6 @@ input[type="submit"] {
 
 /* ************************** */
 /* ***** Height Helpers ***** */
-/* Height auto */
-.hauto,
-.ghauto > * {
-  height: auto;
-}
-
-.min-hauto,
-.min-ghauto > * {
-  min-height: auto;
-}
-
-.max-hauto,
-.max-ghauto > * {
-  max-height: auto;
-}
-
 /* Height 25 */
 .h25,
 .gh25 > * {
@@ -10960,82 +10928,82 @@ input[type="submit"] {
 
 /* *********************************** */
 /* ***** Text Decoration Helpers ***** */
-.solid-underline {
-  -webkit-text-decoration: underline solid;
-  text-decoration: underline solid;
+.under {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.solid-overline {
-  -webkit-text-decoration: overline solid;
-  text-decoration: overline solid;
-}
-
-.solid-through {
-  -webkit-text-decoration: line-through solid;
-  text-decoration: line-through solid;
-}
-
-.double-underline {
+.under-double {
   -webkit-text-decoration: underline double;
   text-decoration: underline double;
 }
 
-.double-overline {
-  -webkit-text-decoration: overline double;
-  text-decoration: overline double;
-}
-
-.double-through {
-  -webkit-text-decoration: line-through double;
-  text-decoration: line-through double;
-}
-
-.dotted-underline {
+.under-dotted {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
-.dotted-overline {
-  -webkit-text-decoration: overline dotted;
-  text-decoration: overline dotted;
-}
-
-.dotted-through {
-  -webkit-text-decoration: line-through dotted;
-  text-decoration: line-through dotted;
-}
-
-.dashed-underline {
+.under-dashed {
   -webkit-text-decoration: underline dashed;
   text-decoration: underline dashed;
 }
 
-.dashed-overline {
-  -webkit-text-decoration: overline dashed;
-  text-decoration: overline dashed;
-}
-
-.dashed-through {
-  -webkit-text-decoration: line-through dashed;
-  text-decoration: line-through dashed;
-}
-
-.wavy-underline {
+.under-wavy {
   -webkit-text-decoration: underline wavy;
   text-decoration: underline wavy;
 }
 
-.wavy-overline {
+.over {
+  -webkit-text-decoration: overline;
+  text-decoration: overline;
+}
+
+.over-double {
+  -webkit-text-decoration: overline double;
+  text-decoration: overline double;
+}
+
+.over-dotted {
+  -webkit-text-decoration: overline dotted;
+  text-decoration: overline dotted;
+}
+
+.over-dashed {
+  -webkit-text-decoration: overline dashed;
+  text-decoration: overline dashed;
+}
+
+.over-wavy {
   -webkit-text-decoration: overline wavy;
   text-decoration: overline wavy;
 }
 
-.wavy-through {
+.through {
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.through-double {
+  -webkit-text-decoration: line-through double;
+  text-decoration: line-through double;
+}
+
+.through-dotted {
+  -webkit-text-decoration: line-through dotted;
+  text-decoration: line-through dotted;
+}
+
+.through-dashed {
+  -webkit-text-decoration: line-through dashed;
+  text-decoration: line-through dashed;
+}
+
+.through-wavy {
   -webkit-text-decoration: line-through wavy;
   text-decoration: line-through wavy;
 }
 
-.no-decoration {
+.no-deco {
   text-decoration: none;
 }
 

@@ -102,22 +102,33 @@
 /* *********************************** */
 /* ***** Text Decoration Helpers ***** */
 
-// Loops on the $decoration-style map for each text decoration style
-@each $prefix, $style in $decoration-style
+// Loops on the $decoration-line map for each text decoration line
+@each $prefix, $line in $decoration-line
 {
-  // Loops on the $decoration-line map for each text decoration line
-  @each $suffix, $line in $decoration-line
+  // Loops on the $decoration-style map for each text decoration style
+  @each $suffix, $style in $decoration-style
   {
-    // Constructs the text-decoration classes
-    .#{$prefix}-#{$suffix} {
-      -webkit-text-decoration: $line $style;
-              text-decoration: $line $style;
+    // Checks if the style is the default style
+    @if $style == 'solid'
+    {
+      // Constructs the text-decoration default classes
+      .#{$prefix} {
+        -webkit-text-decoration: $line;
+                text-decoration: $line;
+      }
+    }
+    @else {
+      // Constructs the text-decoration classes
+      .#{$prefix}-#{$suffix} {
+        -webkit-text-decoration: $line $style;
+                text-decoration: $line $style;
+      }
     }
   }
 }
 
 // To unset text decoration
-.no-decoration {
+.no-deco {
   text-decoration: none;
 }
 
