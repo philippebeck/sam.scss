@@ -18,60 +18,71 @@
 // @param Color $color => the current color
 @mixin text-color($color)
 {
-  &-text,
-  &-outline,
-  {
+  &-text {
     color: map-get(map-get($colors-map, $color), base);
   }
 
-  &-dark
-  {
-    color: map-get(map-get($colors-map, $color), bright);
-  }
-
-  &-btn,
-  &-sea,
-  &-trans,
-  &-light:hover,
-  &-outline:hover
-  {
-    color: map-get(map-get($colors-map, $color), brighter);
-  }
-
-  &-light,
-  &-btn:hover
-  {
-    color: map-get(map-get($colors-map, $color), dark);
-  }
-
-  &-glass,
-  &-dark:hover,
-  &-trans:hover
-  {
-    color: map-get(map-get($colors-map, $color), darker);
-  }
-
-  & a
-  {
-    color: map-get(map-get($colors-map, $color), comp);
-  }
-
-  & a:hover
-  {
-    color: map-get(map-get($colors-map, $color), inv);
-  }
 
   // Checks if the current color is a white or a yellow
   @if $color == 'base' or $color == 'new'
   {
-    & {
+    &,
+    &-btn,
+    &-dark,
+    &-glass,
+    &-light:hover,
+    &-outline:hover,
+    &-sea,
+    &-trans {
       color: map-get(map-get($colors-map, $color), inv);
     }
+
+    &-btn:hover,
+    &-dark:hover,
+    &-light,
+    &-outline,
+    &-trans:hover {
+      color: map-get(map-get($colors-map, $color), darker);
+    }
   }
+
   @else {
-    & {
+    &-text,
+    &-outline {
+      color: map-get(map-get($colors-map, $color), base);
+    }
+
+    &-dark {
+      color: map-get(map-get($colors-map, $color), bright);
+    }
+
+    &,
+    &-btn,
+    &-sea,
+    &-trans,
+    &-light:hover,
+    &-outline:hover {
       color: map-get(map-get($colors-map, $color), brighter);
     }
+
+    &-light,
+    &-btn:hover {
+      color: map-get(map-get($colors-map, $color), dark);
+    }
+
+    &-glass,
+    &-dark:hover,
+    &-trans:hover {
+      color: map-get(map-get($colors-map, $color), darker);
+    }
+  }
+
+  & a {
+    color: map-get(map-get($colors-map, $color), comp);
+  }
+
+  & a:hover {
+    color: map-get(map-get($colors-map, $color), inv);
   }
 }
 

@@ -802,7 +802,7 @@ ul.btn-group {
 }
 
 .btn-group > * {
-  margin: .3rem;
+  margin: .5rem;
 }
 
 ul.btn-group > li {
@@ -4903,13 +4903,16 @@ input[type="submit"] {
 
 /* ***** Colors Classes **** */
 /* default color */
+.default-text {
+  color: black;
+}
 .default-text, .default-outline {
   color: black;
 }
 .default-dark {
   color: #333333;
 }
-.default-btn, .default-sea, .default-trans, .default-light:hover, .default-outline:hover {
+.default, .default-btn, .default-sea, .default-trans, .default-light:hover, .default-outline:hover {
   color: #a6a6a6;
 }
 .default-light, .default-btn:hover {
@@ -4923,9 +4926,6 @@ input[type="submit"] {
 }
 .default a:hover {
   color: white;
-}
-.default {
-  color: #a6a6a6;
 }
 .default, .default-btn, .default-light:hover, .default-dark:hover, .default-outline:hover {
   background-color: black;
@@ -4960,13 +4960,16 @@ input[type="submit"] {
 }
 
 /* info color */
+.info-text {
+  color: DodgerBlue;
+}
 .info-text, .info-outline {
   color: DodgerBlue;
 }
 .info-dark {
   color: #84c2ff;
 }
-.info-btn, .info-sea, .info-trans, .info-light:hover, .info-outline:hover {
+.info, .info-btn, .info-sea, .info-trans, .info-light:hover, .info-outline:hover {
   color: white;
 }
 .info-light, .info-btn:hover {
@@ -4980,9 +4983,6 @@ input[type="submit"] {
 }
 .info a:hover {
   color: #e16f00;
-}
-.info {
-  color: white;
 }
 .info, .info-btn, .info-light:hover, .info-dark:hover, .info-outline:hover {
   background-color: DodgerBlue;
@@ -5017,13 +5017,16 @@ input[type="submit"] {
 }
 
 /* classic color */
+.classic-text {
+  color: SaddleBrown;
+}
 .classic-text, .classic-outline {
   color: SaddleBrown;
 }
 .classic-dark {
   color: #e17223;
 }
-.classic-btn, .classic-sea, .classic-trans, .classic-light:hover, .classic-outline:hover {
+.classic, .classic-btn, .classic-sea, .classic-trans, .classic-light:hover, .classic-outline:hover {
   color: #fdf3ed;
 }
 .classic-light, .classic-btn:hover {
@@ -5037,9 +5040,6 @@ input[type="submit"] {
 }
 .classic a:hover {
   color: #74baec;
-}
-.classic {
-  color: #fdf3ed;
 }
 .classic, .classic-btn, .classic-light:hover, .classic-dark:hover, .classic-outline:hover {
   background-color: SaddleBrown;
@@ -5074,13 +5074,16 @@ input[type="submit"] {
 }
 
 /* cancel color */
+.cancel-text {
+  color: DimGray;
+}
 .cancel-text, .cancel-outline {
   color: DimGray;
 }
 .cancel-dark {
   color: #9c9c9c;
 }
-.cancel-btn, .cancel-sea, .cancel-trans, .cancel-light:hover, .cancel-outline:hover {
+.cancel, .cancel-btn, .cancel-sea, .cancel-trans, .cancel-light:hover, .cancel-outline:hover {
   color: white;
 }
 .cancel-light, .cancel-btn:hover {
@@ -5094,9 +5097,6 @@ input[type="submit"] {
 }
 .cancel a:hover {
   color: #969696;
-}
-.cancel {
-  color: white;
 }
 .cancel, .cancel-btn, .cancel-light:hover, .cancel-dark:hover, .cancel-outline:hover {
   background-color: DimGray;
@@ -5131,13 +5131,16 @@ input[type="submit"] {
 }
 
 /* valid color */
+.valid-text {
+  color: ForestGreen;
+}
 .valid-text, .valid-outline {
   color: ForestGreen;
 }
 .valid-dark {
   color: #42d142;
 }
-.valid-btn, .valid-sea, .valid-trans, .valid-light:hover, .valid-outline:hover {
+.valid, .valid-btn, .valid-sea, .valid-trans, .valid-light:hover, .valid-outline:hover {
   color: #fbfefb;
 }
 .valid-light, .valid-btn:hover {
@@ -5151,9 +5154,6 @@ input[type="submit"] {
 }
 .valid a:hover {
   color: #dd74dd;
-}
-.valid {
-  color: #fbfefb;
 }
 .valid, .valid-btn, .valid-light:hover, .valid-dark:hover, .valid-outline:hover {
   background-color: ForestGreen;
@@ -5188,13 +5188,16 @@ input[type="submit"] {
 }
 
 /* warning color */
+.warning-text {
+  color: OrangeRed;
+}
 .warning-text, .warning-outline {
   color: OrangeRed;
 }
 .warning-dark {
   color: #ff8f66;
 }
-.warning-btn, .warning-sea, .warning-trans, .warning-light:hover, .warning-outline:hover {
+.warning, .warning-btn, .warning-sea, .warning-trans, .warning-light:hover, .warning-outline:hover {
   color: white;
 }
 .warning-light, .warning-btn:hover {
@@ -5208,9 +5211,6 @@ input[type="submit"] {
 }
 .warning a:hover {
   color: #00baff;
-}
-.warning {
-  color: white;
 }
 .warning, .warning-btn, .warning-light:hover, .warning-dark:hover, .warning-outline:hover {
   background-color: OrangeRed;
@@ -5245,13 +5245,16 @@ input[type="submit"] {
 }
 
 /* delete color */
+.delete-text {
+  color: Crimson;
+}
 .delete-text, .delete-outline {
   color: Crimson;
 }
 .delete-dark {
   color: #f16581;
 }
-.delete-btn, .delete-sea, .delete-trans, .delete-light:hover, .delete-outline:hover {
+.delete, .delete-btn, .delete-sea, .delete-trans, .delete-light:hover, .delete-outline:hover {
   color: white;
 }
 .delete-light, .delete-btn:hover {
@@ -5265,9 +5268,6 @@ input[type="submit"] {
 }
 .delete a:hover {
   color: #23ebc3;
-}
-.delete {
-  color: white;
 }
 .delete, .delete-btn, .delete-light:hover, .delete-dark:hover, .delete-outline:hover {
   background-color: Crimson;
@@ -5302,13 +5302,16 @@ input[type="submit"] {
 }
 
 /* special color */
+.special-text {
+  color: SlateBlue;
+}
 .special-text, .special-outline {
   color: SlateBlue;
 }
 .special-dark {
   color: #b1a8e5;
 }
-.special-btn, .special-sea, .special-trans, .special-light:hover, .special-outline:hover {
+.special, .special-btn, .special-sea, .special-trans, .special-light:hover, .special-outline:hover {
   color: white;
 }
 .special-light, .special-btn:hover {
@@ -5322,9 +5325,6 @@ input[type="submit"] {
 }
 .special a:hover {
   color: #95a532;
-}
-.special {
-  color: white;
 }
 .special, .special-btn, .special-light:hover, .special-dark:hover, .special-outline:hover {
   background-color: SlateBlue;
@@ -5359,28 +5359,19 @@ input[type="submit"] {
 }
 
 /* base color */
-.base-text, .base-outline {
+.base-text {
   color: Snow;
 }
-.base-dark {
-  color: white;
+.base, .base-btn, .base-dark, .base-glass, .base-light:hover, .base-outline:hover, .base-sea, .base-trans {
+  color: #000505;
 }
-.base-btn, .base-sea, .base-trans, .base-light:hover, .base-outline:hover {
-  color: white;
-}
-.base-light, .base-btn:hover {
-  color: #ffc7c7;
-}
-.base-glass, .base-dark:hover, .base-trans:hover {
+.base-btn:hover, .base-dark:hover, .base-light, .base-outline, .base-trans:hover {
   color: #ff6161;
 }
 .base a {
   color: #faffff;
 }
 .base a:hover {
-  color: #000505;
-}
-.base {
   color: #000505;
 }
 .base, .base-btn, .base-light:hover, .base-dark:hover, .base-outline:hover {
@@ -5416,28 +5407,19 @@ input[type="submit"] {
 }
 
 /* new color */
-.new-text, .new-outline {
+.new-text {
   color: Gold;
 }
-.new-dark {
-  color: #ffe766;
+.new, .new-btn, .new-dark, .new-glass, .new-light:hover, .new-outline:hover, .new-sea, .new-trans {
+  color: #0028ff;
 }
-.new-btn, .new-sea, .new-trans, .new-light:hover, .new-outline:hover {
-  color: white;
-}
-.new-light, .new-btn:hover {
-  color: #ccac00;
-}
-.new-glass, .new-dark:hover, .new-trans:hover {
+.new-btn:hover, .new-dark:hover, .new-light, .new-outline, .new-trans:hover {
   color: #665600;
 }
 .new a {
   color: #0028ff;
 }
 .new a:hover {
-  color: #0028ff;
-}
-.new {
   color: #0028ff;
 }
 .new, .new-btn, .new-light:hover, .new-dark:hover, .new-outline:hover {
@@ -5473,13 +5455,16 @@ input[type="submit"] {
 }
 
 /* primary color */
+.primary-text {
+  color: RoyalBlue;
+}
 .primary-text, .primary-outline {
   color: RoyalBlue;
 }
 .primary-dark {
   color: #99afef;
 }
-.primary-btn, .primary-sea, .primary-trans, .primary-light:hover, .primary-outline:hover {
+.primary, .primary-btn, .primary-sea, .primary-trans, .primary-light:hover, .primary-outline:hover {
   color: white;
 }
 .primary-light, .primary-btn:hover {
@@ -5493,9 +5478,6 @@ input[type="submit"] {
 }
 .primary a:hover {
   color: #be961e;
-}
-.primary {
-  color: white;
 }
 .primary, .primary-btn, .primary-light:hover, .primary-dark:hover, .primary-outline:hover {
   background-color: RoyalBlue;
@@ -5530,13 +5512,16 @@ input[type="submit"] {
 }
 
 /* secondary color */
+.secondary-text {
+  color: CornflowerBlue;
+}
 .secondary-text, .secondary-outline {
   color: CornflowerBlue;
 }
 .secondary-dark {
   color: #bfd3f8;
 }
-.secondary-btn, .secondary-sea, .secondary-trans, .secondary-light:hover, .secondary-outline:hover {
+.secondary, .secondary-btn, .secondary-sea, .secondary-trans, .secondary-light:hover, .secondary-outline:hover {
   color: white;
 }
 .secondary-light, .secondary-btn:hover {
@@ -5550,9 +5535,6 @@ input[type="submit"] {
 }
 .secondary a:hover {
   color: #9b6a12;
-}
-.secondary {
-  color: white;
 }
 .secondary, .secondary-btn, .secondary-light:hover, .secondary-dark:hover, .secondary-outline:hover {
   background-color: CornflowerBlue;
@@ -5587,13 +5569,16 @@ input[type="submit"] {
 }
 
 /* facebook color */
+.facebook-text {
+  color: #4267b2;
+}
 .facebook-text, .facebook-outline {
   color: #4267b2;
 }
 .facebook-dark {
   color: #87a0d3;
 }
-.facebook-btn, .facebook-sea, .facebook-trans, .facebook-light:hover, .facebook-outline:hover {
+.facebook, .facebook-btn, .facebook-sea, .facebook-trans, .facebook-light:hover, .facebook-outline:hover {
   color: white;
 }
 .facebook-light, .facebook-btn:hover {
@@ -5607,9 +5592,6 @@ input[type="submit"] {
 }
 .facebook a:hover {
   color: #bd984d;
-}
-.facebook {
-  color: white;
 }
 .facebook, .facebook-btn, .facebook-light:hover, .facebook-dark:hover, .facebook-outline:hover {
   background-color: #4267b2;
@@ -5644,13 +5626,16 @@ input[type="submit"] {
 }
 
 /* freecodecamp color */
+.freecodecamp-text {
+  color: #006400;
+}
 .freecodecamp-text, .freecodecamp-outline {
   color: #006400;
 }
 .freecodecamp-dark {
   color: #00ca00;
 }
-.freecodecamp-btn, .freecodecamp-sea, .freecodecamp-trans, .freecodecamp-light:hover, .freecodecamp-outline:hover {
+.freecodecamp, .freecodecamp-btn, .freecodecamp-sea, .freecodecamp-trans, .freecodecamp-light:hover, .freecodecamp-outline:hover {
   color: #b1ffb1;
 }
 .freecodecamp-light, .freecodecamp-btn:hover {
@@ -5664,9 +5649,6 @@ input[type="submit"] {
 }
 .freecodecamp a:hover {
   color: #ff9bff;
-}
-.freecodecamp {
-  color: #b1ffb1;
 }
 .freecodecamp, .freecodecamp-btn, .freecodecamp-light:hover, .freecodecamp-dark:hover, .freecodecamp-outline:hover {
   background-color: #006400;
@@ -5701,13 +5683,16 @@ input[type="submit"] {
 }
 
 /* github color */
+.github-text {
+  color: #24292e;
+}
 .github-text, .github-outline {
   color: #24292e;
 }
 .github-dark {
   color: #515c67;
 }
-.github-btn, .github-sea, .github-trans, .github-light:hover, .github-outline:hover {
+.github, .github-btn, .github-sea, .github-trans, .github-light:hover, .github-outline:hover {
   color: #c9cfd5;
 }
 .github-light, .github-btn:hover {
@@ -5721,9 +5706,6 @@ input[type="submit"] {
 }
 .github a:hover {
   color: #dbd6d1;
-}
-.github {
-  color: #c9cfd5;
 }
 .github, .github-btn, .github-light:hover, .github-dark:hover, .github-outline:hover {
   background-color: #24292e;
@@ -5758,13 +5740,16 @@ input[type="submit"] {
 }
 
 /* linkedin color */
+.linkedin-text {
+  color: #0077b5;
+}
 .linkedin-text, .linkedin-outline {
   color: #0077b5;
 }
 .linkedin-dark {
   color: #1cb1ff;
 }
-.linkedin-btn, .linkedin-sea, .linkedin-trans, .linkedin-light:hover, .linkedin-outline:hover {
+.linkedin, .linkedin-btn, .linkedin-sea, .linkedin-trans, .linkedin-light:hover, .linkedin-outline:hover {
   color: white;
 }
 .linkedin-light, .linkedin-btn:hover {
@@ -5778,9 +5763,6 @@ input[type="submit"] {
 }
 .linkedin a:hover {
   color: #ff884a;
-}
-.linkedin {
-  color: white;
 }
 .linkedin, .linkedin-btn, .linkedin-light:hover, .linkedin-dark:hover, .linkedin-outline:hover {
   background-color: #0077b5;
@@ -5815,13 +5797,16 @@ input[type="submit"] {
 }
 
 /* medium color */
+.medium-text {
+  color: #029e74;
+}
 .medium-text, .medium-outline {
   color: #029e74;
 }
 .medium-dark {
   color: #0afcbb;
 }
-.medium-btn, .medium-sea, .medium-trans, .medium-light:hover, .medium-outline:hover {
+.medium, .medium-btn, .medium-sea, .medium-trans, .medium-light:hover, .medium-outline:hover {
   color: #edfffa;
 }
 .medium-light, .medium-btn:hover {
@@ -5835,9 +5820,6 @@ input[type="submit"] {
 }
 .medium a:hover {
   color: #fd618b;
-}
-.medium {
-  color: #edfffa;
 }
 .medium, .medium-btn, .medium-light:hover, .medium-dark:hover, .medium-outline:hover {
   background-color: #029e74;
@@ -5872,13 +5854,16 @@ input[type="submit"] {
 }
 
 /* npm color */
+.npm-text {
+  color: #c12127;
+}
 .npm-text, .npm-outline {
   color: #c12127;
 }
 .npm-dark {
   color: #e46468;
 }
-.npm-btn, .npm-sea, .npm-trans, .npm-light:hover, .npm-outline:hover {
+.npm, .npm-btn, .npm-sea, .npm-trans, .npm-light:hover, .npm-outline:hover {
   color: white;
 }
 .npm-light, .npm-btn:hover {
@@ -5892,9 +5877,6 @@ input[type="submit"] {
 }
 .npm a:hover {
   color: #3eded8;
-}
-.npm {
-  color: white;
 }
 .npm, .npm-btn, .npm-light:hover, .npm-dark:hover, .npm-outline:hover {
   background-color: #c12127;
@@ -5929,13 +5911,16 @@ input[type="submit"] {
 }
 
 /* packagist color */
+.packagist-text {
+  color: #f28d1a;
+}
 .packagist-text, .packagist-outline {
   color: #f28d1a;
 }
 .packagist-dark {
   color: #f7bd7b;
 }
-.packagist-btn, .packagist-sea, .packagist-trans, .packagist-light:hover, .packagist-outline:hover {
+.packagist, .packagist-btn, .packagist-sea, .packagist-trans, .packagist-light:hover, .packagist-outline:hover {
   color: white;
 }
 .packagist-light, .packagist-btn:hover {
@@ -5949,9 +5934,6 @@ input[type="submit"] {
 }
 .packagist a:hover {
   color: #0d72e5;
-}
-.packagist {
-  color: white;
 }
 .packagist, .packagist-btn, .packagist-light:hover, .packagist-dark:hover, .packagist-outline:hover {
   background-color: #f28d1a;
@@ -5986,13 +5968,16 @@ input[type="submit"] {
 }
 
 /* stackoverflow color */
+.stackoverflow-text {
+  color: #f48024;
+}
 .stackoverflow-text, .stackoverflow-outline {
   color: #f48024;
 }
 .stackoverflow-dark {
   color: #f9b885;
 }
-.stackoverflow-btn, .stackoverflow-sea, .stackoverflow-trans, .stackoverflow-light:hover, .stackoverflow-outline:hover {
+.stackoverflow, .stackoverflow-btn, .stackoverflow-sea, .stackoverflow-trans, .stackoverflow-light:hover, .stackoverflow-outline:hover {
   color: white;
 }
 .stackoverflow-light, .stackoverflow-btn:hover {
@@ -6006,9 +5991,6 @@ input[type="submit"] {
 }
 .stackoverflow a:hover {
   color: #0b7fdb;
-}
-.stackoverflow {
-  color: white;
 }
 .stackoverflow, .stackoverflow-btn, .stackoverflow-light:hover, .stackoverflow-dark:hover, .stackoverflow-outline:hover {
   background-color: #f48024;
@@ -6043,13 +6025,16 @@ input[type="submit"] {
 }
 
 /* twitter color */
+.twitter-text {
+  color: #1da1f2;
+}
 .twitter-text, .twitter-outline {
   color: #1da1f2;
 }
 .twitter-dark {
   color: #7dc9f8;
 }
-.twitter-btn, .twitter-sea, .twitter-trans, .twitter-light:hover, .twitter-outline:hover {
+.twitter, .twitter-btn, .twitter-sea, .twitter-trans, .twitter-light:hover, .twitter-outline:hover {
   color: white;
 }
 .twitter-light, .twitter-btn:hover {
@@ -6063,9 +6048,6 @@ input[type="submit"] {
 }
 .twitter a:hover {
   color: #e25e0d;
-}
-.twitter {
-  color: white;
 }
 .twitter, .twitter-btn, .twitter-light:hover, .twitter-dark:hover, .twitter-outline:hover {
   background-color: #1da1f2;
