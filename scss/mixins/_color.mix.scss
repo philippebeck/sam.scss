@@ -98,25 +98,25 @@
 {
   &,
   &-btn,
-  &-light:hover,
-  &-dark:hover,
   &-outline:hover
   {
     background-color: map-get(map-get($colors-map, $color), base);
   }
 
   &-light,
-  &-btn:hover
+  &-dark:hover
   {
     background-color: map-get(map-get($colors-map, $color), bright);
   }
 
-  &-dark
+  &-dark,
+  &-light:hover
   {
     background-color: map-get(map-get($colors-map, $color), dark);
   }
 
-  &-outline
+  &-outline,
+  &-btn:hover
   {
     background-color: map-get(map-get($colors-map, $color), brighter);
   }
