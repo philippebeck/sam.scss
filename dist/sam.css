@@ -1106,7 +1106,8 @@ input[type="submit"] {
   flex-wrap: nowrap;
 }
 
-[class*="col-"][class*="-inverse"], [class*="row-"][class*="-inverse"] {
+[class*="col-"][class*="-inverse"],
+[class*="row-"][class*="-inverse"] {
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
@@ -1614,47 +1615,6 @@ input[type="submit"] {
   -webkit-box-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-}
-
-/* Self order for flex items */
-.order-1 {
-  order: 1;
-}
-
-.order-2 {
-  order: 2;
-}
-
-.order-3 {
-  order: 3;
-}
-
-.order-4 {
-  order: 4;
-}
-
-.order-5 {
-  order: 5;
-}
-
-.order-6 {
-  order: 6;
-}
-
-.order-7 {
-  order: 7;
-}
-
-.order-8 {
-  order: 8;
-}
-
-.order-9 {
-  order: 9;
-}
-
-.order-10 {
-  order: 10;
 }
 
 /* Grid containers */

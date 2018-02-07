@@ -12,12 +12,11 @@
 // 05 => the fixed classes to fix the element position
 // 06 => the flex, col & row classes for using the flexible boxes layout
 // 07 => the flex classes for changing dimensions on flex items with the flex property
-// 08 => the order classes for changing order items on flex items with the order property
-// 09 => the grid classes for each breakpoint & each number of columns
-// 10 => the gap classes for adding gutters on flex & grid containers with the grid-gap property
-// 11 => the items classes for items alignments on flex & grid containers with the justify & align items properties throught the items mixin
-// 12 => the content classes for content alignments on flex & grid containers with the justify & align content properties throught the content mixin
-// 13 => the self classes for self item alignment on flex & grid items with the justify & align self properties throught the self mixin
+// 08 => the grid classes for each breakpoint & each number of columns
+// 09 => the gap classes for adding gutters on flex & grid containers with the grid-gap property
+// 10 => the items classes for items alignments on flex & grid containers with the justify & align items properties throught the items mixin
+// 11 => the content classes for content alignments on flex & grid containers with the justify & align content properties throught the content mixin
+// 12 => the self classes for self item alignment on flex & grid items with the justify & align self properties throught the self mixin
 
 
 
@@ -176,7 +175,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 // Selects all col classes for column, wrap & x-padding
@@ -184,8 +183,8 @@
 [class^="col"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 0 1rem;
 }
 
@@ -194,8 +193,8 @@
 [class^="row"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   padding: 1rem 0;
 }
 
@@ -203,29 +202,30 @@
 [class*="col-"][class*="-reverse"] {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 // Adds suffix to reverse row
 [class*="row-"][class*="-reverse"] {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 // Adds suffix to nowrap col & row
 [class*="col-"][class*="-nowrap"],
 [class*="row-"][class*="-nowrap"] {
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 // Adds suffix to reverse wrap col & wrap row
-[class*="col-"][class*="-inverse"], [class*="row-"][class*="-inverse"] {
+[class*="col-"][class*="-inverse"],
+[class*="row-"][class*="-inverse"] {
   -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 // Loops on the $breakpoints map to create the flex grids
@@ -265,30 +265,15 @@
   // Constructs the suffix with the key
   .flexible-#{$flex-key} {
     -webkit-box-flex: $flex-value;
-        -ms-flex: $flex-value;
-            flex: $flex-value;
-  }
-}
-
-
-
-// ****************************** \\
-// ***** 08 - Order Classes ***** \\
-
-/* Self order for flex items */
-// Loops from 1 to 10
-@for $order from 1 through 10
-{
-  // Constructs the suffix with the order number
-  .order-#{$order} {
-    order: #{$order};
+    -ms-flex: $flex-value;
+    flex: $flex-value;
   }
 }
 
 
 
 // ************************************* \\
-// ***** 09 - Grid & Fluid Classes ***** \\
+// ***** 08 - Grid & Fluid Classes ***** \\
 
 /* Grid containers */
 // Selects all grid & fluid classes to display grid
@@ -333,7 +318,7 @@
 
 
 // ********************************* \\
-// ***** 10 - Grid Gap Classes ***** \\
+// ***** 09 - Grid Gap Classes ***** \\
 
 /* Gutters for grid container */
 // Loops on the $grid-gap map to create the gutters
@@ -348,7 +333,7 @@
 
 
 // ****************************** \\
-// ***** 11 - Items classes ***** \\
+// ***** 10 - Items classes ***** \\
 
 /* Items alignments in flex & grid container */
 // Loops on the $items map to justify items
@@ -366,7 +351,7 @@
 
 
 // ******************************** \\
-// ***** 12 - Content Classes ***** \\
+// ***** 11 - Content Classes ***** \\
 
 /* Content alignments in flex & grid container */
 // Loops on the $content map to justify content
@@ -384,7 +369,7 @@
 
 
 // ***************************** \\
-// ***** 13 - Self Classes ***** \\
+// ***** 12 - Self Classes ***** \\
 
 /* Self alignments for flex & grid items */
 // Loops on the $items map to justify self
