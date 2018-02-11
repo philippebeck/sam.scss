@@ -6156,16 +6156,6 @@ input[type="submit"] {
     opacity: 1;
   }
 }
-@keyframes fullX3d {
-  from {
-    opacity: 0;
-    -webkit-transform: rotate3d(0, 1, 1, 360deg);
-    transform: rotate3d(0, 1, 1, 360deg);
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes quarterY3d {
   from {
     opacity: 0;
@@ -6181,16 +6171,6 @@ input[type="submit"] {
     opacity: 0;
     -webkit-transform: rotate3d(1, 0, 1, 180deg);
     transform: rotate3d(1, 0, 1, 180deg);
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fullY3d {
-  from {
-    opacity: 0;
-    -webkit-transform: rotate3d(1, 0, 1, 360deg);
-    transform: rotate3d(1, 0, 1, 360deg);
   }
   to {
     opacity: 1;
@@ -6216,16 +6196,6 @@ input[type="submit"] {
     opacity: 1;
   }
 }
-@keyframes fullZ3d {
-  from {
-    opacity: 0;
-    -webkit-transform: rotate3d(1, 1, 0, 360deg);
-    transform: rotate3d(1, 1, 0, 360deg);
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes quarter3d {
   from {
     opacity: 0;
@@ -6241,16 +6211,6 @@ input[type="submit"] {
     opacity: 0;
     -webkit-transform: rotate3d(1, 1, 1, 180deg);
     transform: rotate3d(1, 1, 1, 180deg);
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes full3d {
-  from {
-    opacity: 0;
-    -webkit-transform: rotate3d(1, 1, 1, 360deg);
-    transform: rotate3d(1, 1, 1, 360deg);
   }
   to {
     opacity: 1;
@@ -7284,42 +7244,6 @@ input[type="submit"] {
   animation: halfX3d 60s;
 }
 
-/* Animation Classes => fullX3d */
-[class*='anime'][class*='fullX3d-tn'],
-[class*='child'][class*='fullX3d-tn'] > *,
-[class*='active'][class*='fullX3d-tn']:active,
-[class*='hover'][class*='fullX3d-tn']:hover {
-  animation: fullX3d 1s;
-}
-
-[class*='anime'][class*='fullX3d-sm'],
-[class*='child'][class*='fullX3d-sm'] > *,
-[class*='active'][class*='fullX3d-sm']:active,
-[class*='hover'][class*='fullX3d-sm']:hover {
-  animation: fullX3d 2s;
-}
-
-[class*='anime'][class*='fullX3d-md'],
-[class*='child'][class*='fullX3d-md'] > *,
-[class*='active'][class*='fullX3d-md']:active,
-[class*='hover'][class*='fullX3d-md']:hover {
-  animation: fullX3d 5s;
-}
-
-[class*='anime'][class*='fullX3d-lg'],
-[class*='child'][class*='fullX3d-lg'] > *,
-[class*='active'][class*='fullX3d-lg']:active,
-[class*='hover'][class*='fullX3d-lg']:hover {
-  animation: fullX3d 10s;
-}
-
-[class*='anime'][class*='fullX3d-wd'],
-[class*='child'][class*='fullX3d-wd'] > *,
-[class*='active'][class*='fullX3d-wd']:active,
-[class*='hover'][class*='fullX3d-wd']:hover {
-  animation: fullX3d 60s;
-}
-
 /* Animation Classes => quarterY3d */
 [class*='anime'][class*='quarterY3d-tn'],
 [class*='child'][class*='quarterY3d-tn'] > *,
@@ -7390,42 +7314,6 @@ input[type="submit"] {
 [class*='active'][class*='halfY3d-wd']:active,
 [class*='hover'][class*='halfY3d-wd']:hover {
   animation: halfY3d 60s;
-}
-
-/* Animation Classes => fullY3d */
-[class*='anime'][class*='fullY3d-tn'],
-[class*='child'][class*='fullY3d-tn'] > *,
-[class*='active'][class*='fullY3d-tn']:active,
-[class*='hover'][class*='fullY3d-tn']:hover {
-  animation: fullY3d 1s;
-}
-
-[class*='anime'][class*='fullY3d-sm'],
-[class*='child'][class*='fullY3d-sm'] > *,
-[class*='active'][class*='fullY3d-sm']:active,
-[class*='hover'][class*='fullY3d-sm']:hover {
-  animation: fullY3d 2s;
-}
-
-[class*='anime'][class*='fullY3d-md'],
-[class*='child'][class*='fullY3d-md'] > *,
-[class*='active'][class*='fullY3d-md']:active,
-[class*='hover'][class*='fullY3d-md']:hover {
-  animation: fullY3d 5s;
-}
-
-[class*='anime'][class*='fullY3d-lg'],
-[class*='child'][class*='fullY3d-lg'] > *,
-[class*='active'][class*='fullY3d-lg']:active,
-[class*='hover'][class*='fullY3d-lg']:hover {
-  animation: fullY3d 10s;
-}
-
-[class*='anime'][class*='fullY3d-wd'],
-[class*='child'][class*='fullY3d-wd'] > *,
-[class*='active'][class*='fullY3d-wd']:active,
-[class*='hover'][class*='fullY3d-wd']:hover {
-  animation: fullY3d 60s;
 }
 
 /* Animation Classes => quarterZ3d */
@@ -7500,42 +7388,6 @@ input[type="submit"] {
   animation: halfZ3d 60s;
 }
 
-/* Animation Classes => fullZ3d */
-[class*='anime'][class*='fullZ3d-tn'],
-[class*='child'][class*='fullZ3d-tn'] > *,
-[class*='active'][class*='fullZ3d-tn']:active,
-[class*='hover'][class*='fullZ3d-tn']:hover {
-  animation: fullZ3d 1s;
-}
-
-[class*='anime'][class*='fullZ3d-sm'],
-[class*='child'][class*='fullZ3d-sm'] > *,
-[class*='active'][class*='fullZ3d-sm']:active,
-[class*='hover'][class*='fullZ3d-sm']:hover {
-  animation: fullZ3d 2s;
-}
-
-[class*='anime'][class*='fullZ3d-md'],
-[class*='child'][class*='fullZ3d-md'] > *,
-[class*='active'][class*='fullZ3d-md']:active,
-[class*='hover'][class*='fullZ3d-md']:hover {
-  animation: fullZ3d 5s;
-}
-
-[class*='anime'][class*='fullZ3d-lg'],
-[class*='child'][class*='fullZ3d-lg'] > *,
-[class*='active'][class*='fullZ3d-lg']:active,
-[class*='hover'][class*='fullZ3d-lg']:hover {
-  animation: fullZ3d 10s;
-}
-
-[class*='anime'][class*='fullZ3d-wd'],
-[class*='child'][class*='fullZ3d-wd'] > *,
-[class*='active'][class*='fullZ3d-wd']:active,
-[class*='hover'][class*='fullZ3d-wd']:hover {
-  animation: fullZ3d 60s;
-}
-
 /* Animation Classes => quarter3d */
 [class*='anime'][class*='quarter3d-tn'],
 [class*='child'][class*='quarter3d-tn'] > *,
@@ -7606,42 +7458,6 @@ input[type="submit"] {
 [class*='active'][class*='half3d-wd']:active,
 [class*='hover'][class*='half3d-wd']:hover {
   animation: half3d 60s;
-}
-
-/* Animation Classes => full3d */
-[class*='anime'][class*='full3d-tn'],
-[class*='child'][class*='full3d-tn'] > *,
-[class*='active'][class*='full3d-tn']:active,
-[class*='hover'][class*='full3d-tn']:hover {
-  animation: full3d 1s;
-}
-
-[class*='anime'][class*='full3d-sm'],
-[class*='child'][class*='full3d-sm'] > *,
-[class*='active'][class*='full3d-sm']:active,
-[class*='hover'][class*='full3d-sm']:hover {
-  animation: full3d 2s;
-}
-
-[class*='anime'][class*='full3d-md'],
-[class*='child'][class*='full3d-md'] > *,
-[class*='active'][class*='full3d-md']:active,
-[class*='hover'][class*='full3d-md']:hover {
-  animation: full3d 5s;
-}
-
-[class*='anime'][class*='full3d-lg'],
-[class*='child'][class*='full3d-lg'] > *,
-[class*='active'][class*='full3d-lg']:active,
-[class*='hover'][class*='full3d-lg']:hover {
-  animation: full3d 10s;
-}
-
-[class*='anime'][class*='full3d-wd'],
-[class*='child'][class*='full3d-wd'] > *,
-[class*='active'][class*='full3d-wd']:active,
-[class*='hover'][class*='full3d-wd']:hover {
-  animation: full3d 60s;
 }
 
 /* Animation Classes => flipY */

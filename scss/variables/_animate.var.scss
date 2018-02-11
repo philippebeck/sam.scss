@@ -39,19 +39,15 @@ $full:              rotate(360deg)              !default;
 // Rotate3d
 $quarterX3d:        rotate3d(0, 1, 1, 90deg)    !default;
 $halfX3d:           rotate3d(0, 1, 1, 180deg)   !default;
-$fullX3d:           rotate3d(0, 1, 1, 360deg)   !default;
 
 $quarterY3d:        rotate3d(1, 0, 1, 90deg)    !default;
 $halfY3d:           rotate3d(1, 0, 1, 180deg)   !default;
-$fullY3d:           rotate3d(1, 0, 1, 360deg)   !default;
 
 $quarterZ3d:        rotate3d(1, 1, 0, 90deg)    !default;
 $halfZ3d:           rotate3d(1, 1, 0, 180deg)   !default;
-$fullZ3d:           rotate3d(1, 1, 0, 360deg)   !default;
 
 $quarter3d:         rotate3d(1, 1, 1, 90deg)    !default;
 $half3d:            rotate3d(1, 1, 1, 180deg)   !default;
-$full3d:            rotate3d(1, 1, 1, 360deg)   !default;
 
 // ***** Scale ***** \\
 // ScaleX
@@ -181,19 +177,15 @@ $transforms:        map-merge(
 // Rotate3d
 'quarterX3d':       $quarterX3d,
 'halfX3d':          $halfX3d,
-'fullX3d':          $fullX3d,
 
 'quarterY3d':       $quarterY3d,
 'halfY3d':          $halfY3d,
-'fullY3d':          $fullY3d,
 
 'quarterZ3d':       $quarterZ3d,
 'halfZ3d':          $halfZ3d,
-'fullZ3d':          $fullZ3d,
 
 'quarter3d':        $quarter3d,
 'half3d':           $half3d,
-'full3d':           $full3d,
 
 // ***** Scale ***** \\
 // ScaleX
