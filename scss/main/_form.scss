@@ -23,8 +23,8 @@ form li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* Fixed form size */
@@ -88,6 +88,7 @@ textarea {
   margin: 1rem 0 2rem;
   border: thin solid map-get(map-get($colors-map, 'info'), darker);
   border-radius: 1rem;
+  padding: 1rem;
   background-color: map-get(map-get($colors-map, 'info'), trans);
 }
 
@@ -114,23 +115,23 @@ input[type="submit"] {
   form li {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     justify-items: start;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   label {
     -webkit-box-flex: 2;
-        -ms-flex: 2 0 auto;
-            flex: 2 0 auto;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
     -webkit-text-decoration: underline dashed;
-            text-decoration: underline dashed;
+    text-decoration: underline dashed;
   }
 
   input,

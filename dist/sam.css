@@ -894,6 +894,7 @@ textarea {
   margin: 1rem 0 2rem;
   border: thin solid #004384;
   border-radius: 1rem;
+  padding: 1rem;
   background-color: rgba(30, 144, 255, 0.2);
 }
 
