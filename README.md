@@ -4,13 +4,28 @@ Scss Animated Microframework
 
 # Installation
 
-To install via npm :
+> NPM :
 
-$ npm install sam.scss
+    $ npm i sam.scss
 
-To install via Bower :
+> Yarn :
 
-$ bower install sam.scss --save
+    $ yarn add sam.scss
+
+> Bower :
+
+    $ bower install sam.scss --save
+
+
+# CDN
+
+> jsDelivr :
+
+    https://cdn.jsdelivr.net/npm/sam.scss/dist/sam.min.css
+
+> unpkg :
+
+    https://unpkg.com/sam.scss/dist/sam.min.css
 
 
 # Overview
@@ -34,7 +49,7 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 # Documentation
 
 - Sam documentation will be available in English here as soon as possible => https://github.com/philippebeck/sam.scss/wiki
-- Sam documentation is available in French here => https://philippebeck.net/index.php?access=pjs!sam
+- Sam documentation is available in French here => https://philippebeck.net/?access=pjs!sam
 
 
 # Contribution
