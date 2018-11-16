@@ -12,10 +12,24 @@
 // ***** Installation ***** \\
 
 // To install via npm :
-// $ npm install sam.scss
+// $ npm i sam.scss
+
+// To install via Yarn :
+// $ yarn add sam.scss
 
 // To install via Bower :
 // $ bower install sam.scss --save
+
+
+
+// *************** \\
+// ***** CDN ***** \\
+
+// jsDelivr :
+// https://cdn.jsdelivr.net/npm/sam.scss/dist/sam.min.css
+
+// unpkg :
+// https://unpkg.com/sam.scss/dist/sam.min.css
 
 
 
@@ -67,9 +81,6 @@
 
 // Sam needs you if you like it : sends pull requests on GitHub to improve it !!
 
-// Notes that this project is in first a student project, so I will watch the pull requests only after the 1st of march... thank you for your understanding
-
-
 
 // ************************** \\
 // ***** 01 - Variables ***** \\
@@ -82,12 +93,10 @@
 @import 'variables/helper.var';
 
 
-
 // ************************** \\
 // ***** 02 - Functions ***** \\
 
 @import 'functions/color.fun';
-
 
 
 // *********************** \\
@@ -101,13 +110,11 @@
 @import 'mixins/helper.mix';
 
 
-
 // ********************* \\
 // ***** 04 - Init ***** \\
 
 @import 'init/normalize';
 @import 'init/init';
-
 
 
 // ********************* \\
