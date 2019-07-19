@@ -19,7 +19,7 @@ Sam can make a grid with flexbox layout or with grid layout!
 Sam can be used without any SCSS, Sass or Ruby knowledge, by using only the CSS library.
 
 Sam is build around 6 main characteristics :
-- the display, the colors, the borders, the shadows, the animations & the helpers.
+-   the display, the colors, the borders, the shadows, the animations & the helpers.  
 
 Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 
