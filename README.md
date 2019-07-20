@@ -46,8 +46,6 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 
 [![NPM Version](https://img.shields.io/npm/v/sam.scss.svg?label=NPM)](https://www.npmjs.com/package/sam.scss)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dt/sam.scss.svg?label=Downloads)](https://www.npmjs.com/package/sam.scss)
-[![NPM Yearly Downloads](https://img.shields.io/npm/dy/sam.scss.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/sam.scss)
-[![NPM Montly Downloads](https://img.shields.io/npm/dm/sam.scss.svg?label=Montly+Downloads)](https://www.npmjs.com/package/sam.scss)
 
 NPM : `npm i sam.scss`  
 Yarn : `yarn add sam.scss`    
@@ -55,8 +53,6 @@ Yarn : `yarn add sam.scss`
 ---
 
 ## CDN
-
-[![jsDelivr Yearly Downloads](https://img.shields.io/jsdelivr/npm/hy/sam.scss.svg?label=jsDelivr+Yearly+Downloads)](https://www.jsdelivr.com/package/npm/sam.scss)
 
 For dev :
 [https://cdn.jsdelivr.net/npm/sam.scss@0.2.5/dist/sam.css](https://cdn.jsdelivr.net/npm/sam.scss@0.2.5/dist/sam.css)
@@ -97,6 +93,7 @@ Sam is wrote only with SCSS & compile to CSS
 ## Support
 
 Sam has NO continuous support !
+
 [![Project Maintained](https://img.shields.io/maintenance/no/2019.svg?label=Maintained)](https://github.com/philippebeck/sam.scss)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/philippebeck/sam.scss.svg?label=Last+Commit)](https://github.com/philippebeck/sam.scss/commits/master)
 
