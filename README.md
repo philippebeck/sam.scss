@@ -1,4 +1,4 @@
-[![Sam Logo](project/public/img/sam.png)](https://github.com/philippebeck/sam.scss)
+[![Sam Logo](img/sam.png)](https://github.com/philippebeck/sam.scss)
 
 # Sam.scss
 
@@ -46,9 +46,7 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 
 [![NPM Version](https://img.shields.io/npm/v/sam.scss.svg?label=NPM)](https://www.npmjs.com/package/sam.scss)
 [![NPM Yearly Downloads](https://img.shields.io/npm/dt/sam.scss.svg?label=Downloads)](https://www.npmjs.com/package/sam.scss)
-
 [![NPM Yearly Downloads](https://img.shields.io/npm/dy/sam.scss.svg?label=Yearly+Downloads)](https://www.npmjs.com/package/sam.scss)
-
 [![NPM Montly Downloads](https://img.shields.io/npm/dm/sam.scss.svg?label=Montly+Downloads)](https://www.npmjs.com/package/sam.scss)
 
 NPM : `npm i sam.scss`  
@@ -99,10 +97,8 @@ Sam is wrote only with SCSS & compile to CSS
 ## Support
 
 Sam has NO continuous support !
-
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/philippebeck/sam.scss.svg?label=Last+Commit)](https://github.com/philippebeck/sam.scss/commits/master)
-
 [![Project Maintained](https://img.shields.io/maintenance/no/2019.svg?label=Maintained)](https://github.com/philippebeck/sam.scss)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/philippebeck/sam.scss.svg?label=Last+Commit)](https://github.com/philippebeck/sam.scss/commits/master)
 
 ---
 
@@ -157,9 +153,7 @@ Sam is maintained under the [Semantic Versioning 2.0.0](https://semver.org)
 Philippe Beck
 
 [![WebSite Status](https://img.shields.io/website-up-down-green-red/https/philippebeck.net.svg?label=https://philippebeck.net)](https://philippebeck.net)
-
 [![GitHub Followers](https://img.shields.io/github/followers/philippebeck.svg?label=GitHub+:+philippebeck+|+Followers)](https://github.com/philippebeck)
-
 [![Twitter Follow](https://badgen.net/twitter/follow/philippepjbeck)](https://twitter.com/philippepjbeck)
 
 ---
