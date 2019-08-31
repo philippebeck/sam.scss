@@ -32,7 +32,6 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 -   [Language](#language)  
 -   [Support](#support)  
 -   [Open-Source](#open-source)  
--   [Documentation](#documentation)  
 -   [Issues](#issues)  
 -   [Pull Requests](#pull-requests)  
 -   [Contributing](#contributing)  
@@ -102,14 +101,6 @@ Sam has NO continuous support !
 ## Open-Source
 
 [![GitHub Stars](https://img.shields.io/github/stars/philippebeck/sam.scss.svg?label=GitHub+:+sam.scss+|+Stars)](https://github.com/philippebeck/sam.scss)
-
----
-
-## Documentation
-
-Documentation is available !
-
-[![WebSite Status](https://img.shields.io/website-up-down-green-red/https/github.com/philippebeck/sam.scss/wiki.svg?label=Documentation)](https://github.com/philippebeck/sam.scss/wiki)
 
 ---
 
