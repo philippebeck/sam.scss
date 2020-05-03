@@ -101,10 +101,10 @@
   @else
   {
     // Gives only the 2 initials for the name & attributes the 2 values
-    [class*='anime'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}],
-    [class*='child'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}] > *,
-    [class*='active'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}]:active,
-    [class*='hover'][class*=-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}]:hover {
+    [class*='anime'][class*='-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}'],
+    [class*='child'][class*='-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}'] > *,
+    [class*='active'][class*='-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}']:active,
+    [class*='hover'][class*='-#{str_slice(#{$prefix}, 1, 1)}#{str_slice(#{$suffix}, 1, 1)}']:hover {
       transform-origin: #{$origin-x} #{$origin-y};
     }
   }
