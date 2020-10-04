@@ -4,8 +4,6 @@
 
 Scss Animated Microframework
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ff25dbb7f1b94cd980b78a8238fbc296)](https://www.codacy.com/app/philippebeck/sam.scss?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=philippebeck/sam.scss&amp;utm_campaign=Badge_Grade)
-
 ## Overview
 
 Sam is a microframework SCSS who group some important CSS properties by class.
@@ -25,7 +23,6 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 
 ## Summary
 
--   [Package Manager](#package-manager)  
 -   [CDN](#cdn)  
 -   [Download](#download)  
 -   [Content](#content)  
@@ -38,16 +35,6 @@ Sam provides 3 basic elements in more, the navigation bar, buttons & forms.
 -   [Versioning](#versioning)  
 -   [Creator](#creator)  
 -   [Copyright](#copyright)  
-
----
-
-## Package Manager
-
-[![NPM Version](https://img.shields.io/npm/v/sam.scss.svg?label=NPM)](https://www.npmjs.com/package/sam.scss)
-[![NPM Yearly Downloads](https://img.shields.io/npm/dt/sam.scss.svg?label=Downloads)](https://www.npmjs.com/package/sam.scss)
-
-NPM : `npm i sam.scss`  
-Yarn : `yarn add sam.scss`    
 
 ---
 
@@ -77,7 +64,7 @@ The project contains 2 folders :
 -   dist = the distribution library : `sam.scss` - `sam.min.scss`  
 -   scss = the source code of the project : `functions` - `init` - `main` - `mixins` - `variables`  
 
-[![CSS Code Size](https://img.shields.io/github/languages/code-size/philippebeck/sam.scss.svg?label=Code+Size)](https://github.com/philippebeck/sam.scss/tree/master)
+[![Code Size](https://img.shields.io/github/languages/code-size/philippebeck/sam.scss.svg?label=Code+Size)](https://github.com/philippebeck/sam.scss/tree/master)
 
 ---
 
@@ -151,12 +138,3 @@ Philippe Beck
 Code released under the MIT License
 
 [![GitHub License](https://img.shields.io/github/license/philippebeck/sam.scss.svg?label=License)](https://github.com/philippebeck/sam.scss/blob/master/LICENSE)
-
----
-
-## Support on Beerpay
-
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/philippebeck/sam.scss/badge.svg?style=beer-square)](https://beerpay.io/philippebeck/sam.scss)
-[![Beerpay](https://beerpay.io/philippebeck/sam.scss/make-wish.svg?style=flat-square)](https://beerpay.io/philippebeck/sam.scss?focus=wish)
